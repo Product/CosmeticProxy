@@ -1,0 +1,178 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<script type="text/javascript">
+
+    /*正则对象*/
+    var AdminRegex = {
+        Empty: /^\s*$/, //空字符串
+        Password: /^[^\s]{6,14}$/, //密码格式
+        Number: /^\d+$/, //数字
+        ReturnUrl: /^.*ReturnUrl=(.+)$/i, //用于匹配到ReturnUrl的地址
+    };
+
+    /*验证字符串是否符合相应格式*/
+    function verifyString(str, regexPattern) {
+        return regexPattern.test(str);
+    }
+    /*用户登录使用*/
+
+    /*回车登陆*/
+    function initAutoSubmitForLogin() {
+        var $userName = $('#it_uName'),
+            $password = $('#it_uPassword');
+        $('#it_uName').bind('keydown', function (event) {
+            if (event.keyCode === 13) {
+                var userName = $(this).val();
+                if (!verifyString(userName, AdminRegex.Empty)) {
+                    if (!verifyString($password.val(), AdminRegex.Empty)) {
+                        login();
+                    }
+                    else {
+                        $password.val('');
+                        $password.focus();
+                    }
+                }
+            }
+        });
+        $('#it_uPassword').bind('keydown', function (event) {
+            if (event.keyCode === 13) {
+                var password = $(this).val();
+                if (!verifyString(password, AdminRegex.Empty)) {
+                    if (!verifyString($userName.val(), AdminRegex.Empty)) {
+                        login();
+                    }
+                    else {
+                        $userName.val('');
+                        $userName.focus();
+                    }
+                }
+            }
+        });
+    }
+
+    /*登陆*/
+    function login() {
+        var userName = $('#it_uName').val(),
+            userPassword = $('#it_uPassword').val(),
+            errorMessage = '',
+            success = true;
+        if (verifyString(userName, AdminRegex.Empty)) {
+            success = false;
+            errorMessage += '用户名不能为空!\r\n';
+        }
+        if (verifyString(userPassword, AdminRegex.Empty)) {
+            success = false;
+            errorMessage += '用户密码不能为空!\r\n';
+        }
+        else if (!verifyString(userPassword, AdminRegex.Password)) {
+            success = false;
+            errorMessage += '用户密码格式不正确!';
+        }
+
+        if (success) {
+            $.ajax({
+                'type': 'POST',
+                'url': '/login/loginservice',
+                'data': { 'userName': userName, 'userPassword': userPassword },
+                'success': function (message) {
+                    var alertMessage = '未知错误!',
+                        success = false;
+                    switch (message) {
+                        case 'LoginSuccess':
+                            success = true;
+                            break;
+                        case 'LoginError':
+                            alertMessage = '登录失败!';
+                            break;
+                        case 'DataFormatError':
+                            alertMessage = '用户名或密码不能为空!';
+                            break;
+                    }
+                    if (success) {
+                        var currentUrl = window.location.href,
+                            returnUrl = '/User/Index';
+                        if (AdminRegex.ReturnUrl.test(currentUrl)) {
+                            returnUrl = decodeURIComponent(currentUrl.replace(AdminRegex.ReturnUrl, '$1'));
+                            returnUrl = removeDuplicateQueryString(returnUrl);
+                        }
+                        window.location = returnUrl;
+                    }
+                    else {
+                        alert(alertMessage);
+                    }
+                },
+                'error': function () {
+                    alert('error');
+                }
+            });
+        }
+        else {
+            alert(errorMessage);
+        }
+    }
+
+    /*过滤重复的查询参数*/
+    function removeDuplicateQueryString(url) {
+        var urlArray = url.split('?');
+        var returnUrl = urlArray[0];
+        if (urlArray.length > 1) {
+            var queryStringArray = urlArray[1].split('&');
+            var array = [], i = 0;
+            for (i; i < queryStringArray.length; i++) {
+                if (!arrayContainsItem(array, queryStringArray[i])) {
+                    array.push(queryStringArray[i]);
+                }
+            }
+            returnUrl = urlArray[0] + '?' + array.join('&');
+        }
+        return returnUrl;
+    }
+    function arrayContainsItem(array, item) {
+        var has = false, i = 0;
+        for (i; i < array.length; i++) {
+            if (array[i] === item) {
+                has = true;
+                break;
+            }
+        }
+        return has;
+    }
+
+    //#endregion
+
+
+    /*用户注销使用*/
+    function logout() {
+        $.ajax({
+            'type': 'POST',
+            'url': '/login/loginout.do',
+            'success': function (message) {
+                if (message === 'LogoutSuccess') {
+                    alert('用户已成功退出!');
+                    window.location = window.location.href;
+                }
+                else {
+                    alert('退出失败!');
+                }
+            },
+            'error': function () {
+                alert('error');
+            }
+        });
+    }
+</script>
+<form id="f_login">
+    <p>
+        <label>用户名：</label>
+        <input id="it_uName" name="userName" type="text" autocomplete="off" />
+    </p>
+    <p>
+        <label>密　码：</label>
+        <input id="it_uPassword" name="userPassword" type="password" autocomplete="off" />
+    </p>
+    <div class="l_nobg">
+        <input type="button" value="登录" class="l_login_btn" onclick="login()" />
+    </div>
+</form>

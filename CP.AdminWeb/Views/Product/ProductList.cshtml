@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "商品列表";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript" src="~/Scripts/jquery.ajaxpage-syw-2.2.js"></script>
+<script type="text/javascript" src="~/Scripts/ProductList.js"></script>
+
+<h2>商品列表</h2>
+
+<!-- 查询列表结果页 start -->
+<section class="scrollable padder" style="display:none;" id="scrollable_one">
+    <div class="m-b-md">
+    </div>
+    <!--数据表格  start -->
+    <section class="panel panel-default">
+        <div class="table-responsive">
+            <table class="table table-striped m-b-none">
+                <thead>
+                    <tr>
+                        <th>商品编号</th>
+                        <th>商品名称</th>
+                        <th>品牌</th>
+                        <th>商品介绍</th>
+                        <th>商品价格</th>
+                        <th>商品区域</th>
+                        <th>商品图片</th>
+                        <th>添加时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="js_tbSzList"></tbody>
+            </table>
+            <div class="row dataTables_wrapper">
+                <footer class="footer bg-white b-t">
+                    <div class="row dataTables_wrapper">
+                        <div class="col-sm-6">
+                            <div id="DataTables_Table_0_info" class="dataTables_info"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="DataTables_Table_0_paginate" class="dataTables_paginate paging_full_numbers"></div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <!--end 数据表格   -->
+</section>
+<!--end 查询表单结束 -->
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+        $("#DelProduct").live("click", function() {
+            var code;
+            code = $("#DelProduct").attr("code");
+            $.ajax({
+                type: "post",
+                url: "/Product/DeleteProduct",
+                dataType: "json",
+                data: {
+                    code: code
+                },
+                success: function (data) {
+                    if (data.IsSuccess) {
+                        alert(data.Message);
+                    } else {
+                        alert(data.Message);
+                    }
+                    window.location.href = window.location.href;
+                },
+                error: function (data) {
+                    alert(data);
+                }
+            });
+        });  
+
+
+        $("#UpdateStatus").live("click", function () {
+            var code, status;
+            code = $("#UpdateStatus").attr("code");
+            status = $("#UpdateStatus").attr("status");
+            if (status == 2)
+                status = 0;
+            else if(status == 0)
+                status = 2;
+            $.ajax({
+                type: "post",
+                url: "/Product/UpdateProductStatus",
+                dataType: "json",
+                data: {
+                    code: code,
+                    status: status
+                },
+                success: function (data) {
+                    if (data.IsSuccess) {
+                        alert(data.Message);
+                    } else {
+                        alert(data.Message);
+                    }
+                    window.location.href = window.location.href;
+                },
+                error: function (data) {
+                    alert(data);
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,15 @@
+﻿@model CP.AdminWeb.Models.LogOnViewModel
+
+@{
+    ViewBag.Title = "登录页";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>用户登录</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    @Html.EditorForModel()
+    <p><input type="submit" value="登录" /></p>
+}

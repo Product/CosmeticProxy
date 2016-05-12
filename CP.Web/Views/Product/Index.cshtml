@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/list.css" rel="stylesheet" />
+<script type="text/javascript" src="~/Scripts/jquery.ajaxpage-syw-2.2.js"></script>
+<script type="text/javascript" src="~/Scripts/ProductList.js"></script>
+<div class="main_con">
+    <div id="scrollable_one">
+        <ul id="js_tbSzList" class="clear"></ul>
+        <div class="row dataTables_wrapper">
+            <footer class="footer bg-white b-t">
+                <div class="row dataTables_wrapper">
+                    <div class="col-sm-6">
+                        <div id="DataTables_Table_0_info" class="dataTables_info"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="DataTables_Table_0_paginate" class="dataTables_paginate paging_full_numbers"></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery.cookie.js"></script>
+<script type="text/javascript">
+    //$.ajax({
+    //    type: 'GET',
+    //    url: "/Product/GetPic/202b2b0a0e0142ad81f7d13b6e98c897/250/",
+    //    success: function (data) {
+    //        alert($.cookie('duping'));
+    //    },
+    //    error: function (data) {
+    //        alert(data);
+    //    }
+    //});
+</script>

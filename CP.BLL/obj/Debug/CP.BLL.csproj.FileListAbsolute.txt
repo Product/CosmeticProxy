@@ -1,0 +1,16 @@
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\CP.BLL.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\CP.BLL.pdb
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\CP.DAL.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\CP.Model.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\Gyyx.Core.DBUtility.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\Log4net.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\CP.DAL.pdb
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\bin\Debug\CP.Model.pdb
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\obj\Debug\CP.BLL.csprojResolveAssemblyReference.cache
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\obj\Debug\CP.BLL.dll
+D:\zhangxiaowei\CosmeticProxy\CP.BLL\obj\Debug\CP.BLL.pdb

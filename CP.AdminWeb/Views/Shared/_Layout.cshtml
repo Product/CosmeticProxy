@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>管理后台</title>
+    <link href="~/Content/index.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+    </script>
+</head>
+    <body>
+        
+        <div class="main clear">
+            <h1>管理后台</h1>
+            <div class="left_menu">
+                <ul>
+                    <li><a href="http://localhost:58174/User/">用户管理</a></li>
+                    <li><a href="http://localhost:58174/User/Create/">添加用户</a></li>
+                    <li><a href="http://localhost:58174/Product/ProductList/">商品管理</a></li>
+                    <li><a href="http://localhost:58174/Product/AddProduct/">发布商品</a></li>
+                </ul>
+            </div>
+
+            <div class="rig_con">
+                @RenderBody()
+            </div>
+        </div>
+    </body>        
+</html>

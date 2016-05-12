@@ -1,0 +1,63 @@
+﻿@model CP.AdminWeb.Models.RegisterViewModel
+
+
+@{
+    ViewBag.Title = "添加用户";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>添加用户</h2>
+
+@using (Html.BeginForm("Create", "User", FormMethod.Post))
+{
+    <table id="t_userAdd" style="background:transparent;margin:20px 0;">
+        <tr>
+            <td>
+                <label>用户名:</label>
+            </td>
+            <td>
+                <input type="text" id="userName" name="userName" maxlength="14" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>密码:</label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password" maxlength="14" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>确认密码:</label>
+            </td>
+            <td>
+                <input type="password" id="password2" name="password2" maxlength="14" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>邮箱地址:</label>
+            </td>
+            <td>
+                <input type="text" id="email" name="email" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>真实姓名:</label>
+            </td>
+            <td>
+                <input type="text" id="trueName" name="trueName" />
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="添加用户" />
+}
+@if (@ViewBag.Message != "")
+{
+    <script type="text/javascript">
+        alert("@ViewBag.Message");
+    </script>
+}
+

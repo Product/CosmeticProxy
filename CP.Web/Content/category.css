@@ -1,0 +1,1948 @@
+@import url('http://chimg.lottedfs.com/static-root/cn_cdn/css/renewal/layout.css');
+
+@import url('http://chimg.lottedfs.com/static-root/cn_cdn/css/renewal/cate_best.css');
+
+
+
+div.leftMenu_flash {height:317px}
+
+
+
+/* left :banner */
+
+div.lban {margin:0; padding:10px 0 0 0}
+
+div.lban img {margin-bottom:6px}
+
+
+
+/* left :판매량 베스트, 판매금액 베스트 */
+
+.lbuyBest {clear:both; width:194px; margin:8px 0 10px 0; line-height:13px}
+
+.lbuyBest ul.tab {width:194px; height:26px}
+
+.lbuyBest ul.tab li {float:left}
+
+.lbuyBest ol.rankbuy {clear:both; width:190px; margin:0 auto}
+
+.lbuyBest ol.rankbuy li {width:190px; border-top:1px solid #f0f0f0; padding:12px 0 8px 0; clear:both}
+
+.lbuyBest ol.rankbuy li.L1, .lbuyBest ol.rankbuy li.L6 {border-top:0 solid #f0f0f0}
+
+.lbuyBest ol.rankbuy li.L5, .lbuyBest ol.rankbuy li.L10 {padding:12px 0 0 0}
+
+.lbuyBest ol.rankbuy li.btn {padding:4px 0 8px 0; text-align:center; border-top:0 solid #f0f0f0}
+
+.lbuyBest ol.rankbuy dl {width:190px; padding:0; margin:0}
+
+.lbuyBest ol.rankbuy dl dt.lp {width:57px; float:left; padding:0 0 0 3px; margin:0}
+
+.lbuyBest ol.rankbuy dl dd.lr {width:130px; float:left; font-size:11px; margin:0}
+
+.lbuyBest ol.rankbuy dl dt.lp img {border:1px solid #e3e3e3}
+
+.lbuyBest ol.rankbuy dl dd.lr p.brand {font-weight:bold}
+
+.lbuyBest ol.rankbuy dl dd.lr p.price {color:#a61221; font-weight:bold; padding:2px 0 0 0}
+
+.lbuyBest ol.rankbuy dl dd.lr p.price strike {color:#9f9f9f; font-weight:normal; padding-right:4px}
+
+
+
+/* big :카테고리 메인 03 */
+
+.cateMain_03 {width:690px; height:306px; padding:0 0 17px 0; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/catemain_03.gif') no-repeat left bottom; position:relative}
+
+.cateMain_03 .bestList { width:163px; position:absolute; top:9px; right:11px}
+
+.cateMain_03 .bestList div.prev {width:30px; position:absolute; top:180px; left:10px; z-index:10}
+
+.cateMain_03 .bestList div.next {width:30px; position:absolute; top:180px; left:120px; z-index:10}
+
+.cateMain_03 .bestList div.title {height:25px; padding-top:15px; text-align:center}
+
+.cateMain_03 .bestList div.best { z-index:9; width:135px; overflow:hidden; position:relative; margin-left:14px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/catemain_03_bar.gif') no-repeat 67px 147px}
+
+.cateMain_03 .bestList div.best ol.list li.L1 {width:135px; float:left}
+
+.cateMain_03 .bestList div.best dl {width:135px; text-align:center}
+
+.cateMain_03 .bestList div.best dl dt.lp {width:135px; height:152px; padding-top:5px; position:relative}
+
+.cateMain_03 .bestList div.best dl dt.lp div.icon {position:absolute; top:5px; left:0px}
+
+.cateMain_03 .bestList div.best dl dt.lp div.iconR {position:absolute; top:5px; right:0px}
+
+.cateMain_03 .bestList div.best dl dd.lr {height:100px}
+
+.cateMain_03 .bestList div.best dl dd.lr p.brand {color:#3e3e3e; font-weight:bold; padding:5px 0 2px 0}
+
+.cateMain_03 .bestList div.best dl dd.lr p.name {width:130px; color:#9e9e9e; padding:0 0 2px 0}
+
+.cateMain_03 .bestList div.best dl dd.lr p.price {color:#a61221; font-weight:bold}
+
+.cateMain_03 .bestList div.best dl dd.lr p.price strike {padding-right:4px; color:#9f9f9f; font-weight:normal}
+
+
+
+/* big :카테고리 메인 04 */
+
+.cateMain_04 {width:690px; margin:0 0 20px 0}
+
+
+
+/* big :관심상품 & 새로운상품 */
+
+/* 수정 120404 lhj
+
+.recomList {width:690px; margin:0 0 10px 0}
+
+*/
+
+.recomList {width:690px; margin:8px 0 10px 0}
+
+.recomList ul.title {height:45px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/title_bg2.gif') repeat-x left 0}
+
+.recomList ul.title li.left {float:left}
+
+.recomList ul.title li.right {float:right; padding:10px 3px 0 0}
+
+.recomList ul.title li.right span.bar {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/alcohol_01.gif') no-repeat 2px 5px; padding-left:10px}
+
+.recomList ul.best {width:690px}
+
+.recomList ul.best li.prev {float:left; width:11px; padding:70px 0 0 0}
+
+.recomList ul.best li.next {float:left; width:11px; text-align:right; padding:70px 0 0 0}
+
+.recomList ul.best li.list {width:668px; float:left; overflow:hidden; position:relative}
+
+.recomList ul.best li.list ol li {width:167px; float:left; text-align:center; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/line_01.gif') no-repeat left 20px}
+
+.recomList ul.best li.list ol li.L1 {background:none}
+
+.recomList dl.prodInfor {width:130px}
+
+.recomList dl.prodInfor dd.icon{padding-left:5px}
+
+.recomList dl.prodInfor dt.photo {width:130px}
+
+.recomList dl.prodInfor dt.photo div.icon {left:0}
+
+.recomList dl.prodInfor dt.photo div.iconR {right:0}
+
+.recomList ol.list {clear:both; padding-bottom:20px}
+
+.recomList ol.list li.L1, div.recomList ol.list li.L2, div.recomList ol.list li.L3, div.recomList ol.list li.L4, div.recomList ol.list li.L5 {width:167px; float:left; text-align:center; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/line_01.gif') no-repeat left 20px}
+
+.recomList ol.list li.L1 {background:none; padding-left:11px}
+
+.recomList ol.list li.L4 {padding-right:11px}
+
+
+
+/* big :추천상품 베스트 */
+
+.recomBest {width:690px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_9_btm.gif') no-repeat left bottom; padding-bottom:15px; margin-bottom:20px}
+
+.recomBest div.list {width:690px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_9_top.gif') no-repeat left top}
+
+.recomBest p.title {width:690px; height:35px}
+
+.recomBest table.best {width:650px}
+
+.recomBest table.best td {vertical-align:top; text-align:center}
+
+.recomBest table.best td ol.list2 dl.prodInfor dt.photo div.icon img {padding:0; border:0; margin-left:30px}
+
+.recomBest table.best td ol.list2 dl.prodInfor dt.photo div.iconR img {padding:0; border:0; margin-right:30px}
+
+.recomBest table.best td ol.list2 dl.prodInfor {width:160px}
+
+.recomBest table.best td ol.list2 dl.prodInfor dd.icon {padding-left:15px}
+
+.recomBest table.best td ol.list2 dl.prodInfor dt.photo {width:160px}
+
+.recomBest table.best td ol.list2 dl.prodInfor dt.photo div.icon {left:-15px; text-align:left}
+
+.recomBest table.best td ol.list2 dl.prodInfor dt.photo div.iconR {right:-15px; text-align:left}
+
+.recomBest table.best td ol.list li.L1 {width:220px; float:left; padding:0; margin:0}
+
+.recomBest table.best td ol.list li.L2 {width:220px; float:right}
+
+.recomBest table.best td ol.list dl.prodInfor {width:220px; text-align:left; padding:0}
+
+.recomBest table.best td ol.list dl.prodInfor dt.photo {width:90px; float:left}
+
+.recomBest table.best dl.prodInfor dt.photo img {border:1px solid #e9e9e9; padding:4px}
+
+.recomBest table.best dl.prodInfor dt.photo div.icon img {padding:0; border:0; margin-left:-5px}
+
+.recomBest table.best td ol.list dl.prodInfor dd.infor {width:130px; float:left; text-align:left; padding:0}
+
+.recomBest table.best td ol.list dl.prodInfor dd.btn {width:130px; float:left; text-align:left}
+
+
+
+/* big :대표브랜드 베스트 */
+
+.brandBest {width:690px; margin:0 0 20px 0}
+
+.brandBest p.title {height:22px}
+
+.brandBest p.title img.right {float:right; margin-right:10px}
+
+.brandBest ol.list li.L1,
+
+.brandBest ol.list li.L2,
+
+.brandBest ol.list li.L3,
+
+.brandBest ol.list li.L4,
+
+.brandBest ol.list li.L5,
+
+.brandBest ol.list li.L6 {width:100px; height:27px; float:left; padding:0 0 7px 15px}
+
+.brandBest ol.list li img {width:60px; border:1px solid #e0e0e0; padding:0 19px}
+
+
+
+/* big :기획전 */
+
+.planList {width:672px; height:265px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/plan_bg.gif') no-repeat left top; padding:15px 0 10px 18px}
+
+.planList ul.title {width:654px; height:30px}
+
+.planList ul.title li.left {float:left; padding:5px 0 0 4px; padding-top:5px}
+
+.planList ul.title li.right {float:right; padding:5px 5px 0 0}
+
+.planList div.list1 {width:317px; float:left}
+
+.planList div.list1 ul.tab {text-align:right; float:right; height:16px}
+
+.planList div.list1 ul.tab li.left {float:left}
+
+.planList div.list1 div.title {font-size:11px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/plan_bull.gif') no-repeat 0 2px; padding-left:15px}
+
+.planList div.list1 div.title a {color:#926d38; font-weight:bold}
+
+.planList div.list2 {width:322px; float:left; padding-left:16px}
+
+.planList div.list2 ul.banner li.L1 {float:left}
+
+.planList div.list2 ul.banner li.L2 {float:right}
+
+.planList div.list2 ul.txt {clear:left; padding:5px 0 5px 3px}
+
+.planList div.list2 ul.txt li {padding:2px 0 3px 30px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bl_plan.gif') no-repeat 0 2px}
+
+.planList div.list2 ul.txt li span.b {color:#926d38; font-weight:bold; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/plan_bar.gif') no-repeat right 0; padding-right:9px}
+
+.planList div.list2 ul.txt li a {color:#d2874a; font-size:11px}
+
+
+
+/* big :브랜드사은행사 & 베스트 상품평 */
+
+.giftReview {width:690px; margin:0 0 25px 0}
+
+.giftReview .gift {width:500px; float:left; padding:0 10px 15px 0; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/gift_bg.gif') no-repeat left bottom}
+
+.giftReview .gift ul.title {width:455px; height:32px; padding:13px 19px 0 26px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/gift_bg1.gif') no-repeat left top}
+
+.giftReview .gift ul.title li.left {float:left}
+
+.giftReview .gift ul.title li.right {float:right; padding-top:3px}
+
+.giftReview .gift div.logoL {width:115px; height:176px; float:left; padding:0 0 0 14px; overflow:auto;
+
+ scrollbar-face-color:#fff;
+
+ scrollbar-highlight-color:#ccad74;
+
+ scrollbar-shadow-color:#ccad74;
+
+ scrollbar-3dlight-color:#F5F5F5;
+
+ scrollbar-darkshadow-color:#F5F5F5;
+
+ scrollbar-track-color:#fff;
+
+ scrollbar-arrow-color:#cb9f4e}
+
+.giftReview .gift ul.tab li.on {width:95px; height:33px; text-align:center; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/gift_on.gif') no-repeat left 0; padding:11px 0 0 0}
+
+.giftReview .gift ul.tab li.off {width:95px; height:33px; text-align:center; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/gift_off.gif') no-repeat right 0; padding:11px 0 0 0}
+
+.giftReview .gift div.txt {width:345px; float:left; padding-left:10px}
+
+.giftReview .gift div.txt dl.giftName {position:relative; padding-top:10px; width:345px; min-height:177px; _height:177px; overflow:hidden; _overflow:visible}
+
+.giftReview .gift div.txt dl.giftName dt {color:#7a6e54; font-weight:bold; padding-bottom:10px}
+
+.giftReview .gift div.txt dl.giftName dd.photo {width:184px; float:left}
+
+.giftReview .gift div.txt dl.giftName dd.text {font-size:11px; color:#999; padding-bottom:5px}
+
+.giftReview .gift div.txt dl.giftName dd.date {font-size:11px; color:#7a6e54}
+
+.giftReview .gift div.txt dl.giftName dd.photo2 {width:184px; float:left}
+
+.giftReview .gift div.txt dl.giftName dd.text2 {width:150px; float:right; font-size:11px; color:#999; padding-bottom:25px}
+
+.giftReview .gift div.txt dl.giftName dd.box2 {position:absolute; left:0; bottom:0; width:185px; font-size:11px; color:#7a6e54}
+
+.giftReview .gift div.txt dl.giftName dd.box3 {position:absolute; line-height:14px; right:25px; bottom:0}
+
+.giftReview .gift div.txt dl.giftName p.date2 {line-height:14px; padding-left:47px; text-indent:-47px}
+
+.giftReview .gift div.txt dl.giftName p.gift2 {line-height:14px; padding-top:10px; padding-left:70px; text-indent:-70px}
+
+
+
+/* big :베스트 상품평 :review */
+
+.bestReview {width:180px; height:255px; float:left}
+
+.bestReview ul.title {width:175px; height:23px}
+
+.bestReview ul.title li.left {float:left; padding:3px 0 5px 0}
+
+.bestReview ul.title li.right {float:right; padding:3px 0 0 0; letter-spacing:-4px}
+
+.bestReview dl.infor {width:162px; margin:5px 0 0 0; font-size:11px; line-height:13px}
+
+.bestReview dl.infor dd.lg {height:18px; text-align:right}
+
+.bestReview dl.infor dd.lg .star {float:left; margin-top:1px}
+
+.bestReview dl.infor dt.lp {width:175px; height:66px; text-align:center; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/review_01.gif') no-repeat left 0; padding:10px 0 0 0}
+
+.bestReview dl.infor dd.lr {padding:8px 0 5px 2px}
+
+.bestReview dl.infor dd.lr p.brand {color:#3e3e3e; font-weight:bold; padding:0 0 2px 0}
+
+.bestReview dl.infor dd.lr p.name {color:#9e9e9e; padding:0 0 2px 0}
+
+.bestReview dl.infor dd.lr p.price {color:#a61221; font-weight:bold}
+
+.bestReview dl.infor dd.lr p.price strike {padding-right:4px; color:#9f9f9f; font-weight:normal}
+
+.bestReview dl.infor dd.lt {padding:5px 0 5px 2px}
+
+
+
+/* big :베스트 상품평 :review 개선 */
+
+.bestReview_b {position:relative; width:180px; height:255px; float:left}
+
+.bestReview_b ul.title {width:175px; height:23px}
+
+.bestReview_b ul.title li.left {float:left; padding:3px 0 5px 0}
+
+.bestReview_b ul.button li.left {position:absolute; left:1px; top:36px}
+
+.bestReview_b ul.button li.right {position:absolute; left:163px; top:36px}
+
+.bestReview_b dl.infor {float:left; width:176px; margin:5px 0 0 0; font-size:11px; line-height:13px}
+
+.bestReview_b dl.infor dd.lg {position:absolute; right:0; top:6px; height:18px; text-align:right; color:#999}
+
+.bestReview_b dl.infor dd.lg strong {color:#646E91; text-decoration:underline}
+
+.bestReview_b dl.infor dt.lp {width:176px; height:77px; text-align:center; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/review_02.gif') no-repeat left 0; padding:7px 0 0 0}
+
+.bestReview_b dl.infor dd.lr {padding:8px 0 5px 2px}
+
+.bestReview_b dl.infor dd.lr p.brand {color:#3e3e3e; font-weight:bold; padding:0 0 2px 0}
+
+.bestReview_b dl.infor dd.lr p.name {color:#9e9e9e; padding:0 0 2px 0}
+
+.bestReview_b dl.infor dd.lr p.price {color:#a61221; font-weight:bold}
+
+.bestReview_b dl.infor dd.lr p.price strike {padding-right:4px; color:#9f9f9f; font-weight:normal}
+
+.bestReview_b dl.infor dd.lt {padding:5px 0 5px 2px}
+
+.bestReview_b .viewArea {width:176px; overflow:hidden}
+
+.bestReview_b .inforWrap {width:2000px}
+
+
+
+/* big :카테고리베스트상품 */
+
+.cateBest {width:690px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_9_top.gif') no-repeat left top; margin-bottom:20px}
+
+.cateBest p.title {width:690px; height:43px}
+
+.cateBest div.list {width:665px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_9_btm.gif') no-repeat left bottom; padding:0 5px 0 20px}
+
+.cateBest p.title .right {float:right; margin:5px 3px 0 0}
+
+.cateBest ol.menu {width:650px; border-bottom:1px solid #e0e0e0; padding:0 0 5px 0}
+
+.cateBest ol.menu li.left {float:left; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bar3.gif') no-repeat right 2px; line-height:18px; padding:0 14px 0 12px}
+
+.cateBest ol.menu li.on a {color:#000; font-weight:bold}
+
+.cateBest .brandL {width:150px; height:245px; overflow:auto; float:left; margin-top:10px;
+
+ scrollbar-face-color:#fff;
+
+ scrollbar-highlight-color:#CCC;
+
+ scrollbar-shadow-color:#CCC;
+
+ scrollbar-3dlight-color:#F5F5F5;
+
+ scrollbar-darkshadow-color:#F5F5F5;
+
+ scrollbar-track-color:#fff;
+
+ scrollbar-arrow-color:#cb0a0d}
+
+.cateBest .brandL ol li {font-size:11px; line-height:16px; padding:0 0 2px 10px}
+
+.cateBest .brandL ol li.on a {font-weight:bold; color:#8b2425}
+
+.cateBest .brandP {width:505px; float:right; padding:10px 0 15px 0}
+
+.cateBest .brandP p.btn {text-align:right; margin:-5px 18px 8px 0}
+
+.cateBest .brandP ol {width:495px}
+
+.cateBest .brandP ol li.L1, div.cateBest div.brandP ol li.L3 {width:160px; float:left}
+
+.cateBest .brandP ol li.L2 {width:160px; float:left; margin:0 5px}
+
+.cateBest .brandP dl.prodInfor dd.icon {padding-left:20px}
+
+.cateBest .brandP dl.prodInfor dt.photo img {border:1px solid #e4e4e4}
+
+.cateBest .brandP dl.prodInfor dt.photo div.icon {left:20px}
+
+.cateBest .brandP dl.prodInfor dt.photo div.icon img {border:0px solid #e4e4e4}
+
+
+
+/* big :핫&베스트 & 베스트 상품평 */
+
+.hotReview {width:690px; margin:0 0 25px 0}
+
+.hotReview .hot {width:500px; float:left; padding:0 10px 8px 0}
+
+.hotReview .hot p.title {height:30px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/title_bg2.gif') repeat-x left top}
+
+.hotReview .hot ol.list li.L1, div.hotReview div.hot ol.list li.L2, div.hotReview div.hot ol.list li.L3 {float:left; padding:0 0 0 15px}
+
+.hotReview .hot dl.prodInfor, div.hotReview div.hot dl.prodInfor dt.photo {width:150px}
+
+.hotReview .hot dl.prodInfor dd.icon {padding-left:15px}
+
+.hotReview .hot dl.prodInfor dt.photo div.icon {left:15px}
+
+
+
+/* big :쿠폰할인상품 */
+
+.couponProd {width:690px; margin:0 0 25px 0; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/coupon_03.gif') no-repeat left bottom; padding-bottom:10px}
+
+.couponProd ul.tab {width:660px; height:47px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/coupon_02.gif') no-repeat left top; padding:0 25px 0 5px}
+
+.couponProd ul.tab li.title {float:left}
+
+.couponProd ul.tab li.on {float:right; width:130px; height:32px; text-align:center; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/coupon_tab_on.gif') no-repeat left top; padding-top:10px}
+
+.couponProd ul.tab li.off {float:right; width:130px; height:32px; text-align:center; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/coupon_tab_off.gif') no-repeat left top; padding-top:10px}
+
+.couponProd ul.tab span.no {font-size:16px; line-height:18px; font-family:Arial; font-weight:bold}
+
+.couponProd ul.tab img.middle {vertical-align:middle; margin-bottom:6px}
+
+.couponProd ol.list {padding:0 0 0 14px}
+
+.couponProd ol.list li.L1, div.couponProd ol.list li.L2, div.couponProd ol.list li.L3 {width:167px; float:left; text-align:center}
+
+.couponProd ol.list li.banner {float:left}
+
+.recomList dl.prodInfor {width:130px; margin-left:20px; .margin-left:0px;}
+
+.recomList dl.prodInfor dt.photo div.icon {left:5px}
+
+.recomList dl.prodInfor dt.photo div.iconR {right:5px}
+
+
+
+/* big :쇼핑 기획전 :배너 */
+
+.planEvent {width:690px; margin:0 0 10px 0}
+
+.planEvent ul.title {height:45px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/title_bg2.gif') repeat-x left 0}
+
+.planEvent ul.title li.left {float:left}
+
+.planEvent ul.title li.right {float:right; padding:10px 3px 0 0}
+
+.planEvent ul.banner {width:675px; margin:0 0 0 7px}
+
+.planEvent ul.banner li.L1, div.planEvent ul.banner li.L2, div.planEvent ul.banner li.L3 {width:225px; height:83px; float:left; text-align:center}
+
+
+
+/* big :category List */
+
+.cateList01 {clear:both; width:907px; padding:20px 0 10px 4px}
+
+.cateList01 table.cateList01 {width:907px; table-layout:fixed}
+
+.cateList01 table.cateList01 td {vertical-align:top; padding-bottom:15px}
+
+.cateList01 ul.title {width:447px; height:40px}
+
+.cateList01 ul.title li.left {float:left}
+
+.cateList01 ul.title li.right {float:right; padding:10px 10px 0 0}
+
+.cateList01 ul.b1000110001 {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110001.gif') repeat-x left top}
+
+.cateList01 ul.b1000110002 {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110002.gif') repeat-x left top}
+
+.cateList01 ul.b1000110003 {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110003.gif') repeat-x left top}
+
+.cateList01 ul.b1000110004 {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110004.gif') repeat-x left top}
+
+.cateList01 ul.b1000110005 {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110005.gif') repeat-x left top}
+
+.cateList01 ul.b1000110006 {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110006.gif') repeat-x left top}
+
+.cateList01 ul.b1000110007 {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110007.gif') repeat-x left top}
+
+.cateList01 ul.b1000110008 {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110008.gif') repeat-x left top}
+
+.cateList01 ul.b1000110009 {background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/category/big_b1000110009.gif") repeat-x left top}
+
+
+
+.cateList01 ul.list {width:447px}
+
+.cateList01 ul.list li.bn {width:162px; float:left}
+
+.cateList01 ul.list li.lst {float:left}
+
+.cateList01 ol.list {width:285px}
+
+.cateList01 ol.list li.L1 {width:135px; float:left}
+
+.cateList01 ol.list li.L2 {width:135px; float:right}
+
+.cateList01 ol.list dl.prodInfor, div.cateList01 ol.list dl.prodInfor dt.photo {width:135px}
+
+.cateList01 ol.list dl.prodInfor dd.icon {padding-left:7px}
+
+.cateList01 ol.list dl.prodInfor dt.photo div.icon {left:7px}
+
+.cateList01 ol.list dl.prodInfor dt.photo div.iconR {right:7px}
+
+
+
+/* middle :베스트 상품평 */
+
+.reviewBest {width:690px; margin:0 0 25px 0}
+
+.reviewBest ul.title {height:45px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/title_bg2.gif') repeat-x left 0}
+
+.reviewBest ul.title li.left {float:left}
+
+.reviewBest ul.title li.right {float:right; padding:10px 3px 0 0}
+
+.reviewBest ol.list li.L1,div.reviewBest ol.list li.L2 {width:197px; float:left; padding-right:45px}
+
+.reviewBest ol.list li.L3 {width:197px; float:left}
+
+.reviewBest ol.list li dl {width:175px; margin:0 11px}
+
+.reviewBest ol.list li dl dt.ln {width:50px; height:45px; float:left}
+
+.reviewBest ol.list li dl dd.ln {width:125px; height:15px; float:right; color:#999; font-size:11px; padding:10px 0 5px 0; text-align:right}
+
+.reviewBest ol.list li dl dd.ln span.total {color:#646e91; font-weight:bold; text-decoration:underline}
+
+.reviewBest ol.list li dl dd.lg {width:125px; float:right; height:10px; text-align:right}
+
+.reviewBest ol.list li dl dd.lp {clear:both; text-align:center; width:175px; height:91px; padding-top:11px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/review_bg3.gif') no-repeat left 0; position:relative}
+
+.reviewBest ol.list li dl dd.lp div.icon {left:0; top:0; position:absolute}
+
+.reviewBest ol.list li dl dd.lr {font-size:11px; line-height:13px; padding:0 5px 10px 5px}
+
+.reviewBest ol.list li dl dd.lr p.brand {font-weight:bold; padding:0 0 2px 0}
+
+.reviewBest ol.list li dl dd.lr p.name {padding:0 0 2px 0}
+
+.reviewBest ol.list li dl dd.lr p.price {color:#a61220; font-weight:bold}
+
+.reviewBest ol.list li dl dd.lr p.price strike {padding-right:4px; color:#9f9f9f; font-weight:normal}
+
+.reviewBest ol.list li dl dd.lt {word-wrap:break-word; padding:0 5px 0 5px; color:#999; font-size:11px}
+
+
+
+/* middle :브랜드별 상품 */
+
+.brandProd {width:690px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_9_top.gif') no-repeat left top; margin-bottom:20px}
+
+.brandProd p.title {width:690px; height:43px}
+
+.brandProd .list {width:660px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_9_btm.gif') no-repeat left bottom; padding:0 5px 13px 25px}
+
+.brandProd .brandL {width:150px; height:245px; overflow:auto; float:left;
+
+	scrollbar-face-color:#fff;
+
+	scrollbar-highlight-color:#CCC;
+
+	scrollbar-shadow-color:#CCC;
+
+	scrollbar-3dlight-color:#F5F5F5;
+
+	scrollbar-darkshadow-color:#F5F5F5;
+
+	scrollbar-track-color:#fff;
+
+	scrollbar-arrow-color:#cb0a0d}
+
+.brandProd .brandL ol li {font-size:11px; line-height:16px; padding:0 0 2px 0}
+
+.brandProd .brandL ol li.on a {font-weight:bold; color:#8b2425}
+
+.brandProd .brandP {width:500px; float:left; padding:0 0 15px 8px}
+
+.brandProd .brandP ol {width:495px}
+
+.brandProd .brandP ol li.L1, div.brandProd div.brandP ol li.L3 {width:160px; float:left}
+
+.brandProd .brandP ol li.L2 {width:160px; float:left; margin:0 5px}
+
+.brandProd .brandP ol dl.prodInfor dd.icon {padding-left:20px}
+
+.brandProd .brandP ol dl.prodInfor dt.photo {width:160px}
+
+.brandProd .brandP ol dl.prodInfor dt.photo div.icon {left:20px}
+
+
+
+/* small :소카테고리 best */
+
+.smallBest {width:690px; margin:0 0 20px 0}
+
+.smallBest ul.title {height:24px; border-bottom:1px solid #e0e0e0}
+
+.smallBest ul.title li.left {float:left; height:20px; padding:4px 0 0 10px}
+
+.smallBest ul.title li.right {float:right; height:24px; padding:0 18px 0 0}
+
+.smallBest ul.title li span {color:#c71a37; font-weight:bold}
+
+.smallBest div.line {padding-top:15px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_6_top.gif') no-repeat left top; margin-top:-1px}
+
+.smallBest div.box {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_6_btm.gif') no-repeat left bottom; padding:0 0 5px 0}
+
+.smallBest div.box ol.menu {width:660px; padding:0 0 0 15px}
+
+.smallBest div.box ol.menu li.left {float:left; padding:0 13px 4px 12px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bar2.gif') no-repeat right 3px; line-height:18px}
+
+.smallBest div.box ol.menu li.on a {color:#000; font-weight:bold}
+
+.smallBest div.box ol.list {width:660px; margin:0 15px; border-top:1px solid #ede6d0; padding-top:10px}
+
+.smallBest div.box ol.list li.L1, div.smallBest div.box ol.list li.L2, div.smallBest div.box ol.list li.L3, div.smallBest div.box ol.list li.L4 {width:155px; float:left; text-align:center; padding:0 5px}
+
+.smallBest dl.prodInfor {width:155px}
+
+.smallBest dl.prodInfor dd.icon {padding-left:17px}
+
+.smallBest dl.prodInfor dt.photo {width:155px}
+
+.smallBest dl.prodInfor dt.photo div.icon {left:17px}
+
+
+
+/* small :소카테고리 banner */
+
+.smallBanner {width:690px; margin:0 0 10px 0}
+
+.smallBanner ul.banner {height:70px}
+
+.smallBanner ul.banner li.L1 {width:168px; float:left}
+
+.smallBanner ul.banner li.L2, div.smallBanner ul.banner li.L3, div.smallBanner ul.banner li.L4 {width:167px; float:left; text-align:right; margin-left:7px}
+
+
+
+/* 주류담배 */
+
+.alcoholBest ul.menu {border-bottom:1px solid #e0e0e0; margin-bottom:15px; padding:10px 0 7px 0}
+
+.alcoholBest ul.menu li.left {float:left; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bar3.gif') no-repeat right 2px; line-height:18px; padding:0 14px 0 12px}
+
+.alcoholBest ul.menu li.on a {color:#000; font-weight:bold}
+
+
+
+/* 주류담배 :이벤트 소식 */
+
+.alcoholEvent {width:690px}
+
+.alcoholEvent div.top {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/alcohol_02.gif') no-repeat left 0; height:25px; font-size:1px; line-height:1px}
+
+.alcoholEvent div.btm {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/alcohol_03.gif') no-repeat left 0; height:25px; font-size:1px; line-height:1px}
+
+.alcoholEvent div.mdl {border-left:7px solid #eaeaea; border-right:7px solid #eaeaea; padding:0 20px; width:636px}
+
+.alcoholEvent ul.infor {width:636px; padding-bottom:20px}
+
+.alcoholEvent ul.infor li.left {float:left}
+
+.alcoholEvent ul.infor li.right {float:right; padding-top:32px}
+
+.alcoholEvent dl dd.L1, div.alcoholEvent dl dd.L2, div.alcoholEvent dl dd.L3, div.alcoholEvent dl dd.L4 {float:left; padding-left:4px; padding-top:5px}
+
+.alcoholEvent dl dd.L1 {padding-left:0}
+
+.alcoholEvent div.event {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/alcohol_06.gif') no-repeat left 60px}
+
+.alcoholEvent div.event p.title {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/alcohol_04.gif') no-repeat left 0; padding:20px 0 0 68px; height:40px}
+
+.alcoholEvent div.event ol.list {width:593px; padding:0 0 5px 43px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/alcohol_05.gif') no-repeat left bottom}
+
+.alcoholEvent div.event ol.list li.L1, div.alcoholEvent div.event ol.list li.L2 {float:left; width:282px; padding-bottom:10px}
+
+
+
+/* middle :추천 상품 */
+
+.recomProd {width:690px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_9_top.gif') no-repeat left top; margin-bottom:20px}
+
+.recomProd p.title {width:690px; height:43px}
+
+.recomProd div.list {width:660px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/box_9_btm.gif') no-repeat left bottom; padding:0 5px 13px 25px}
+
+.recomProd div.list ol {width:660px; overflow:hidden}
+
+.recomProd div.list li {float:left}
+
+.recomProd div.list li.first {width:272px; margin-right:23px}
+
+.recomProd div.list li.first dl.prodInfor {text-align:left}
+
+.recomProd div.list li.first dl.prodInfor dt.photo {border:1px solid #e9e9e9; padding:55px 0 56px 0; margin-bottom:10px}
+
+.recomProd div.list li.first dl.prodInfor dt.photo div.icon {left:5px; _left:0px}
+
+.recomProd div.list li.first dl.prodInfor dt.photo div.icon img {border:0}
+
+.recomProd div.list li.first dl.prodInfor dt.photo div.iconR {right:0px; _right:0px}
+
+.recomProd div.list li.first dl.prodInfor dt.photo div.iconR img {border:0}
+
+.recomProd div.list li.first dl.prodInfor dd.btn {text-align:left}
+
+.recomProd div.list li.prod {width:165px; margin-right:15px}
+
+.recomProd div.list li.prod dl.prodInfor {width:165px; margin-bottom:10px; text-align:left}
+
+.recomProd div.list li.prod dl.prodInfor dt.photo,
+
+.recomProd div.list li.prod dl.prodInfor dd.btn,
+
+.recomProd div.list li.prod dl.prodInfor dd.icon,
+
+.recomProd div.list li.prod dl.prodInfor dd.infor {padding-left:5px; text-align:left}
+
+.recomProd div.list li.prod dl.prodInfor dt.photo img {border:1px solid #e9e9e9}
+
+.recomProd div.list li.prod dl.prodInfor dt.photo div.icon {left:5px; _left:0px}
+
+.recomProd div.list li.prod dl.prodInfor dt.photo div.icon img {border:0}
+
+.recomProd div.list li.prod dl.prodInfor dt.photo div.iconR {right:39px}
+
+.recomProd div.list li.prod dl.prodInfor dt.photo div.iconR img {border:0}
+
+.recomProd div.list li.line {width:330px; height:0; overflow:hidden}
+
+.recomProd div.list ol.smallCategory li.prod {width:150px}
+
+.recomProd div.list ol.smallCategory li.prod dl.prodInfor {width:150px}
+
+.recomProd div.list ol.smallCategory li.prod dl.prodInfor dt.photo div.icon {left:5px; _left:0px}
+
+.recomProd div.list ol.smallCategory li.prod dl.prodInfor dt.photo div.icon img {border:0}
+
+.recomProd div.list ol.smallCategory li.prod dl.prodInfor dt.photo div.iconR {right:24px}
+
+.recomProd div.list ol.smallCategory li.prod dl.prodInfor dt.photo div.iconR img {border:0}
+
+
+
+/* 현재 카테고리 네비게이션 */
+
+.currentCategory {clear:both; margin-bottom:10px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_currentCategory_bottom.gif') no-repeat left bottom}
+
+.currentCategory div.bgTop {padding:14px 0 7px 23px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_currentCategory_top.gif') no-repeat left top}
+
+.currentCategory table {table-layout:auto}
+
+.currentCategory table th {white-space:nowrap; vertical-align:top; padding-right:18px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bar_currentCategory_3.gif') repeat-y right 1px}
+
+.currentCategory table td {vertical-align:top; padding-right:20px}
+
+.currentCategory ul {width:100%; overflow:hidden}
+
+.currentCategory ul li {float:left; margin:0 0 5px -2px; height:16px; padding:0 22px; white-space:nowrap; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bar_currentCategory_2.gif') no-repeat left 1px}
+
+.currentCategory a {font:normal 12px dotum; color:#6e6e6e; text-decoration:none}
+
+.currentCategory a:hover {text-decoration:underline}
+
+
+
+/* 검색조건 */
+
+.searchCondition {clear:both; margin-bottom:15px; margin-top:20px}
+
+.searchCondition div.btnToggle {text-align:right; padding-right:15px; border-bottom:1px solid #e0e0e0}
+
+.searchCondition div.checkArea {margin-top:-1px; padding-bottom:5px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_searchCondition_6.gif') no-repeat left bottom}
+
+.searchCondition div.topBackground {width:688px; height:12px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_searchCondition_7.gif') no-repeat left top}
+
+.searchCondition p.searchT {display:none; float:left; width:121px; height:56px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_searchCondition_3.gif') no-repeat left top}
+
+.searchCondition p.searchT img {margin:18px 0 0 29px}
+
+.searchCondition p.searchT2 {display:none; height:56px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_searchCondition_3.gif') no-repeat left top}
+
+.searchCondition p.searchT2 img {margin:18px 0 0 29px}
+
+.searchCondition dl.priceRange {float:left; width:567px; height:56px; overflow:hidden; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_searchCondition_2.gif') no-repeat left top}
+
+.searchCondition dl.priceRange dt {float:left; padding:16px 0 0 19px}
+
+.searchCondition dl.priceRange dd {float:left; margin-top:-5px}
+
+.searchCondition dl.brandCheck {clear:both; position:relative; z-index:1; width:630px; padding-bottom:2px; margin:0 29px 10px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_searchCondition_5.gif') repeat-x left bottom}
+
+.searchCondition dl.brandCheck dt {height:20px}
+
+.searchCondition dl.brandCheck dd {}
+
+.searchCondition dl.brandCheck dd.btn {position:absolute; z-index:2; right:0; top:5px}
+
+.searchCondition dl.brandCheck dd .chb {margin:-2px 2px 2px 0}
+
+.searchCondition dl.brandCheck ul {width:630px; overflow:hidden}
+
+.searchCondition dl.brandCheck li {float:left; width:137px; color:#3d3d3d; padding-bottom:5px; text-indent:-20px; padding-left:20px}
+
+.searchCondition dl.brandCheck li.clear {clear:none; float:left; width:630px; height:0px; overflow:hidden; margin:0; padding:0; background:red}
+
+.searchCondition dl.benefitCheck {clear:both; z-index:1; width:630px; padding-bottom:2px; margin:0 29px 0px}
+
+.searchCondition dl.benefitCheck dt {float:left; width:157px}
+
+.searchCondition dl.benefitCheck dd {}
+
+.searchCondition dl.benefitCheck dd .chb {margin:-2px 2px 2px 0}
+
+.searchCondition dl.benefitCheck dd.searchBtn {float:right; width:50px; margin-top:-25px; _margin-top:0px}
+
+.searchCondition dl.benefitCheck ul {overflow:hidden}
+
+.searchCondition dl.benefitCheck li {float:left; width:157px; color:#3d3d3d; padding-bottom:5px}
+
+
+
+.searchCondition dl.selectedCondition {width:678px; overflow:hidden; margin:0 5px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_searchCondition_4.gif') repeat-x left top}
+
+.searchCondition dl.selectedCondition dt {float:left; width:126px}
+
+.searchCondition dl.selectedCondition dt img {margin:15px 0 0 27px}
+
+.searchCondition dl.selectedCondition dd {float:left; width:480px}
+
+.searchCondition dl.selectedCondition dd.searchBtn {float:right; width:50px; padding-top:11px}
+
+
+
+.searchCondition dl.selectedCondition ul {width:500px; padding-top:5px; overflow:hidden; margin-top:10px; margin-bottom:5px}
+
+.searchCondition dl.selectedCondition ul li {float:left; padding-right:20px; padding-bottom:5px; font:bold 12px dotum; color:#111111}
+
+.searchCondition dl.selectedCondition ul li img {margin-right:5px}
+
+.searchCondition dl.selectedCondition ul li.conB {color:#cb0a0f}
+
+.searchCondition dl.selectedCondition ul li.btn {margin:-5px}
+
+
+
+.searchCondition dl.selectedCondition div.list {width:500px; padding-top:5px; overflow:hidden; margin-top:10px; margin-bottom:5px}
+
+.searchCondition dl.selectedCondition div.list span em {padding-right:20px; font:bold 12px/18px dotum; color:#111111; white-space:nowrap}
+
+.searchCondition dl.selectedCondition div.list span img {margin:-2px 5px 2px 0; vertical-align:middle}
+
+.searchCondition dl.selectedCondition div.list span.range {font:bold 12px/18px dotum; color:#cb0a0f; padding-right:20px}
+
+.searchCondition dl.selectedCondition div.list span.btn {margin:-5px}
+
+
+
+/* 10001_1DepthCate_Atype_mod.jsp 에서 css 옮김 120216*/
+
+.popInfo03 {position: absolute; top: 390px; right: 448px; z-index:1000}
+
+.popInfo03 p.text {position: absolute; top: 11px; right: 7px; font-size: 11px; color: #6c6c6c; font-family: Dotum; letter-spacing: -1px}
+
+.popInfo03 p.text input {margin-top: -3px}
+
+.popInfo03 img.btn {position: absolute; bottom: 9px; right: 98px}
+
+
+
+
+
+/* big :카테고리 메인 03_new 추가 120306*/
+
+.cateMain_03_new {position:relative; width:690px; height:308px; margin-bottom:17px}
+
+.cateMain_03_new .main_img {width:690px; height:283px; overflow:hidden}
+
+.cateMain_03_new ul {}
+
+.cateMain_03_new ul li {float:left;}
+
+.cateMain_03_new ul li a img.on {display:none;}
+
+.cateMain_03_new .bestList { position:absolute; top:12px; right:11px; width:166px; height:250px; background:#fff; border:5px solid #cbcbcb}
+
+.cateMain_03_new .bestList div.title {margin:15px 0 2px 0; text-align:center}
+
+.cateMain_03_new .bestList div.prev {width:31px; position:absolute; top:167px; left:11px; z-index:10}
+
+.cateMain_03_new .bestList div.next {width:30px; position:absolute; top:167px; left:124px; z-index:10}
+
+.cateMain_03_new .bestList div.best { z-index:9; width:135px; overflow:hidden; position:relative; margin-left:15px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/catemain_03_bar.gif') no-repeat 66px 138px}
+
+.cateMain_03_new .bestList div.best dl dd.lr p.brand {color:#666; font-weight:bold; font-size:11px; padding-top:5px}
+
+.cateMain_03_new .bestList div.best dl dd.lr p.name {width:133px; color:#666;}
+
+.cateMain_03_new .bestList div.best dl dt.lp {width:135px; height:149px; padding-top:5px; position:relative}
+
+.cateMain_03_new .bestList div.best dl dd.lr {height:65px}
+
+
+
+.cateMain_03_new .bestList div.best ol.list li.L1 {width:135px; float:left;}
+
+.cateMain_03_new .bestList div.best dl {width:135px; text-align:center}
+
+.cateMain_03_new .bestList div.best dl dt.lp div.icon {position:absolute; top:5px; left:0px}
+
+.cateMain_03_new .bestList div.best dl dt.lp div.iconR {position:absolute; top:5px; right:0px}
+
+.cateMain_03_new .bestList div.best dl dd.lr p.price {color:#a61221; font-weight:bold}
+
+.cateMain_03_new .bestList div.best dl dd.lr p.price strike {padding-right:4px; color:#9f9f9f; font-weight:normal}
+
+
+
+.cateMain_05 {position:relative; width:907px; height:308px;}
+
+.cateMain_05 .main_img {width:907px; height:283px; overflow:hidden}
+
+.cateMain_05 ul {clear:both; width:690px; overflow:hidden;}
+
+.cateMain_05 ul li {float:left; border-right:1px solid #939393;}
+
+.cateMain_05 ul li a {display:inline-block; float:left; width:137px; height:24px; background:#747474; font-size:11px; color:#c8c8c8; text-align:center; line-height:26px; text-decoration:none;}
+
+.cateMain_05 ul li a:hover {background:#2a2a2a; color:#fff;}
+
+.cateMain_05 ul li a:active {background:#2a2a2a; color:#fff;}
+
+
+
+
+
+/*  카테고리 메인 상단 박스 (플래쉬 대체) 추가 120307*/
+
+.category_mainContainer {padding:12px; width:883px; background:#cb4c5f}
+
+.category_mainContainer li.last {background:none}
+
+.category_mainContainer:after {content:""; display:block; clear:both}
+
+.category_mainContent:after {content:""; display:block; clear:both}
+
+.category_mainContent .lnb {float:left; position:relative; width:170px; margin-right:12px; padding-top:15px}
+
+.category_mainContent .lnb li {height:19px; padding-bottom:12px; .padding-bottom:8px}
+
+.category_mainContent .lnb li a {display:block}
+
+.category_mainContent .lnb li.first {margin-bottom:15px; padding:0}
+
+.category_mainContent .lnb li div {display:none; position:absolute; top:39px; right:0; width:116px; padding:5px 0; border:1px solid #a42c3e; background:#fff; z-index:1000}
+
+.category_mainContent .lnb li span {position:absolute; left:-4px; top:13px}
+
+.category_mainContent .lnb li ul {width:103px; margin:0 5px}
+
+.category_mainContent .lnb li ul li {height:18px; padding:4px 0 0 3px; margin-bottom:0; border-bottom:1px solid #f0d3d3; letter-spacing:-1px}
+
+.category_mainContent .lnb li ul li.last {border-bottom:none; height:15px}
+
+.category_mainContent .lnb li ul li a {font-size:11px; color:#666}
+
+.category_mainContent .lnb li .makeup {top:70px}
+
+.category_mainContent .lnb li .white {top:101px}
+
+.category_mainContent .lnb li .body {top:133px}
+
+.category_mainContent .lnb li .hair {top:163px}
+
+.category_mainContent .lnb li .man {top:194px}
+
+.category_mainContent .lnb li .kids {top:225px}
+
+.category_mainContent .lnb li .sets {top:256px}
+
+.category_mainContent .mainBanner {float:left; width:515px; height:299px; position:relative; margin-right:12px; text-align:center}
+
+.category_mainContent .mainBanner ul.banner_nav {position:absolute; bottom:5px; left:4px}
+
+.category_mainContent .mainBanner ul.banner_nav .on {display:none}
+
+.category_mainContent .mainBanner ul.banner_img {width:1545px;height:299px;}
+
+.category_mainContent .mainBanner ul.banner_img li {float:left; width:515px; height:299px; overflow:hidden}
+
+.category_mainContent .mainBanner #banner_img_view {position:relative; clear:both; width:515px; height:299px;overflow:hidden}
+
+.category_mainContent .mainBanner #banner_img_view ul {position:absolute; width:1545px; left:0px}
+
+.category_mainContent .mainBanner #banner_img_view ul li {float:left;height:299px}
+
+.category_mainContent .mainBanner #banner_img_view ul li a img{width:515px;height:299px}
+
+.category_mainContent .mainBanner li {float:left}
+
+.category_mainContent .bannerList {*zoom:1;float:left; width:173px; height:300px; background:#e76e81; overflow:hidden; font-size:0; line-height:0}
+
+.category_mainContent .bannerList ol {width:163px;  margin:0 5px}
+
+.category_mainContent .bannerList li {float:left;border-bottom:1px solid #f68fa0} /* padding:7px 0; 20120424 guk */
+
+.category_mainContent .bannerList li a {display:block}
+
+.category_mainContent .bannerList li div a img {padding-left:0}
+
+.category_mainContent .bannerList li.last {border-bottom:none; padding-bottom:1px}
+
+.category_mainContent .bannerList li.first div {display:block;}
+
+.category_mainContent .bannerList li div {display:none; width:163px; height:169px;} /* top:7px 20120424 guk*/
+
+.category_mainContent .bannerList li div img {width:163px; height:169px}
+
+.category_mainContainer .brandList {width:862px; height:60px; margin-top:12px; padding:0 10px; background:#fff}
+
+.category_mainContainer .brandList ul {*zoom:1;width:1680px}
+
+.category_mainContainer .brandList ul:after {content:"";display:block;clear:both}
+
+.category_mainContainer .barndView {float:left;width:840px;margin-left:12px;display:inline;overflow:hidden}
+
+.category_mainContainer .brandList li {float:left; width:119px; padding:4px 1px 0 0; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/renewal/bg_banner_line.gif') no-repeat right 5px}
+
+.category_mainContainer .brandList li.last {background:none}
+
+.category_mainContainer .brandList .leftBtn {margin:0 3px 0 4px}
+
+.category_mainContainer .brandList .leftBtn, .category_mainContainer .brandList .rightBtn {float:left; width:5px; height:9px; position:relative; top:25px}
+
+
+
+/* 0601 new */
+
+.cate_mainContain {padding:12px; width:883px; background:#c71a38;}
+
+.cate_mainContain li.last {background:none}
+
+.cate_mainContain:after {content:""; display:block; clear:both}
+
+.cate_mainContain .brandList {width:862px; height:70px; margin-top:12px; padding:0 10px; background:#fff}
+
+.cate_mainContain .brandList ul {*zoom:1;width:1680px}
+
+.cate_mainContain .brandList ul:after {content:"";display:block;clear:both}
+
+.cate_mainContain .barndView {float:left;width:840px;margin-left:12px;display:inline;overflow:hidden}
+
+.cate_mainContain .brandList li {float:left; width:119px; padding:9px 1px 5px 0; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/category/renewal/bg_banner_line.gif') no-repeat right 5px;}
+
+.cate_mainContain .brandList li.last {background:none}
+
+.cate_mainContain .brandList .leftBtn {margin-top:0;}
+
+.cate_mainContain .brandList .leftBtn, .cate_mainContain .brandList .rightBtn {float:left; width:5px; height:9px; position:relative; top:32px;}
+
+.cate_mainContents:after {content:""; display:block; clear:both}
+
+.cate_mainContents .lnb {float:left; position:relative; width:170px; margin-right:12px; padding-top:15px}
+
+.cate_mainContents .lnb li {height:19px; padding-bottom:12px; .padding-bottom:8px}
+
+.cate_mainContents .lnb li a {display:block}
+
+.cate_mainContents .lnb li.first {margin-bottom:15px; padding:0}
+
+.cate_mainContents .lnb li div {display:none; position:absolute; top:39px; right:0; width:116px; padding:5px 0; border:1px solid #a42c3e; background:#fff; z-index:1000}
+
+.cate_mainContents .lnb li span {position:absolute; left:-4px; top:13px}
+
+.cate_mainContents .lnb li ul {width:103px; margin:0 5px}
+
+.cate_mainContents .lnb li ul li {height:18px; padding:4px 0 0 3px; margin-bottom:0; border-bottom:1px solid #f0d3d3; letter-spacing:-1px}
+
+.cate_mainContents .lnb li ul li.last {border-bottom:none; height:15px}
+
+.cate_mainContents .lnb li ul li a {font-size:11px; color:#666}
+
+.cate_mainContents .lnb li .makeup {top:70px}
+
+.cate_mainContents .lnb li .white {top:101px}
+
+.cate_mainContents .lnb li .body {top:133px}
+
+.cate_mainContents .lnb li .hair {top:163px}
+
+.cate_mainContents .lnb li .man {top:194px}
+
+.cate_mainContents .lnb li .kids {top:225px}
+
+.cate_mainContents .lnb li .sets {top:256px}
+
+.cate_mainContents .mainBanner {float:left; width:515px; height:299px; position:relative; margin-right:12px; text-align:center}
+
+.cate_mainContents .mainBanner ul.banner_nav {position:absolute; bottom:5px; left:4px}
+
+.cate_mainContents .mainBanner ul.banner_nav .on {display:none}
+
+.cate_mainContents .mainBanner ul.banner_img {width:1545px;height:299px;}
+
+.cate_mainContents .mainBanner ul.banner_img li {float:left; width:515px; height:299px; overflow:hidden}
+
+.cate_mainContents .mainBanner #banner_img_view {position:relative; clear:both; width:515px; height:299px;overflow:hidden}
+
+.cate_mainContents .mainBanner #banner_img_view ul {position:absolute; width:1545px; left:0px}
+
+.cate_mainContents .mainBanner #banner_img_view ul li {float:left;height:299px}
+
+.cate_mainContents .mainBanner #banner_img_view ul li a img{width:515px;height:299px}
+
+.cate_mainContents .mainBanner li {float:left}
+
+.cate_mainContents .bannerList {*zoom:1;float:left; width:173px; height:298px; padding-top:2px; background:#f37086; overflow:hidden; font-size:0; line-height:0}
+
+.cate_mainContents .bannerList ol {width:163px;  margin:0 5px}
+
+.cate_mainContents .bannerList li {float:left;border-bottom:1px solid #f68fa0} /* padding:7px 0; 20120424 guk */
+
+.cate_mainContents .bannerList li a {display:block}
+
+.cate_mainContents .bannerList li div a img {padding-left:0}
+
+.cate_mainContents .bannerList li.last {border-bottom:none; padding-bottom:1px}
+
+.cate_mainContents .bannerList li.first div {display:block;}
+
+.cate_mainContents .bannerList li div {display:none; width:163px; height:169px;} /* top:7px 20120424 guk*/
+
+.cate_mainContents .bannerList li div img {width:163px; height:169px}
+
+
+
+
+
+/* left 실시간 베스트 브랜드 마진조절 20120406*/
+
+div.lRanking {margin-left:6px;}
+
+
+
+/* 3시간전 샵 안내 팝업 배경이미지 수정 :: 120413 수정 */
+
+#ordertimePopup .impossible03 {height:58px !important;padding:138px 0 0 36px !important;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/popup/ordertimePopup_123.gif') no-repeat left top !important;}
+
+
+
+/* 5시간전 샵 안내 팝업 배경이미지 수정 :: 120413 수정 */
+
+#ordertimePopup .impossible05 {height:58px !important;padding:138px 0 0 36px !important;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/popup/ordertimePopup_125.gif') no-repeat left top !important;}
+
+
+
+.best_prod_thum {position:absolute; top:0; right:0; width:205px; background:#f5f5f5;}
+
+.best_prod_thum .title {padding:21px 0 12px 0; text-align:center;}
+
+.best_prod_thum .prev {position:absolute; top:109px; left:0; z-index:10}
+
+.best_prod_thum .next {position:absolute; top:109px; right:0; z-index:10}
+
+.best_prod_thum .best {position:relative; width:152px; height:307px; margin:0 auto; overflow:hidden; z-index:100;}
+
+.best_prod_thum .best ol.list {clear:both; overflow:hidden;}
+
+.best_prod_thum .best li.L1 {float:left; margin-right:27px;}
+
+.best_prod_thum .best dl {width:150px; text-align:center}
+
+.best_prod_thum .best dl dt.lp {width:150px; height:149px; padding-top:5px; position:relative}
+
+.best_prod_thum .best dl dt.lp img {border:1px solid #f0f0f0;}
+
+.best_prod_thum .best dl dd.lr {margin-top:10px;}
+
+.best_prod_thum .best dl dd.lr .bst_brand {color:#666; font-weight:bold; font-size:11px; margin-bottom:5px;}
+
+.best_prod_thum .best dl dd.lr .bst_name {color:#666;}
+
+.best_prod_thum .best dl dd.lr .bst_price {color:#a61221; font-weight:bold}
+
+.best_prod_thum .best dl dd.lr .bst_price strike {padding-right:4px; color:#9f9f9f; font-weight:normal}
+
+.best_prod_thum .best ol.list li.L1 {width:122px; float:left;}
+
+
+
+.best_prod_thum .best dl dd.lr .bst_brand2 {font-size:11px; padding-top:8px; font-weight:bold; color:#3d3d3d; text-decoration:none;}
+
+.best_prod_thum .best dl dd.lr .bst_name2 {font-size:11px; color:#9e9e9e; line-height:14px;}
+
+.best_prod_thum .best dl dd.lr .bst_price2 {font-size:12px; color:#a61221; font-weight:bold}
+
+.best_prod_thum .best dl dd.lr .bst_price strike2 {padding-right:4px; color:#9f9f9f; font-weight:normal}
+
+
+
+.abc_view3 {width:907px; margin:0 auto; font-size:11px;}
+
+.abc_view3 a {text-decoration:none;font-size:11px;text-decoration:none;color:#666}
+
+.abc_view3 div {float:left; margin-right:5px; display:inline-block;}
+
+.abc_view3 a:hover {color:#e52142}
+
+.abc_view3 ul:after {content:"";display:block;clear:both;}
+
+.abc_view3 ul li {float:left}
+
+.abc_view3 .ln_btm {width:877px; padding:4px 15px 12px 15px;}
+
+.abc_view3 .text_select2 {*zoom:1; }
+
+.abc_view3 .text_select2:after {content:"";display:block;clear:both}
+
+/* 20120625 */
+
+.abc_view3 .text_select2 div span {cursor:pointer;text-decoration:none;width:27px;height:14px;overflow:hidden;display:block;line-height:14px;text-align:center;text-decoration:none;color:#8b8b8b;font-size:11px;border-top:1px solid #dedede;border-right:1px solid #c7c7c7;border-bottom:1px solid #c7c7c7;background:#fbfbfb;border-left:1px solid #dedede}
+
+:root .abc_view3 .text_select2 div span {height:13px; padding-top:1px}
+
+.abc_view3 .text_select2 div span:hover {text-decoration:none;border-top:1px solid #f94060;border-right:1px solid #c91130;border-bottom:1px solid #c91130;border-left:1px solid #f94060;background:#e52142;color:#fff}
+
+.abc_view3 .text_select2 div span.active {border-top:1px solid #f94060;border-right:1px solid #c91130;border-bottom:1px solid #c91130;border-left:1px solid #f94060;background:#e52142;color:#fff}
+
+.abc_view3 .text_select2 div span.disable {cursor:default; background:#eee;color:#bebebe;border:1px solid #eee}
+
+/* //20120625 */
+
+.abc_view3 .text_select2 ul {float:left; margin-right:6px; _margin-right:3px;_padding-right:1px}
+
+.abc_view3 .text_select2 li {margin-right:5px}
+
+.abc_view3 .text_select2 li span {cursor:pointer;text-decoration:none;width:13px;height:14px;overflow:hidden;display:block;line-height:14px;text-align:center;text-decoration:none;color:#8b8b8b;font-size:11px;border-top:1px solid #dedede;border-right:1px solid #c7c7c7;border-bottom:1px solid #c7c7c7;background:#fbfbfb;border-left:1px solid #dedede}
+
+:root .abc_view3 .text_select2 li span {height:13px; padding-top:1px}
+
+.abc_view3 .text_select2 li span:hover {text-decoration:none;border-top:1px solid #f94060;border-right:1px solid #c91130;border-bottom:1px solid #c91130;border-left:1px solid #f94060;background:#e52142;color:#fff}
+
+.abc_view3 .text_select2 li span.active {border-top:1px solid #f94060;border-right:1px solid #c91130;border-bottom:1px solid #c91130;border-left:1px solid #f94060;background:#e52142;color:#fff}
+
+.abc_view3 .text_select2 li span.disable {cursor:default; background:#eee;color:#bebebe;border:1px solid #eee}
+
+.abc_view3 .text_select2 .etc_list {margin:0;border:0;padding:0}
+
+.abc_view3 .text_select2 .etc_list li {margin:0}
+
+.abc_view3 .text_select2 .etc_list li span {width:26px;_width:26px}
+
+
+
+/* 20120627 */
+
+.brand_list {clear:both; position:relative; width:907px; margin:0 auto;}
+
+.brand_list div {padding:15px 0 10px 16px; border-bottom:1px solid #cfcfcf; background:#f3f3f3 url("http://chimg.lottedfs.com/static-root/cn_cdn/images/brandmap/renewal/brandmap_bottom_bg.gif") repeat-x; /*overflow:hidden;*/ *zoom:1;}
+
+.brand_list div:after {content:"";display:block;clear:both}
+
+.brand_list div p {float:left;width:71px;padding:0 0 0 8px;}
+
+.brand_list div p span {display:block;width:42px;height:42px;line-height:42px;text-align:center;background-color:#e52142;font-size:21px;font-weight:bold;color:#fff;}
+
+.brand_list ol {float:left;width:812px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_dotted02.gif") repeat-y; overflow:hidden;}
+
+.brand_list li {float:left; width:194px; padding-left:11px; margin-bottom:4px;}
+
+.brand_list li.two {width:192px;}
+
+.brand_list li.thr {width:203px;}
+
+.brand_list li.last {width:179px;}
+
+.brand_list li a {font-size:11px; color:#808080; text-decoration:none;}
+
+.brand_list li a:hover {color:#e52142;}
+
+.brand_list .brandlistWrap {position:relative;}
+
+.brand_list .brandlistWrap div {padding:0;border:none;background:none;}
+
+.brand_list .brandlistWrap .all ol {width:878px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_dotted02_2.gif") repeat-y; }
+
+.brand_list .brandlistWrap .all li {width:219px;}
+
+.brand_list .brandlistWrap .all li.last {width:165px;}
+
+.brand_list .btn_full {clear:both;position:absolute;bottom:-18px;left:50%;margin-left:-46px;}
+
+
+
+.brand_list02 {clear:both; position:relative; width:907px; margin:0 auto;}
+
+.brand_list02 div {position:relative;padding:15px 0 10px 16px; border-bottom:1px solid #cfcfcf; background:#f3f3f3 url("http://chimg.lottedfs.com/static-root/cn_cdn/images/brandmap/renewal/brandmap_bottom_bg.gif") repeat-x; /*overflow:hidden;*/ *zoom:1;}
+
+.brand_list02 div:after {content:"";display:block;clear:both}
+
+.brand_list02 ol {width:878px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_dotted02_3.gif") repeat-y; overflow:hidden;}
+
+.brand_list02 li {float:left; width:134px; padding-left:11px; margin-bottom:4px;}
+
+
+
+.brand_list02 li a {font-size:11px; color:#808080; text-decoration:none;}
+
+.brand_list02 li a:hover {color:#e52142;}
+
+.brand_list02 .btn_full {clear:both;position:absolute;bottom:-18px;left:50%;margin-left:-46px;}
+
+/* //20120627 */
+
+
+
+.h1_grp {clear:both; width:907px; margin:0 auto; position:relative; height:27px; margin-top:30px;}
+
+.h1_grp.h1_grp_btmLine {border-bottom:1px solid #cfcfcf;}
+
+.h1_grp.mgt12 {margin-top:12px;}
+
+.h1_grp.mgt58 {margin-top:58px;}
+
+.h1_grp .btn_all {position:absolute; right:9px; bottom:5px;}
+
+.h1_grp ul {clear:both; position:absolute; right:0; top:7px;}
+
+.h1_grp li {float:left; padding:0 9px; background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/common/ico_hbar01.gif") no-repeat right 0px; text-align:center;} 
+
+.h1_grp li.last {background:none; padding-right:3px;}
+
+.h1_grp li a {font-size:11px; color:#6a6866; text-decoration:none;}
+
+.h1_grp li a:hover {text-decoration:underline;}
+
+.h1_grp li a.cate_on {font-weight:bold; color:#e42141;}
+
+.h1_grp_btmLine {border-bottom:1px solid #cfcfcf} /* 20120711 추가 */
+
+
+
+.product_section {margin-bottom:25px;}
+
+.product_section ul {clear:Both; width:907px; margin:0 auto 15px; overflow:hidden;}
+
+.product_section ul li {float:left; margin:0 16px 0 0}
+
+.product_section ul li.fin {margin-right:0;}
+
+
+
+.brandGiftList2 {width:907px; margin:0 auto; border-top:1px solid #e2e2e2;}
+
+.brandGiftList2 table{margin:0 auto; width:897; border-bottom:1px solid #e2e2e2;}
+
+.brandGiftList2 table .text_sec{text-align:left; background:#f5f5f5; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; vertical-align:top}
+
+.brandGiftList2 table .text_sec .border_dot{background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/project/brand/list_bull02.gif') repeat-x 0 bottom}
+
+.brandGiftList2 table .text_sec strong{color:#c9243f}
+
+.brandGiftList2 table .text_sec .padding{padding:9px 9px 2px 12px}
+
+.brandGiftList2 table .img_sec{border-right:1px solid #e2e2e2; vertical-align:top}
+
+.brandGiftList2 table .img_sec_01{height:63px; text-align:center; padding-top:10px}
+
+.brandGiftList2 table .img_sec_02{height:28px; text-align:center; vertical-align:top}
+
+.brandGiftList2 table .img_sec_03{height:170px;text-align:center; padding-top:10px}
+
+.brandGiftList2 table .borderR_none{border-right:none}
+
+.brandGiftList2 table .borderB_none{border-bottom:none}
+
+.brandGiftList2 table td li{padding-left:10px; background:#f5f5f5}
+
+.brandGiftList2 table td li.bg_01{height:24px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/project/brand/list_bull.gif') no-repeat 0 6px}
+
+.brandGiftList2 table td li.bg_02{background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/project/brand/list_bull.gif') no-repeat 0 6px}
+
+.brandGiftList2 table td li.pt_13{padding-top:8px}
+
+.brandGiftList2 table td.title {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/project/brand/dot_bg.gif') 0 0 repeat-x; height:23px; padding-top:5px; text-align:center; border-right:1px solid #e2e2e2}
+
+.brandGiftList2 table td.last {border-right:0}
+
+
+
+.cate_reco {clear:both; width:907px;overflow:hidden;}
+
+.cate_reco ul {clear:both; padding-top:8px; overflow:hidden;}
+
+.cate_reco li {float:left; position:relative; width:180px; background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/common/ico_vdot02.gif") no-repeat; text-align:center;}
+
+.cate_reco li.first {background:none;}
+
+.cate_reco li .icon {position:absolute; left:10px; top:0;}
+
+.cate_reco li .icon img {margin-right:2px;}
+
+
+
+.cate_reco li:hover .tm_quick {display:block; position:absolute; top:146px; left:0; width:180px} /* 20120704 */
+
+.cate_reco li .tm_quick {display:none;}
+
+.cate_reco li .tm_quick p {float:left; width:45px;}
+
+.cate_reco li .tm_quick p img.cr_on {display:none;}
+
+.cate_reco li .tm_quick p a:hover img {display:none;}
+
+.cate_reco li .tm_quick p a:hover img.cr_on {display:block;}
+
+.cate_reco li dl dt div.iconR{ text-align:right; position:absolute; top:24px; left:127px; z-index:99999999; display:none;}
+
+
+.cate_reco dt {padding:23px 0 7px 0;}
+
+.cate_reco dd .infoWrap {padding:0 15px;}
+
+.cate_reco dd .infoWrap div {font-size:11px; color:#9e9e9e;}
+
+.cate_reco dd .infoWrap a {color:#9e9e9e; text-decoration:none;}
+
+.cate_reco dd .infoWrap .gd_name {padding-top:5px; font-weight:bold; color:#3d3d3d;}
+
+.cate_reco dd .infoWrap .gd_desc {color:#9e9e9e; line-height:14px;}
+
+.cate_reco dd .infoWrap .gd_price {padding-top:2px; font-weight:bold; color:#a71221;}
+
+.cate_reco dd .infoWrap .gd_price strike {color:#9e9e9e;font-weight:normal;} /* 20120704 */
+
+
+
+.opt_search {clear:both; width:907px; overflow:hidden;}
+
+.opt_search .opt_tit {height:26px; padding-left:11px; font-size:16px; font-weight:bold; line-height:22px;}
+
+.opt_search .opt_tit .fc_red {color:#c41c36;}
+
+.opt_search .bnd_sch {position:relative; border:1px solid #e1e1e1; background:#ececec; overflow:hidden;}
+
+.opt_search .bnd_opt {padding:0 10px; width:778px; background:#fff;}
+
+.opt_search .bnd_opt dl {clear:both; padding-bottom:10px; overflow:hidden;}
+
+.opt_search .bnd_opt dl.brd_line {border-bottom:1px solid #e1e1e1;}
+
+.opt_search .bnd_opt dt {float:left; width:66px; padding:15px 0 0 10px;}
+
+.opt_search .bnd_opt dt a {display:block; margin:6px 0 0 6px;}
+
+.opt_search .bnd_opt dd {float:left; width:702px; height:auto;}
+
+.opt_search .bnd_opt dd.padb10 {padding-bottom:10px;}
+
+.opt_search .bnd_opt dd ul {clear:both; margin-top:12px;}
+
+.opt_search .bnd_opt dd li {float:left; width:175px; margin-bottom:1px; font-size:11px; color:#808080;}
+
+.opt_search .bnd_opt dd .bnf {margin-top:12px; }
+
+.opt_search .bnd_opt dd .bnf label {display:inline-block; width:150px; font-size:11px; color:#808080; vertical-align:top;}
+
+
+
+/* 20120628 시작_ 검색 가격범위 지정 */
+
+.opt_search .bnd_grp {float:left;position:relative; width:383px;height:5px;margin:29px 20px 0 0;}
+
+.opt_search .bnd_grp #priceRange_schBar {position:relative; bottom:0; display:inline-block; width:383px; padding-right:3px; background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_grp_bar.gif) repeat-x 0 0;border:none;border-radius:0px;}
+
+.opt_search .bnd_grp #priceRange_schBar .ui-slider-range  {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_grp_bar02.gif) repeat-x 0 0;}
+
+.opt_search .bnd_grp #priceRange_schBar .ui-slider-handle {display:inline-block;*display:inline;*zoom:1;width:12px;height:7px;top:-1px;margin-left:-6px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ico_grp_l.gif) no-repeat 0 0;border:none;border-radius:0px;cursor:pointer}
+
+.opt_search .bnd_grp #priceRange_schBar .ui-slider-handle span {position:absolute; top:-17px; width:40px;height:17px;text-align:center;font-size:10px;color:red;letter-spacing:-1px;}
+
+.opt_search .bnd_grp #priceRange_schBar .ui-slider-handle .minPrice {left:0;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_prc01.gif) no-repeat;}
+
+.opt_search .bnd_grp #priceRange_schBar .ui-slider-handle .maxPrice {right:0;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_prc02.gif) no-repeat;}
+
+/* // 20120628  끝 */
+
+.opt_search .prc_ipt {float:left; margin-top:11px; padding-left:15px;}
+
+.opt_search .prc_ipt input {width:46px; height:18px; padding-right:3px; padding-top:2px; border:1px solid #c8c8c8; color:#838383; font-weight:bold; text-align:right;}
+
+.opt_search .prc_ipt img {vertical-align:middle;}
+
+.opt_search .bnd_btn {display:block; position:absolute; top:50%; right:12px; margin-top:-14px;}
+
+
+
+.cate_rec_list {clear:both; position:relative; width:907px; margin-top:28px; overflow:hidden;}
+
+.cate_rec_list div {height:47px; font-weight:bold; font-size:16px; color:#454545;}
+
+.cate_rec_list div span {vertical-align:6px;}
+
+.cate_rec_list div span img {vertical-align:middle;}
+
+.cate_rec_list div span .num_ {margin:2px;}
+
+.cate_rec_list ul {clear:both; position:absolute; right:0; top:22px;}
+
+.cate_rec_list li {float:left; padding:0 9px; background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/common/ico_hbar01.gif") no-repeat right 0; text-align:center;}
+
+.cate_rec_list li.last {background:none;}
+
+.cate_rec_list li a {font-size:11px; color:#6a6866; text-decoration:none;}
+
+.cate_rec_list li a:hover {text-decoration:underline;}
+
+.cate_rec_list li a.cate_on {font-weight:bold; color:#e42141;}
+
+
+
+.agn_top {clear:both; position:relative; height:35px; width:907px;border-bottom:1px solid #efefef;overflow:hidden;} /* 페이징 개선 0912 */
+
+.agn_top.btm_clr {margin-bottom:0;}
+
+.agn_top .view_opt {position:absolute; right:0px; top:9px; width:228px;}
+
+.agn_top .view_opt div {float:left; padding:4px 8px 0 0;}
+
+.agn_top .view_opt div .vbar {margin:0 9px;}
+
+.agn_top .view_opt p {float:left;}
+
+.agn_top .view_opt p select {margin:0}
+
+
+
+.cate_tit {position:relative; clear:both; width:907px; margin-bottom:9px; border-bottom:1px solid #e52142}
+
+.cate_tit p {height:24px; padding:5px 0 0 9px; font-size:16px; font-weight:bold; color:#c61a37}
+
+.cate_tit .ct_tab {position:absolute; right:0; bottom:-1px; _bottom:-2px/*width:276px;*/}
+
+.cate_tit .ct_tab a {float:left; width:138px}
+
+
+
+.bestSeller {margin:0 auto; padding:3px 0; width:907px; height:540px; background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/common/ico_vdot05.gif") repeat-x; overflow:hidden}
+
+.bestSeller .best1 {position:absolute; left:40px; top:30px;}
+
+.bestSeller .ico_top {position:absolute; left:32px; top:15px}
+
+.bestSeller .ico_top2 {position:absolute; left:24px; top:15px}
+
+.bestSeller .ico_bottom {position:absolute; left:216px; top:-1px}
+
+.bestSeller .ico_right {left:201px; }
+
+.bestSeller div.icon {position:absolute;top:30px;left:90px;z-index:2;}
+
+.bestSeller div.icon img {padding-right:3px}
+
+.bestSeller div.item01 {width:355px; float:left; position:relative;}
+
+.bestSeller div.item01 div.mImgWrap {width:270px; margin:50px auto 0 auto;}
+
+.bestSeller div.item01 div.infoWrap {width:270px; margin:0 auto;}
+
+.bestSeller div.item02_renew {width:551px; float:left; overflow:hidden; position:relative}
+
+.bestSeller div.item02_renew ul {border-left:solid 1px #ececec; width:551px; overflow:hidden; position:relative}
+
+.bestSeller div.item02_renew li {float:left;}
+
+.bestSeller div.item02_renew li.lItem {width:284px; border-right:solid 1px #ececec;}
+
+.bestSeller div.item02_renew li.rItem {width:266px;}
+
+.bestSeller div.item02_renew li.tItem {position:relative; border-bottom:solid 1px #ececec; padding-bottom:19px; padding-top:10px; height:240px}
+
+.bestSeller div.item02_renew li.bItem {padding-top:10px; overflow:hidden;}
+
+/* 20120709 세일 아이콘 위치 수정   */
+
+.bestSeller div.item02_renew .lItem .icon {position:absolute;top:15px;left:70px;}
+
+.bestSeller div.item02_renew .rItem .icon {position:absolute;top:14px;left:62px;}
+
+/* //20120709 세일 아이콘 위치 수정   */
+
+.sImgWrap dt.photo div.iconR{ position:absolute; left:180px; top:24px; z-index:999999999999;}
+.rItem .sImgWrap dt.photo div.iconR{ position:absolute; left:172px; top:24px; z-index:999999999999;}
+.mImgWrap dt.photo div.iconR{ position:absolute; left:226px; top:0px; z-index:999999999999;}
+
+.bestSeller div.item02_renew div.sImgWrap {width:160px; margin:20px auto 0 auto;}
+
+.bestSeller div.item02_renew div.infoWrap {width:180px; margin:0 auto; padding-top:12px; text-align:center;}
+
+.bestSeller div.item02_renew div.infoWrap div.btn {padding-bottom:9px; padding-top:4px}
+
+.bestSeller div.item02_renew div.infoWrap div.name {font-weight:bold; color:#383838; font-size:11px}
+
+.bestSeller div.item02_renew div.infoWrap div.desc {line-height:13px; font-size:11px;
+
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+
+white-space: pre-wrap; /* css-3 */
+
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+
+white-space: -pre-wrap; /* Opera 4-6 */
+
+white-space: -o-pre-wrap; /* Opera 7 */
+
+word-break:break-all}
+
+.bestSeller div.item02_renew div.infoWrap div.prd_name a {font-size:11px; color:#9e9e9e; line-height:14px;}
+
+.bestSeller div.item02_renew div.infoWrap div.code {color:#9e9e9e; padding-bottom:3px; font-size:11px}
+
+.bestSeller div.item02_renew div.infoWrap div.price {font-size:12px; color:#a71221; font-weight:bold;}
+
+.bestSeller div.item02_renew div.infoWrap div.price strike {color:#9e9e9e;font-weight:normal;} /* 20120704 */
+
+
+
+.item01 .bs_quick {display:none;}
+
+.item01:hover .bs_quick {display:block; position:absolute; top:283px; left:43px; width:270px;} /* 20120704 */
+
+:root .item01:hover .bs_quick {left:42px}
+
+.item01 .bs_quick p {float:left; border-right:1px solid #575656;}
+
+.item01 .bs_quick p.last {border-right:none;}
+
+.item01 .bs_quick p img.bsb_on {display:none;}
+
+.item01 .bs_quick p a:hover img {display:none;}
+
+.item01 .bs_quick p a:hover img.bsb_on {display:block;}
+
+/* 20120704 추가 수정*/
+
+.item02_renew .tItem:hover .tm_quick {display:block; position:absolute; top:153px; left:52px;  *margin-top:-10px; /*margin-left:-10px;*/ width:180px;}
+
+.item02_renew .tItem:hover .tm_quick_rItem {left:43px; *margin-top:-10px;}
+
+/* 20120704 */
+
+.item02_renew .tItem .tm_quick {display:none;}
+
+.item02_renew .tItem .tm_quick p {float:left; width:45px;}
+
+.item02_renew .tItem .tm_quick p img.cr_on {display:none;}
+
+.item02_renew .tItem .tm_quick p a:hover img {display:none;}
+
+.item02_renew .tItem .tm_quick p a:hover img.cr_on {display:block;}
+
+
+
+.afterWrap div.sPnt {height:18px; padding-bottom:2px}
+
+.afterWrap div.sPnt img {vertical-align:middle; padding-bottom:1px; padding-right:1px}
+
+.afterWrap {padding:6px 15px 0 15px; font-size:11px; color:#aeaeae; letter-spacing:-1px;}
+
+.afterWrap div.sPnt {height:18px; padding-bottom:2px}
+
+.afterWrap div.sPnt img {vertical-align:middle; padding-bottom:1px; padding-right:1px}
+
+.afterWrap div.rating {margin-bottom:5px}
+
+.afterWrap div.rating p.cts a {color:#888; line-height:15px;}
+
+
+
+.best_prc {position:relative; width:270px; min-height:72px; _height:72px; padding-bottom:3px; background:#393939 url("http://chimg.lottedfs.com/static-root/cn_cdn/images/category/bg_best_info.gif") no-repeat left bottom;}
+
+.best_prc .bp_tit {padding:15px 65px 0 15px; font-size:11px; color:#fff; line-height:16px;}
+
+.best_prc .bp_tit a {color:#fff;}
+
+/* 20120704 */
+
+.best_prc .bp_price {position:absolute; right:0px; top:13px; width:80px; text-align:center;}
+
+.best_prc .bp_price p.price{font:bold 18px 'Verdana';color:#e52142; line-height:22px}
+
+.best_prc .bp_price p {font-size:12px;color:#c4263f;font-weight:normal; line-height:14px;}
+
+.best_prc .bp_price p strike {display:block; font-size:12px;color:#9e9e9e;font-weight:normal; line-height:14px}
+
+/* //20120704 */
+
+
+
+/* 20120704 막음
+
+word-wrap: break-word; /* Internet Explorer 5.5+ 
+
+white-space: pre-wrap; /* css-3 
+
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 
+
+white-space: -pre-wrap; /* Opera 4-6 
+
+white-space: -o-pre-wrap; /* Opera 7 
+
+word-break:break-all}
+
+*/
+
+
+
+/* 20120704 가격 모음 */
+
+.cate_rec_list.renew div * {display:inline-block;*display:inline;*zoom:1;vertical-align:bottom;}
+
+.cate_rec_list.renew div em {position:relative;top:-6px;}
+
+
+
+.priceNumBox.dotted {width:9px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num_.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum1 {width:10px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num1.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum2 {width:21px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num2.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum3 {width:21px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num3.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum4 {width:24px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num4.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum5 {width:22px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num5.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum6 {width:22px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num6.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum7 {width:24px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num7.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum8 {width:21px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num8.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum9 {width:22px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num9.gif) no-repeat 0 0;}
+
+.priceNumBox.ctNum0 {width:23px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/category/ct_num0.gif) no-repeat 0 0;}
+
+.priceNumBox {display:inline-block;*display:inline;*zoom:1;height:40px;min-width:9px;}
+
+
+
+/* 20120706 브랜드사은행사 */
+
+.brandThankSale {position:relative;margin-top:35px;}
+
+.brandThankSale h3 {padding-bottom:10px}
+
+.brandThankSale .btnAllView {position:absolute;top:8px;right:8px;}
+
+.thanksaleList {border-top:1px solid #cfcfcf;*zoom:1}
+
+.thanksaleList:after {content:""; display:block; clear:both}
+
+.thanksaleList .goodbox {float:left;width:223px;height:361px;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;color:#545454;}
+
+.thanksaleList .goodbox.first {border-left:none;margin-left:4px;}
+
+.thanksaleList .goodbox .bi {height:57px;padding-top:6px;text-align:center;}
+
+.thanksaleList .goodbox .local {height:17px;padding-top:7px;border-top:1px dotted #d4d2d3; border-bottom:1px dotted #d4d2d3;text-align:center;}
+
+.thanksaleList .goodbox .goodsImg {height:155px;padding-top:5px;text-align:center;}
+
+.thanksaleList .goodbox .txt {padding-left:4px;background-color:#f5f5f5;}
+
+.thanksaleList .goodbox .txt .period {height:22px;padding-top:12px;padding-left:17px;border-bottom:1px dotted #d4d2d3;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/project/brand/list_bull.gif') no-repeat 9px 17px}
+
+.thanksaleList .goodbox .txt .event {height:66px;max-height:66px;padding:10px 0 0 15px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/project/brand/list_bull.gif') no-repeat 9px 17px}
+
+.thanksaleList .goodbox .txt .event strong {color:#c4263d}
+
+
+
+
+
+/* 20120710 수정 */
+
+.best_prod_thum .best {position:relative; width:150px; height:307px; margin:0 auto; overflow:hidden; z-index:100;}
+
+.best_prod_thum .best li.L1 {float:left; width:150px !important; margin-right:0;}
+
+
+
+.bestSeller .best1 {position:absolute; left:40px; top:30px; z-index:300;}
+
+.bestSeller div.item01 div.mImgWrap {width:270px; margin:50px auto 0 auto;position:relative;z-index:1;}
+
+
+
+.item01 .bs_quick {display:none;*zoom:1;position:absolute; top:233px !important; left:0px  !important; width:270px;}
+
+.item01 .bs_quick:after {content:"";display:block;clear:both}
+
+.item01:hover .bs_quick {display:block; } 
+
+
+
+
+
+/*.opt_search .bnd_opt dd {padding-top:14px;}*/
+
+.opt_search .bnd_opt dd ul {margin-top:12px;*zoom:1;}
+
+.opt_search .bnd_opt dd ul:after {content:"";display:block;clear:both}
+
+.opt_search .bnd_opt dd li {float:left; width:175px; margin-bottom:1px; font-size:11px; color:#808080;}
+
+.opt_search .bnd_opt dd li input {float:left;}
+
+.opt_search .bnd_opt dd li p {float:left;width:150px;padding-top:3px;}
+
+.opt_search .bnd_opt dd ul ul {margin-top:0;}
+
+
+
+.cate_reco {clear:both; width:907px; margin-bottom:15px; overflow:hidden;}
+
+.cate_reco .nodata {height:90px;line-height:90px;text-align:center;font-weight:bold;color:#777;}
+
+.thanksaleList .nodata {height:100px;line-height:100px;color:#e2e2e2;font-weight:bold;text-align:center; color:#777}
+
+.product_section .nodata {height:70px;line-height:70px;color:#e2e2e2;font-weight:bold;text-align:center; color:#777}
+
+.cate_reco_btmLine {border-bottom:0} /* 20120711 추가 */
+
+
+
+/* 20120712 상단 베스트상품이미지 보더 제거*/
+
+.best_prod_thum .best dl dt.lp img {border:none !important;}
+
+.h1_grp .btn_all.newPos {position:absolute; right:8px; bottom:9px;}
+
+
+
+/* 20120821 가격표시 변경 달러,원화 순으로 */
+
+.price_won {padding-left:5px; font-size:11px; font-weight:normal}
+
+.price_wonB {font-weight:bold}
+
+.price_wonR {padding-top:2px; font-size:12px; color:#e52142}
+
+.price_wonG {padding-top:3px; color:#9e9e9e !important}
+
+.thanksaleList_new .goodbox {height:400px;}
+.thanksaleList_new .goodbox .txt {height:150px;}
+.thanksaleList_new .goodbox .txt .period {height:40px; background-position:9px 19px;}
+.thanksaleList_new .goodbox .txt .event {height:auto; padding-top:8px;}
+.thanksaleList_new .goodbox .txt .notice {height:22px;padding-left:17px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/project/brand/list_bull.gif') no-repeat 9px 7px}
+
+
+/* 2016-01-27 베스트 셀러 개선 */
+.best_seller_new {margin:0 auto; padding:3px 0; width:907px; height:540px; background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/common/ico_vdot05.gif") repeat-x; overflow:hidden}
+.best_seller_new .best1 {position:absolute; left:40px; top:30px;}
+.best_seller_new .ico_top {position:absolute; left:32px; top:15px}
+.best_seller_new .ico_top2 {position:absolute; left:24px; top:15px}
+.best_seller_new .ico_bottom {position:absolute; left:216px; top:-1px}
+.best_seller_new .ico_right {left:201px; }
+.best_seller_new div.icon {position:absolute;top:30px;left:90px;z-index:2;}
+.best_seller_new div.icon img {padding-right:3px}
+.best_seller_new div.item01 {width:355px; float:left; position:relative;}
+.best_seller_new div.item01 div.mImgWrap {width:270px; margin:50px auto 0 auto;}
+.best_seller_new div.item01 div.infoWrap {width:270px; margin:0 auto;}
+.best_seller_new div.item02_renew {width:551px; float:left; overflow:hidden; position:relative}
+.best_seller_new div.item02_renew ul {border-left:solid 1px #ececec; width:551px; overflow:hidden; position:relative}
+.best_seller_new div.item02_renew li {float:left;}
+.best_seller_new div.item02_renew li.lItem {width:284px; border-right:solid 1px #ececec;}
+.best_seller_new div.item02_renew li.rItem {width:266px;}
+.best_seller_new div.item02_renew li.tItem {position:relative; border-bottom:solid 1px #ececec; padding-bottom:19px; padding-top:10px; height:240px}
+.best_seller_new div.item02_renew li.bItem {padding-top:10px; overflow:hidden;}
+.best_seller_new div.item02_renew .lItem .icon {position:absolute;top:15px;left:70px;}
+.best_seller_new div.item02_renew .rItem .icon {position:absolute;top:14px;left:62px;}
+.best_seller_new div.item02_renew div.sImgWrap {width:160px; margin:20px auto 0 auto;}
+.best_seller_new div.item02_renew div.infoWrap {width:180px; margin:0 auto; padding-top:12px; text-align:center;}
+.best_seller_new div.item02_renew div.infoWrap div.btn {padding-bottom:9px; padding-top:4px}
+.best_seller_new div.item02_renew div.infoWrap div.name {font-weight:bold; color:#383838; font-size:11px}
+.best_seller_new div.item02_renew div.infoWrap div.desc {line-height:13px; font-size:11px;
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-break:break-all}
+.best_seller_new div.item02_renew div.infoWrap div.prd_name a {font-size:11px; color:#9e9e9e; line-height:14px;}
+.best_seller_new div.item02_renew div.infoWrap div.code {color:#9e9e9e; padding-bottom:3px; font-size:11px}
+.best_seller_new div.item02_renew div.infoWrap div.price {font-size:12px; color:#a71221; font-weight:bold;}
+.best_seller_new div.item02_renew div.infoWrap div.price strike {color:#9e9e9e;font-weight:normal;}
+.best_seller_new .best1 {position:absolute; left:40px; top:30px; z-index:300;}
+.best_seller_new div.item01 div.mImgWrap {width:270px; margin:50px auto 0 auto;position:relative;z-index:1;}

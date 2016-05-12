@@ -1,0 +1,1766 @@
+/*-------------------------------------------------------------------
+Goldtroops UX/Publishing Team 
+작성자: 배영하 / 나의창
+검수자: 신민식
+수정기간 : 2012-11-07 ~ 
+--------------------------------------------------------------------*/
+
+
+/* wrap */
+#wrap {position:relative;min-width:920px; }
+#main_wrap {position:relative;min-width:920px; background-color:#f2f1ed; }
+
+/*shopping_sec*/
+.shopping_sec {height:75px;padding-left:12px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/shopping_sec_bg.gif') repeat-x 0 0}
+.shopping_sec p {position:relative;text-align:left;width:906px;margin:0 auto;z-index:13}
+.shopping_sec p a {display:block;width:72px;height:18px;overflow:hidden;position:absolute;left:418px;top:-2px;z-index:100;text-indent:-5000px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/shopping_sec_on.gif') no-repeat 0 0}
+.shopping_sec ul {width:907px;height:75px;margin:0 auto}
+.shopping_sec ul li {width:298px;padding-right:5px;height:73px;float:left;text-align:left;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/shopping_sec_list_bg.gif') repeat-y right top;_padding-right:3px}
+.shopping_sec ul li.last {width:301px;background:none;padding:0}
+.shopping_sec_check {height:3px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/shopping_sec_bg.gif') repeat-x 0 bottom}
+.shopping_sec_check ul {display:none}
+.shopping_sec_check p.mapimg {display:none}
+.shopping_sec_check p a {position:absolute;left:415px;top:1px;z-index:100;background-image:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/shopping_sec_off.gif')}
+ 
+/* header */
+#header {height:149px;padding-top:0px;position:relative;z-index:12;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/header_bg.gif') repeat-x 0 bottom; /*margin-top:-17px;*/}
+.header_content p.gnbBgLeft{ width:12px; height:38px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/gnb_right_bg.gif') no-repeat; position:absolute; left:919px; top:111px;}
+.header_content { height:149px;position:relative;width:907px;padding-left:12px;margin:0 auto;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/header_content_bg.gif') no-repeat left bottom;  }
+.header_content:after {content:"";display:block;clear:both}
+.header_content p.unb_bookmark {position:absolute; top:7px;left:12px}
+.header_content h1 {float:left;padding-top:18px;margin-right:40px}
+.header_content .unb {position:relative; left:-7px; float:right;margin-top:10px; z-index:1010}
+.header_content .unb li {float:left;margin-right:7px}
+.header_content .unb li.korea_site{ margin:0 0 0 3px;}
+.header_content .unb li.infor {margin:0; position:relative; z-index:1020}
+.header_content .unb li.infor a {position:relative;top:-4px; left:7px}
+.header_content .search_box {*zoom:1;z-index:120;position:relative;float:left;margin:30px 0 0 0;width:346px;border:3px solid #e52142;font-size:12px;_display:inline;_width:388px}
+.header_content .search_box:after {content:"";display:block;clear:both}
+.header_content .search_box .search_select {float:left;margin:0 3px 0 9px;width:60px}
+.header_content .search_box .search_select span {width:83px;display:inline-block;padding:8px 0 8px 0;_padding-bottom:7px}
+.header_content .search_box .search_select span a {width:90px;padding:3px 0 2px 1px;height:10px;line-height:11px;text-decoration:none;color:#e52142;display:block;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/search_list_bg.gif') no-repeat 80px 50%; font-size:14px;}/*2013-09-27 폰트사이즈 수정*/
+.header_content .search_box .search_select_view {display:none;padding:6px 6px 10px 6px;width:88px;position:absolute;left:-3px;top:34px;border:3px solid #e52142;border-top:0;background:#fff}
+.header_content .search_box .search_select_view li {height:20px}
+.header_content .search_box .search_select_view li.hypn {margin-left:5px; line-height:21px}
+.header_content .search_box .search_select_view li a {padding:5px 0 4px 6px;width:82px;display:block;color:#777;line-height:11px;text-decoration:none}
+.header_content .search_box .search_select_view li a:hover {background:#ff647e;color:#fff}
+.header_content .search_box #SearchForm {float:left;margin-top:7px;width:240px;_width:230px}
+.header_content .search_box #SearchForm #search_form {float:right;width:210px}
+.header_content .search_box #SearchForm input {border:0;color:#212121;font-size:14px; height:18px; }/*2013-09-27 수정*/
+.header_content .search_box #SearchForm .close {position:absolute;left:303px;top:9px}
+.header_content .gnb {*zoom:1;position:relative;z-index:100;float:right;margin-top:3px;}
+.header_content .gnb:after {content:"";display:block;clear:both}
+.header_content .gnb li {float:left;margin-right:19px;height:35px}
+.header_content .gnb li a {display:inline-block;padding:10px 0}
+.header_content .gnb li.last {margin-right:13px}
+.header_content .gnb li.special {margin:0;width:96px;text-align:center;background:#901b2e}
+.header_content .lnb {height: 38px;overflow:hidden;position:absolute;top:111px;width:194px;z-index:20;background:none; *margin-left:-5px;} /* 20121203 수정 */
+.header_content .lnb h2 {font-size:12px;height:38px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/lnb_h2_bg.gif') repeat-x left bottom;width:108px;position:relative;z-index:105;cursor: pointer}
+.header_content .lnb ul.dep1 {float:left;position:relative;z-index:100;width:102px;padding:6px 0 0 6px;background-color: #e52142;}
+.header_content .lnb ul.dep1 li {height:24px;margin-bottom:4px}
+.header_content .lnb ul.dep1 li a {height:14px}
+.header_content .lnb ul li.last {margin-bottom:0}
+.header_content .lnb ul li .dep2 {display:none;padding:9px 8px 0 ;width:152px;height:337px;position:absolute;top:0px;left:108px;z-index:20;background:#fff;border-bottom:1px solid #e52142;border-right:1px solid #e52142}
+.header_content .lnb ul li .dep2 li {height:20px;padding:0;margin-bottom:2px;cursor:pointer;}
+.header_content .lnb ul li .dep2 li.active {background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/lnb_dep2_active_bg.gif') no-repeat right 1px #ff637d}
+.header_content .lnb ul li .dep2 li a {height:10px;width:144px;display:inline-block;color:#393939;padding:5px 0 5px 8px;line-height:10px;font-size:11px;*padding:4px 0 5px 8px;*height:11px;_height:20px;_line-height:20px;_padding:0}
+.header_content .lnb ul li .dep2 li a:hover {text-decoration:none}
+.header_content .lnb ul li .dep2 li.active a {color:#fff}
+.header_content .lnb ul li .dep2 li.banner {height:96px;width:152px;position:absolute;bottom:0px;padding:0;margin:0;background:none !important;*bottom:6px}
+.header_content .lnb ul li .dep2 li.banner a {display:inline;background:none;margin:0;padding:0}
+.header_content .lnb ul li .dep2 .dep3 {padding:9px 8px 0 ;width:152px;height:337px;position:absolute;top:0;left:169px;z-index:12;background:#fff;border-bottom:1px solid #e52142;border-right:1px solid #e52142}
+.header_content .lnb ul li .dep2 .dep3 li.last {margin-bottom:0}
+.header_content .lnb ul li .dep2 .dep3 li a {color:#393939;padding:0px 0 0px 8px;*padding:0px 0 0px 8px;height:20px;line-height:20px;overflow:hidden;_height:20px;_line-height:20px;_padding:0}
+.header_content .lnb ul li .dep2 .dep3 li.active {background:#828282}
+.header_content .lnb ul li .dep2 .dep3 li.active a {color:#fff}
+.header_content .lnb ul li .dep2 .dep3 .dep4 {padding:9px 8px 0 ;width:152px;height:337px;position:absolute;top:0;left:169px;z-index:12;background:#fff;border-bottom:1px solid #e52142;border-right:1px solid #e52142}
+.header_content .lnb ul li .dep2 .dep3 .dep4 li.last {margin-bottom:0}
+.header_content .lnb ul li .dep2 .dep3 .dep4 li a {color:#393939;padding:0px 0 0px 8px;*padding:0px 0 0px 8px;height:20px;line-height:20px;overflow:hidden;_height:20px;_line-height:20px;_padding:0}
+.header_content .lnb ul li .dep2 .dep3 .dep4 li.active {background:#828282}
+.header_content .lnb ul li .dep2 .dep3 .dep4 li.active a {color:#fff}
+.header_content .lnb ul li.paging {position:absolute;bottom:2px;left:8px;width:152px;border-top:1px solid #E1E1E3;cursor:default !important;margin:7px 0 0; background:#fff !important;}
+.header_content .lnb ul li.paging:hover {background:#fff !important;}
+.header_content .lnb ul li.paging a {position:absolute;top:0;width:23px !important;height:22px !important;padding:0 !important;text-indent:-9999px;}
+.header_content .lnb ul li.paging a:hover {background:none;}
+.header_content .lnb ul li.paging a.down {left:0;background: url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/lnb_brand_paging_up.gif') no-repeat 9px 9px;}
+.header_content .lnb ul li.paging a.up {right:0;background: url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/lnb_brand_paging_down.gif') no-repeat 9px 9px;}
+.header_content .lnb ul li.paging a.down_off {background-image: url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/lnb_brand_paging_up_off.gif') !important; cursor:default;}
+.header_content .lnb ul li.paging a.up_off {background-image: url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/lnb_brand_paging_down_off.gif') !important; cursor:default;}
+.header_content .lnb ul li.paging p.number {text-align:center;font:normal 11px dotum;color:#888888;padding-top:7px;}
+.header_content .lnb ul li.paging p.number strong {color:#e42141;padding:0 2px;}
+.header_content .lnb ul li.paging p.number span {padding:0 2px;}
+.header_content .lnb .addlnb {clear:both;width:194px;height:61px;padding-bottom:0px;background:#c61a37;position:relative;z-index:25}
+.header_content .lnb .addlnb li {margin-left:3px;border-top:1px solid #E52142}
+.header_content .lnb .addlnb li.mgl {margin-left:0;}
+.header_content .lnb .addlnb li.first {border:0}
+.header_content .lnb .brand_p {position:absolute;left:108px;top:0px; height:50px; z-index:555}
+
+
+.header_content .lnb .brand_nav {float:left;font-size:11px;padding-bottom:5px;} 
+.header_content .lnb .brand_nav ul {height:340px; width:81px;padding:3px 0 0 0;background:#fff}
+.header_content .lnb .brand_nav p.btn{ position:absolute; top:322px; left:114px;}
+.header_content .lnb .brand_nav ul li {padding:2px 0 3px 0;margin-bottom:1px}
+.header_content .lnb .brand_nav ul li.first {padding-top:10px} 
+.header_content .lnb .brand_nav ul li a {letter-spacing:-1px;color:#737373;margin-left:7px;font-size:11px}
+.header_content .brand_view {display:none;overflow:hidden;width:907px;height:350px;position:absolute;top:149px;left:119px;z-index:-1}
+.header_content .brand_view .brand_move {margin-left:-800px;position:relative;width:798px;height:346px;border:1px solid #e52142;border-top:0;background:#fff}
+.header_content .brand_view .close {position:absolute;top:10px;right:10px}
+/* 배경색 추가  */
+.header_content .unb .infor ul {display:none;top:15px;right:-7px;padding:5px 9px;position:absolute;width:104px; border:1px solid #c2c2c2;border-top:0;_right:-8px; background:#fff; z-index:1000;}
+.header_content .unb .infor ul li {width:99px;padding-left:5px;margin:0;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/blt_point_rect_black.gif') no-repeat 0 5px;line-height:14px}
+.header_content .unb .infor ul li a {position:static;font-size:11px;color:#a2a2a2}
+.header_content .unb .infor ul li a:hover {text-decoration:none;color:#c2364d}
+.header_content .subbox ul.dep1 {padding:8px 0 0 8px;height:281px}
+.header_content .subbox ul.dep1 li {padding:0;height:24px;padding-left:7px;margin-bottom:0;*margin-bottom:-4px}
+.header_content .subbox ul.dep1 li.active {background:#fff}
+.header_content .subbox ul.dep1 li.hover {background:#fff;margin-right:8px}
+.header_content .subbox ul.dep1 li.active a, .header_content .subbox ul.dep1 li.hover a {color:#e52142}
+.header_content .subbox ul.dep1 li.subtit {padding-left:0;*margin-bottom:0px}
+.header_content .subbox ul.dep1 li a {height:11px;display:block;letter-spacing:-1px;padding:7px 0 5px 0;line-height:12px;text-decoration:none;font-size:12px;color:#fff}
+:root .header_content .subbox ul.dep1 li a {padding:8px 0 4px 0 \0/IE9}
+.header_content .subbox ul.dep1 .dep2 li {height:20px;padding-left:9px;margin-bottom:2px;background:none;*margin-bottom:0}
+.header_content .subbox ul.dep1 .dep2 li.active {background:none #ff637d}
+.header_content .subbox ul.dep1 .dep2 li a {padding:5px 0;margin:0;text-decoration:none;line-height:13px;height:10px;font-size:11px;color:#393939}
+.header_content .subbox ul.dep1 .dep2 li.active a {background:#ff637d;color:#fff}
+.header_content .subbox ul.dep1 .dep2 li.banner {height:96px;width:152px;padding:0;margin:0}
+.header_content .subbox ul.dep1 .dep2 li.banner a {display:inline;background:none;margin:0;padding:0}
+.header_content .lnb .lnbbox {width:189px;padding-right:5px;margin-top:-385px;left:0;position:absolute;top: 38px;z-index:104;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/addlnb_bg.gif"); background-repeat:none; height:347px; background-color:#e42141;}
+.header_content .lnb .subbox {display:none;width:189px;padding-right:5px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/addlnb_bg.gif") no-repeat;}
+.lnbbox .viewlist {display:none;padding:0 9px 0 10px;position:absolute;right:-713px;top:0;z-index:200;border-right:1px solid #e52142;border-bottom:1px solid #e52142;background:#fff}
+.lnbbox .list2 {width:441px;height:346px}
+.lnbbox .list3 {width:610px;height:346px}
+.lnbbox .list4 {width:272px;height:346px}
+.lnbbox .viewlist .viewlist_tit {padding:11px 0 7px 0;border-bottom:1px solid #e2e2e2;text-align:center}
+.lnbbox .list2 .theme_list {width:412px;padding:0 8px;margin-top:18px;_padding:0}
+.lnbbox .list3 .theme_list {width:600px;padding:0 9px;margin-top:18px}
+.lnbbox .list4 .theme_list {width:252px;padding:0;margin-top:8px}
+.lnbbox .viewlist .theme_list img {border:1px solid #f0f0f0}
+.lnbbox .viewlist .theme_list p {float:left}
+.lnbbox .viewlist .theme_list p.img_thum {width:92px;height:82px}
+.lnbbox .viewlist .theme_list p.img_thum img {width:80px;height:80px}
+
+.lnbbox .viewlist .theme_list p.img_thum a {position:relative;left:1px}
+.lnbbox .list4 .theme_list p {float:none;}
+.lnbbox .list4 .theme_list p.img_thum {width:126px;height:82px;text-align:center;}
+.lnbbox .list2 .theme_list p.img_name {width:114px;height:82px;padding:0;overflow:hidden;*width:110px}
+.lnbbox .list3 .theme_list p.img_name {width:97px;height:82px;padding:0;overflow:hidden}
+.lnbbox .list4 .theme_list p.img_name {width:106px;height:58px;padding:0 0 0 20px;overflow:hidden}
+.lnbbox .list2 .theme_list p.img_name .product {height:26px;width:97px;overflow:hidden}
+.lnbbox .list3 .theme_list p.img_name .product {height:26px;width:85px;overflow:hidden}
+.lnbbox .list4 .theme_list p.img_name .product {height:26px;width:85px;overflow:hidden}
+.lnbbox .list2 .theme_list p.img_name .price, .lnbbox .list3 .theme_list p.img_name .price {position:relative;top:6px}
+.lnbbox .list4 .theme_list p.img_name .price {position:relative;top:0px}
+.lnbbox .viewlist .theme_list li {float:left;border:0;padding:11px 0 0 0}
+.lnbbox .viewlist .theme_list li.first {padding-top:0}  
+
+.header_center h1.rolling {margin-top:45px;padding-top:0;position:relative;width:245px;height:64px;overflow:hidden;}
+.header_center h1.rolling a {display:block;}
+.header_center h1.rolling a img {display:block;}
+.header_center .emblem_160330 {display:block;position:absolute;top:7px;left:-187px;z-index:-1;}
+.header_center .ciCnt {height:149px;position:absolute;right:907px;top:0px;z-index:10;}
+#middle {*zoom:1; position:relative; z-index:10; width:926px; margin:auto auto ;padding-left:16px; padding-bottom:50px; margin-top:-16px;}
+#middle:after {content:"";display:block;clear:both; }
+#middles {*zoom:1; position:relative; z-index:10; width:926px; margin:auto auto ;padding-left:16px; margin-top:-32px; padding-bottom:50px;}
+#middles.fType {padding-left:11px;}
+#middles:after {content:"";display:block;clear:both}
+#main_roll_banner {margin-left:194px;display:inline;float:left;width:712px; height:346px; margin-top:2px; *margin-top:10px; border-bottom: 1px solid #c3bfb5; border-right: 1px solid #c3bfb5; background-color:#fff;}
+#main_roll_banner .banner_img {width:712px;height:346px}
+#main_roll_banner .banner_img li {display:none}
+#main_roll_banner .banner_img li.on {display:block}
+#main_roll_banner .banner_nav {*zoom:1;height:320px; width:145px; position:absolute; left:775px; top:30px;}
+#main_roll_banner .banner_nav li {height:42px; margin-bottom:1px; }
+#main_roll_banner .banner_nav li.last {}
+#main_roll_banner .banner_nav li.on.last {}
+#main_roll_banner .banner_nav li.on a {color:#fff;width:145px;background:#c61937; margin-left:-10px;}
+#main_roll_banner .banner_nav li a {text-decoration:none;display:block; width:135px; height:27px; padding-top:15px; text-align:center;color:#fff;line-height:11px;font-size:11px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/roll_tr_bg.png') no-repeat;}
+.main_container h3 { height:40px; }
+.main_container h3 .more {position:absolute; top:20px; left:80px; padding-left:6px}
+.bestseller {position:relative;float:left;width:677px;margin-right:10px; margin-bottom:30px; *margin-top:1px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/bestsell_top_bg.gif') repeat-x}
+.bestseller h3 {width:683px;*padding-bottom:1px}
+.bestseller h3 .more{ margin-left:20px;}
+.bestseller .bestlayer {display:none;}
+.bestseller .bestlayer:after {content:"";display:block;clear:both}
+/*.bestseller .b1 {display:block} */
+.bestseller .besttab {*zoom:1;width:309px;position:absolute;top:4px;right:-6px;*top:-2px} /* 20121129 수정 */
+.bestseller .besttab li {float:left;position:relative;left:-5px;*top:6px;}
+.bestseller .besttab li.on{ border-bottom:none;}
+.bestseller .besttab li.first{ margin-right:5px;}
+.bestseller .bestview {display:none;border:1px solid #c3bfb5; background:#FFF;border-top:0; width:675px; height:328px; *border-left:none;*width:528px; *position:absolute; *top:40px;}
+
+
+.bestseller .bestview1 {display:block}
+.bestseller .bestlnb {float:left;width:148px; height:329px; *margin-top:-1px;}
+.bestseller .bestlnb li {position:relative}
+.bestseller .bestview .bestitem {float:left;padding-top:21px;width:527px; display:none; _padding:14px 0; *width:542px; _width:534px; _padding:11px 0; }
+
+.bestseller .bestview .rollclear {width:0;padding:0;height:0}
+.bestseller .banner_num {bottom:7px; .bottom:7px;left:7px}
+.bestseller .banner_num2 {bottom:7px; .bottom:7px;left:7px}
+.bestseller .bestview .active {display:block}
+.bestseller .bestview .bestitem .main_list {float:left;padding-right:1px; vertical-align:top;}
+.bestseller .bestview .bestitem .main_list img { width:198px; height:198px; border:1px solid #e0e0e0;}
+.bestseller .bestview .bestitem .main_list a{ margin-top:0px;}
+.bestseller .bestview .bestitem .main_list ul.theme_list{ padding:0px; margin:0px; width:200px; }
+.bestseller .bestview .bestitem .main_list ul.theme_list li{ padding:0px; margin:0px; width:200px; }
+.bestseller .bestview .bestitem .main_list ul.theme_list li a strong{ color:#000; font-size:14px; margin:0px 0 2px 0;}
+.bestseller .bestview .bestitem .main_list ul.theme_list li a span.product{ color:#939393; font-size:13px;}
+
+.bestseller .bestview .bestitem .theme_list {float:left;width:259px; .width:288px; height:auto;margin:0 0 0 0px; *margin:0 0 0 0px; _width:287px; position:relative; top:0;} 
+.bestseller .bestview .bestitem .theme_list li {border:0;padding:0 0 0 0px; width:125px; height:155px; margin-right:15px; overflow:hidden; /*.padding:0 19px 0 25px; _padding:0 18px*/ text-align:center;}
+.bestseller .bestview .bestitem .theme_list li.mr0{ margin-right:0px;}
+.bestseller .bestview .bestitem .theme_list li p img { width:63px; height:63px;  border:1px solid #e0e0e0;}
+.bestseller .bestview .bestitem .theme_list li.even {padding:0 0px 0 0px}
+.bestseller .bestview .bestitem .theme_list li.twin {margin-top:0px}
+.bestseller .bestview .bestitem .theme_list .img_name {width:120px}
+.bestseller .bestview .bestitem .theme_list .img_name strong {margin:5px 0 3px 0;}
+.bestseller .bestview .bestitem .theme_list .img_name .product {margin-left:0; display:inline-block; height:12px;}
+.bestseller .bestview .bestitem .theme_list .img_name .price {position:relative;top:4px ; font-weight:normal; color:#000; white-space:nowrap; letter-spacing:-1px;}
+.bestseller .bestview .bestitem .theme_list .img_thum {margin-bottom:5px; width:auto;}
+.bestbrand {position:relative;margin-top:15px;float:left;width:205px;height:450px;*margin-top:7px}
+.bestbrand .brandview {display:none;position:relative;top:-2px;*top:-1px}
+.bestview .theme_list .product {height:26px}
+.bestbrand .brandview p {padding-bottom:3px}
+.bestbrand .active {display:block !important}
+.bestbrand h3 {padding-left:3px;width:200px;border-bottom:0}
+.bestbrand h3 img {position:relative;top:-1px}
+.bestbrand h3 .more {right:0}
+.bestbrand dl {height:67px;padding-top:12px}
+.bestbrand dl dt {float:left;width:65px;margin-right:13px;border:1px solid #f0f0f0}
+.bestbrand dl dd {padding-top:1px;float:left;width:120px;font-size:11px;color:#666;line-height:14px}
+.bestbrand dl dd a {font-size:11px;color:#666}
+.bestbrand dl dd a:hover {text-decoration:underline}
+.bestbrand dl dd .price {position:relative;top:2px;font-weight:bold;font-size:14px;color:#c61a37;font-family:verdana,sans-serif}
+.bestbrand dl dd .product {height:27px;overflow:hidden;display:block;margin-bottom:2px}
+.bestbrand .banner_num {bottom:7px;*bottom:-1px}
+.bestbrand .banner_num2 {bottom:7px;*bottom:-1px}
+
+/* 메인리뉴얼 이전 브랜드 사은품*/
+.bestgift {float:left;position:relative;margin:15px 15px 0 0;width:687px;*margin-top:7px}
+.bestgift h3 {width:683px;padding-bottom:9px;*padding-bottom:2px}
+.bestgift h3 .more {right:0}
+.bestgift ul {width:289px;float:left}
+.bestgift p {float:left}
+
+/* 브랜드 사은품  */
+.bestgift_new {float:left; width:907px; margin-top:28px; margin-bottom:51px;}
+.bestgift_new h3 {width:907px; padding:0; padding-bottom:9px;*padding-bottom:2px; border:0}
+.bestgift_new h3 .more {right:0}
+.bestgift_new ul {float:left}
+.bestgift_new p {float:left}
+.marBtm49 {margin-bottom:49px}
+
+/* 메인리뉴얼 이전 고객 상품평*/
+.brandcustormer {*zoom:1; position:relative;float:left;margin-top:15px;width:205px;font-size:11px;color:#393939;*margin-top:7px;_width:205px}
+.brandcustormer:after {display:block; clear:both; content:"";}
+.brandcustormer h3 {border-bottom:0;padding-left:3px;width:201px}
+.brandcustormer h3 img {position:relative;top:-1px}
+.brandcustormer h3 .more {right:0}
+.brandcustormer ul {position:relative;top:-2px;height:271px;overflow:hidden;padding-top:17px;background:#f5f5f5;*top:-1px}
+.brandcustormer ul li p {line-height:13px}
+.brandcustormer ul li p.cus_img {text-align:center}
+.brandcustormer ul li p.cus_img img {border:1px solid #f0f0f0}
+.brandcustormer ul li p.cus_titi {height:27px;margin:11px 0 8px 0;padding-left:27px}
+.brandcustormer ul li p.cus_titi a {text-decoration:none;color:#393939}
+.brandcustormer ul li p.cus_titi a:hover {text-decoration:underline} 
+.brandcustormer ul li p.cus_post {width:185px;height:54px;padding:10px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/cus_post_bg.gif') no-repeat 0 0}
+.brandcustormer ul li p.cus_post span {display:block;padding-bottom:3px}
+.brandcustormer ul li p.cus_post a {line-height:14px;word-wrap: break-word;width:180px;height:57px;overflow-y:hidden;display:block;text-decoration:none;color:#fff}
+.brandcustormer .btn_box {position:absolute;top:118px;width:205px;height:27px}
+.brandcustormer .btn_box .prev {float:left}
+.brandcustormer .btn_box .next {float:right}
+
+/* 메인리뉴얼 이전 테마샵 */
+.themeshop {*height:416px;float:left;position:relative;margin:13px 0 4px 0;width:907px;padding-bottom:23px;font-size:11px;line-height:14px;color:#666;*margin-top:6px;*padding-bottom:27px}
+.themeshop .themetab {position:absolute;top:0;right:0;*top:8px;}
+.themeshop .themetab li {float:left}
+.themeshop h3 {width:902px;padding-bottom:9px;*padding-bottom:2px}
+.themeshop h3 .more {right:0}
+.themeview {display:none}
+.theme1 {display:block}
+/*.theme_list {float:left;width:305px;margin-top:15px}  */
+.theme_list {float:left;width:305px;margin-top:15px}
+.theme_list li {float:left;padding:0 26px 12px;border-right:1px solid #eee;_padding:0 24px}
+.themeshop .theme_list li {float:left;padding:0 25px 12px;border-right:1px solid #eee;_padding:0 24px}
+.theme_list li.fchild {border-bottom:1px solid #eee;_padding-bottom:10px}
+.theme_list li.last {border-right:0}
+.theme_list2 li.last {padding:0 25px 12px 26px}
+.theme_list li.twin {padding-top:10px}
+.img_thum {width:100px;margin-bottom:7px}
+.img_name {width:97px;line-height:14px}
+.theme_list a {font-size:11px;color:#666;line-height:14px}
+.theme_list a:hover {text-decoration:underline} 
+.theme_list a strong {display:block;margin-left:1px;white-space:nowrap;_width:100px;overflow:hidden; color:#000;} 
+.theme_list .product { color:#939393; font-size:12px; width:100px;overflow:hidden;margin:1px 0 0 1px;height:auto; width:100px;display:block;margin-bottom:2px; line-height:13px;_height:20px;_width:96px} 
+:root .theme_list .product {line-height:14px \0/IE9}
+.theme_list .price {color:#C61A37;line-height:12px;font-family:verdana,sans-serif;font-size:14px;font-weight: bold}
+.themeshop .img_banner {margin-top:15px;float:left;border-right:1px solid #eee;padding:0 3px;}
+.themeshop .theme_list .price {line-height:13px;position:relative;top:2px}
+.themeshop .theme_list {width:302px;padding-left:1px;}
+.themeshop .theme_list2 {width:302px;padding-left:0;}
+.themeshop .img_thum {margin-bottom:6px}
+.themeshop .theme_list a strong {margin-left:0} 
+.themeshop .theme_list .product {margin-left:0} 
+.themeshop .product {height:28px;margin-top:-1px}
+.themeshop .themeview2 {width:907px; overflow:hidden; margin-bottom:8px;} 
+.themeshop .themeview2 ul {float:left;margin-top:15px;}
+.themeshop .themeview2 ul li.topLine {border-top:1px solid #eee;}
+.themeshop .themeview2 p.img_banner {float:left;border:0;}
+
+
+/* 롯데추천브랜드 추가 */
+.rebrand {float:left; position:relative; margin-top:21px; padding-bottom:15px; border-bottom:1px solid #DEDEDE;}
+.rebrand h3 {width:907px; padding:0; padding-bottom:9px;*padding-bottom:2px; border:0}
+.rebrand .rebrand_tab {position:relative; z-index:1; width:886px; height:48px; padding:7px 0 0 21px; background:#84a66e url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/rebrand_tab_bg.jpg') no-repeat 0 0;}
+.rebrand .rebrand_tab li {float:left;width:151px;height:40px;text-align:center;cursor:pointer;}
+.rebrand .rebrand_tab li.n2 {width:261px;}
+.rebrand a.prev {position:absolute; top:25px; left:8px; cursor:pointer; z-index:2;}
+.rebrand a.next {position:absolute; top:25px; right:8px; cursor:pointer; z-index:2;}
+.rebrand a.prev span {display:block; width:12px; height:47px; text-indent:-9999px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/btn_rebrand_tab_pre_off.gif') no-repeat left top;}
+.rebrand a.next span {display:block; width:12px; height:47px; text-indent:-9999px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/btn_rebrand_tab_next_off.gif') no-repeat left top;}
+.rebrand a.prev:hover span {background-image:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/btn_rebrand_tab_pre_on.gif');}
+.rebrand a.next:hover span {background-image:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/btn_rebrand_tab_next_on.gif');}
+.rebrand .rebrand_list_wrap {position:relative; height:200px; overflow:hidden;}
+.rebrand .rebrand_list {position:relative; width:886px; height:185px; margin-top:15px; padding-left:21px; /*border-bottom:1px solid #ddd*/}
+.rebrand .rebrand_list div.center {position:absolute; left:313px}
+.rebrand .rebrand_list ul {*zoom:1}
+.rebrand .rebrand_list ul:after {display:block; clear:both; content:"";}
+.rebrand .rebrand_list li {float:left; padding-left:46px;}
+.rebrand .rebrand_list li.first {padding-left:0}
+.rebrand .rebrand_list li.center {padding-left:372px}
+.rebrand .rebrand_list li a {color:#666; font-size:11px; line-height:14px; *line-height:12px}
+.rebrand .rebrand_list li dl {margin-top:4px; width:100px;}
+.rebrand .rebrand_list li dl dt {font-weight:bold}
+/* .rebrand .rebrand_list li dl dd {height:42px; overflow:hidden;} */
+.rebrand .rebrand_list li dl dd.price {padding-top:4px; color:#c61a37; font-family:verdana, sans-serif; font-size:14px; font-weight:bold; line-height:12px; height:15px;}
+.rebrand .rebrand_list .brand_BI {display:none;}
+
+/*footer*/
+#footer {margin-top:0; padding:50 0 20px 0px;clear:both; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/footer_bg.gif') repeat-x 0 0}
+.footer_content {*zoom:1;position:relative;margin-bottom:20px;width:907px; margin:0 auto; padding-left:12px;}
+.footer_content:after {content:"";display:block;clear:both}
+.footer_content .fnb {padding-left:0px;height:29px;margin-bottom:20px}
+:root .footer_content .fnb {padding-left:0 \0/IE9}
+.footer_content .fnb li {float:left; margin-right:0px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/footer_bar.gif') no-repeat right 11px; padding-right:7px;}
+.footer_content .fnb li.last{ background:none; padding-right:0px; margin-right:0px;}
+.footer_content .fnb li.familysite {height:32px; width:190px; float:right; padding:0px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/fnb_family_select_bg_up.gif') no-repeat 92% 50% #4c4c4c;}
+/*20130424_삭제 margin:0 0 0 410px; 추가 float:right;  margin-right:0px; */
+
+/*:root .footer_content .fnb li.familysite {margin-left:150px \0/IE9;}*/
+.footer_content .fnb li.on {background-image:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/fnb_family_select_bg.gif');}
+.footer_content .fnb li.familysite a {display:block;padding-left:12px; margin-right:0px; padding-right:0px;}
+.footer_content .fnb li a {height:16px;padding:9px 0 7px 0; display:block;_float:left;_height:12px;_padding:8px 0 7px 0}
+.footer_content .footer_logo {float:left;width:185px;margin:11px 26px 0 0;padding:24px 23px 32px 0px;border-right:1px solid #e8e8e8}
+.footer_content address {float:left;margin-top:18px}
+.footer_content .footer_quick {*zoom:1;width:590px;float:left;margin:11px 0 0 3px}
+.footer_content .footer_quick:after {content:"";display:block;clear:both}
+.footer_content .footer_quick li {float:left;margin-right:20px}
+
+
+
+/* scroll */
+#familyview{display:none;z-index:545;position:absolute;right:1px;top:-198px;padding:8px 0 0 0;background:#4c4c4c;width:189px;height:190px}
+#familyview .customScrollBox{margin:0 5px;position:relative; height:100%; overflow:hidden;border-bottom:1px solid #666666}
+#familyview .customScrollBox .container{position:relative; width:170px; top:0; float:left}
+#familyview ol {width:165px}
+#familyview li {height:16px;padding:0;margin:0 0 1px 1px}
+#familyview li.twin a {letter-spacing:-2px}
+#familyview li a {font-weight:normal;text-decoration:none;display:block;font-size:11px;height:10px;padding:4px 0 2px 7px;color:#a2a2a2;line-height:12px}
+#familyview li a:hover {background:#e42143; color:#fff}
+#familyview .customScrollBox .content{clear:both}
+#familyview .dragger_container{position:relative; width:6px; height:184px; float:left; margin:0 0 0 3px; cursor:pointer;background:#313131}
+#familyview .dragger{position:absolute; width:6px; height:50px; background:#c71a37; text-align:center; line-height:20px; color:#666; overflow:hidden; cursor:pointer}
+
+/* information */
+#information {*zoom:1;clear:both;margin-top:40px;padding:0px 0 32px 12px;}
+.infor_content {position:relative;*zoom:1;width:907px;margin:0 auto;}
+.infor_content:after {content:"";display:block;clear:both}
+.infor_content h3 {padding:3px 0 0 4px; height:20px; .padding:3px 0 0 4px; }
+.infor_content div {float:left}
+.infor_content div .more {position:absolute;right:0;top:5px}
+.infor_content .quicklink {position:relative;width:249px; margin-right:25px; height:190px;}
+.infor_content .shoppingnews {position:relative;width:254px; padding:0 25px; height:190px; border-right:1px solid #d0cdc6;  border-left:1px solid #d0cdc6}
+.infor_content .custormer {position:relative; width:270px!important; padding-left:25px}
+.infor_content .custormer h3{ margin:0px; padding:0px;}
+.infor_content .custormer p{ padding-top: 15px;}
+.infor_content .custormer p.more{ position:absolute; left:298px; top:-8px;}
+.infor_content .custormer li {margin:2px 0 0 5px}
+.infor_content .custormer li.first {margin-top:9px}
+.infor_content .custormer li.twin {margin-top:16px}
+.infor_content .quicklink h3{ margin:0px; padding:0px;}
+.infor_content .quicklink ul {height:57px;margin:7px 0 8px 0}
+.infor_content .quicklink .imgover li {float:left;width:62px; margin-top:10px; }
+.infor_content .quicklink .imgover li.first {width:63px; }
+.infor_content .quicklink .imgover li.last {background:none}
+.infor_content .quicklink .imgover li a {display:block;padding:0;text-align:center}
+.infor_content .quicklink dl {clear:both; float:left; height:63px;position:relative; width:249px; margin-top:15px;}
+.infor_content .quicklink dl dt { width:62px; height:63px; float:left;}
+.infor_content .quicklink dl dd { width:62px; height:57px; margin:12px 0 0 0;padding:0px;float:left;}
+.infor_content .quicklink dl dd.first {width:63px;}
+.infor_content .quicklink div {margin-top:5px;clear:both;}
+.infor_content .shoppingnews h3{ margin:0px; padding:0px;}
+.infor_content .shoppingnews p.more{ position:absolute; left:250px; top:7px;}
+.infor_content .shoppingnews li {color:#727272;font-size:12px; line-height:19px;}
+.infor_content .shoppingnews li.first {margin-top:12px;color:#727272;font-size:12px}
+.infor_content .shoppingnews li span {margin-left:3px; font-size:11px; font-family:Meiryo UI}
+.infor_content .shoppingnews li a {color:#727272;font-size:12px; font-family:Meiryo UI;}
+.infor_content .shoppingnews li div{white-space: nowrap; width:185px; overflow: hidden; text-overflow: ellipsis;}
+
+/* quickbanner */
+#quickbanner {width:78px;z-index:250;}
+#quickbanner p.vip {margin-bottom:5px}
+#quickbanner dl {padding-bottom:8px; background:#e52142}
+#quickbanner dl dt {padding-bottom:3px}
+#quickbanner dl dd {height:17px; padding-top:1px;font-size:11px;background:#e52142;color:#fff; padding-left:7px; font-weight:bold; text-align:left}
+#quickbanner dl dd strong{font-family:Verdana,sans-serif;}
+#quickbanner dl dd span{margin-right:2px}
+#quickbanner .btn_top {width:78px;padding-top:0px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/quick_bg.gif') no-repeat 0 0;_position:absolute;_left:0;_bottom:-21px}
+.quick_list {padding-top:3px; background-color:#f1f1f1;border:1px solid #d0d0d0;_float:left}
+/*.quick_list {padding-top:3px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/quick_bg.gif') no-repeat 0 0 #f1f1f1; border:1px solid #d0d0d0;_float:left}*/
+.quick_list li {margin:0 auto;width:100%;text-align:center;border-bottom:1px solid #d0d0d0}
+.quick_list li.first {padding:0;}
+.quick_list li.last {border:0}
+.quick_list li.today {*zoom:1;position:relative;border:0;margin-bottom:9px;padding:5px 0 0 0; background-color:#fff; border-bottom:1px solid #d0d0d0;}
+.quick_list li.today:after {content:"";display:block;clear:both}
+.quick_list li.today p {display:none;margin:3px 0 1px 0;text-align:center;}
+.quick_list li.today p span {color:#e52142}
+.quick_list li.today .today_not {line-height:13px;font-size:11px; margin:6px 6px 6px 6px; padding:4px; text-align:center;color:#999; background-color:#f0f0f0;}
+.quick_list li a {display:inline-block;padding:5px 0}
+.quick_list li.user_class a {display:inline;padding:0 0 2px 0;}
+.quick_list .today_list {padding:10px 0 3px 0;background:#f0f0f0;max-height:185px; width:auto; margin:4px;}
+.quick_list li.today a {display:inline-block;padding:9px 0 0 0}
+.quick_list li.today ul {display:none;max-height:171px;overflow:hidden;_height:171px}
+.quick_list li.today ul li {width:auto;border:0;margin-bottom:7px}
+.quick_list li.today ul li a {display:inline;padding:0}
+.quick_list li.today .tb_btn {margin:0;padding:0; background-color:#f0f0f0;}
+.quick_list li.today .tb_btn a {padding:0 background-color:#f0f0f0;}
+.quick_list li.today .tb_btn a.up {margin-right:1px background-color:#f0f0f0;}
+.user_class {padding:10px 0 8px 0;font-size:11px;color:#333;font-weight:bold;text-align:center}
+.quick_list li.shoppinguide a {padding:0px 0 10px 0;display:inline-block;}
+.quick_list li.last a {padding:9px 0 9px 0;display:inline-block;}
+.user_class .user {display:block}
+.user_class p {width:56px; height:26px; margin:0 auto; padding:5px 0 3px 0; line-height:13px; letter-spacing:-1px; font-weight:normal; color:#e52142; font-size:10px; font-family:Verdana,sans-serif; background:#f0f0f0;}
+.user_class p.first {margin:3px auto}
+.user_class p span {display:inline; padding:0px; line-height:13px; letter-spacing:-1px; font-weight:normal; color:#666; font-size:11px; font-family:Dotum,sans-serif}
+
+/* style */
+.clear {clear:both !important}
+.hidden {display:none}
+.blind {position:absolute;overflow:hidden;left:0;top:-5000px}
+.tab3 .two, .tab3 .three {display:none}
+a, img{border:0;outline:none;selector-dummy:expression(this.hideFocus=true)}
+.selectbox_new {behavior:url('htc/selectbox_new.htc')}
+.selectbox_new {border:none\9 !important}
+
+/* main_calendar 디자인 리뉴얼 css 추가 추후 삭제*/
+#ordertime2 {position:absolute;top:100px;left:-220px}
+#ordertime2 .MaincalBox {width:270px; height:237px; border:3px solid #938074; left:0 !important}
+#ordertime2 .MaincalBox table {width:270px; table-layout:fixed; margin:0; border-top:1px solid #eaeaea}
+#ordertime2 .MaincalBox div.calendar table th {padding:5px 0; border-bottom:1px solid #eaeaea; font-weight:normal; color:#666; font-size:12px}
+#ordertime2 .MaincalBox div.calendar table td {text-align:center;padding:0; border-left:none; border-right:none; border-bottom:1px solid #eaeaea; font-size:12px;padding-left:4px}
+#ordertime2 .MaincalBox div.calendar table td a {padding:5px 0; display:block; color:#888;width:31px}
+#ordertime2 .MaincalBox div.calendar table td a:hover {background:#ff637d; color:#fff; text-decoration:none;width:31px}
+#ordertime2 .MaincalBox div.calendar table td a:hover span.blue {color:#fff}
+#ordertime2 .MaincalBox div.calendar table td span.blue {color:#2996bf}
+#ordertime2 .MaincalBox div.calendar table td span.sun a {color:#ff637d}
+#ordertime2 .MaincalBox div.calendar table td a:hover span.sun {color:#fff}
+#ordertime2 .MaincalBox div.calendar table td a:hover span.blue {color:#fff}
+#ordertime2 .MaincalBox div.calendar table td.day {background:none}
+#ordertime2 .MaincalBox div.calendar table td.day span {color:#938074; font-weight:bold}
+#ordertime2 .MaincalBox div.calendar table td.day a {color:#938074; font-weight:bold}
+#ordertime2 .MaincalBox div.calendar table td.day a:hover span {color:#fff; font-weight:normal}
+#ordertime2 .MaincalBox .calendar {width:100%; background:none !important}
+#ordertime2 .MaincalBox .navi {height:auto;margin-bottom:10px}
+#ordertime2 .MaincalBox .navi strong {display:block; text-align:left; margin:3px 0 15px 0; .margin-bottom:0; position:relative}
+#ordertime2 .MaincalBox .navi strong span {position:absolute; right:0}
+#ordertime2 .MaincalBox .calendar .top {display:none}
+#ordertime2 .MaincalBox .newui {text-align:center}
+#ordertime2 .MaincalBox .newui .hand {position:relative;top:2px}
+#ordertime2 .MaincalBox .newui select {position:relative; top:1px; color:#393939 !important}
+#ordertime2 .MaincalBox .newui .nyear {color: #393939;padding-right:3px}
+#ordertime2 .MaincalBox .newui .nyear select.selectbox_new {width:80px}
+#ordertime2 .MaincalBox .newui .nmonth select.selectbox_new {width:60px}
+.MaincalBox table tr td {text-align:left;padding:2px 2px 2px 0; .padding:0 0 0 0}
+
+/* 브랜드맵 */
+.brand_header {background:#efefef;height:38px;font-size:11px}
+.brand_header a {text-decoration:none;font-size:11px;text-decoration:none;color:#666}
+.brand_header a:hover {color:#e52142}
+.brand_header .brand_searchform {padding:10px 0 0 19px;float:left;margin-right:191px}
+.brand_header .brand_searchform label {margin-right:8px;line-height:18px;color:#8b8b8b;position:relative;top:2px}
+.brand_header .brand_searchform #brand_search {padding-left:2px;border:1px solid #a7a7a7;width:134px;height:16px;line-height:16px}
+.brand_header .brand_tab {padding-top:7px}
+.brand_header ul:after {content:"";display:block;clear:both}
+.brand_header ul li {float:left}
+.brand_header .category_view {position:absolute;width:778px;left:10px;top:39px}
+.brand_header .abc_view {position:absolute;width:764px;left:7px;top:39px}
+.brand_header .search_view {display:none;position:absolute;width:764px;left:10px;top:39px}
+.brand_header .category_view .ca_list {*zoom:1;margin-bottom:5px}
+.brand_header .category_view .ca_list li {padding:0 12px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/brand_cate_linebg.gif") no-repeat right 50%}
+.brand_header .category_view .ca_list li.last {background:none}
+.brand_header .category_view .ca_list li a {padding:3px 1px 0 2px;display:block;line-height:12px;text-align:center;text-decoration:none;font-size:12px;color:#666;font-weight:bold}
+.brand_header .category_view .ca_list li a.on {background:#ff637d;color:#fff}
+.brand_header .category_view .ca_list li a:hover {background:#ff637d;color:#fff}
+.brand_header .category_view .ca_sub_list {*zoom:1;padding:7px 9px 6px 9px;background:#f5f5f5}
+.brand_header .category_view .ca_sub_list:after {content:"";display:block;clear:both}
+.brand_header .category_view .ca_sub_list li {overflow:hidden;float:left;width:148px;height:19px;line-height:19px}
+.brand_header .category_view .ca_sub_list li.last {width:136px}
+.brand_header .category_view .ca_sub_list li a {padding-left:8px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/blt_rect_ccc.gif") no-repeat 0 40%}
+.brand_header .category_view .ca_sub_list li a.on {background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/blt_rect_pink.gif") no-repeat 0 40%}
+.brand_header .category_view .ca_sub_list li a:hover {text-decoration:none;padding-left:8px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/blt_rect_pink.gif") no-repeat 0 40%}
+.brand_close {position:absolute;right:10px;top:10px}
+.linebottom {padding:14px 0 13px 0;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/brandmap_bottom_bg.gif") repeat-x 0 bottom;_padding-bottom:13px}
+.ca_group {*zoom:1;margin-bottom:15px}
+.ca_group:after {content:"";display:block;clear:both}
+.ca_group h3 {margin-bottom:11px;font-size:14px;color:#e52142}
+ul.group_list {*zoom:1;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/brandmap_list_bg.gif") repeat-y 0 0}
+ul.group_list3 {*zoom:1;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/brandmap_list_bg.gif") repeat-y 0 0}
+ul.group_list2 {*zoom:1;width:720px;float:left;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/brandmap_list_bg2.gif") repeat-y 0 0}
+ul.group_list:after {content:"";display:block;clear:both}
+ul.group_list3:after {content:"";display:block;clear:both}
+ul.group_list2:after {content:"";display:block;clear:both}
+ul.group_list li {padding-left:10px;margin-top:7px;float:left;line-height:12px;width:171px}
+ul.group_list2 li {padding-left:10px;margin-top:7px;float:left;line-height:12px;width:170px}
+ul.group_list3 li {padding-left:10px;margin-top:7px;float:left;line-height:12px;width:171px}
+ul.group_list li.first ,ul.group_list2 li.first, ul.group_list3 li.first {margin-top:0}
+.result_view {padding-left:13px;font-size:14px;color:#666}
+.result_view strong {color:#e52142}
+
+.text_select {*zoom:1;_padding-bottom:3px}
+.text_select:after {content:"";display:block;clear:both}
+.text_select ul {margin-right:5px;padding-right:2px;float:left;_margin-right:3px;_padding-right:1px} /* 20121203 수정 */
+.text_select li {margin-right:3px}
+.text_select li span {text-decoration:none;width:13px;display:block;padding:2px;text-align:center;text-decoration:none;color:#8b8b8b;line-height:11px;font-size:11px;border-top:1px solid #dedede;border-right:1px solid #c7c7c7;border-bottom:1px solid #c7c7c7;background:#fbfbfb;border-left:1px solid #dedede;cursor:pointer}
+:root .text_select li span {padding:2px; \0/IE9}
+.text_select li span:hover {text-decoration:none;border-top:1px solid #f94060;border-right:1px solid #c91130;border-bottom:1px solid #c91130;border-left:1px solid #f94060;background:#e52142;color:#fff}
+.text_select li span.active {border-top:1px solid #f94060;border-right:1px solid #c91130;border-bottom:1px solid #c91130;border-left:1px solid #f94060;background:#e52142;color:#fff}
+.text_select li span.disable {background:#eee;color:#bebebe;border:1px solid #eee;cursor:default}
+.text_select .etc_list {margin:0;border:0;padding:0}
+.text_select .etc_list li {margin:0}
+.text_select .etc_list li.ETC span {padding:2px;}
+.text_select .etc_list li span {width:26px;_width:26px}
+.text_group {*zoom:1;margin-bottom:23px}
+.text_group:after {content:"";display:block;clear:both}
+.text_group .group_list {width:170px}
+.text_group:after {content:"";display:block;clear:both}
+.text_group h3 {float:left;width:23px;padding-right:10px;font-size:12px;color:#fff}
+.text_group h3.ect {width:30px;padding-right:3px}
+.text_group h3 span {display:block;height:23px;text-align:center;line-height:23px;background:#a7a7a7}
+.text_group h3 span.active {background:#e52142}
+
+/* 브랜드 탭*/
+#brand_content {margin-top:10px;padding:7px 0 0 9px;width:auto;height:240px}
+#brand_content h3 {line-height:20px}
+#brand_content .customScrollBox{position:relative; height:100%; overflow:hidden; margin-bottom:3px;}
+#brand_content .customScrollBox:after {content:"";display:block;clear:both}
+#brand_content .customScrollBox .container{position:relative; width:750px; top:0; float:left}
+#brand_content .dragger_container{position:relative; width:5px; height:240px; float:right; margin:0 0 0 0px; cursor:pointer;background:#e2e2e2}
+#brand_content .dragger{position:absolute; width:5px; height:50px; background:#e52142; text-align:center; line-height:20px; color:#666; overflow:hidden; cursor:pointer}
+#brand_content2 {padding:17px 0 0 4px;width:760px;height:240px}
+#brand_content2 .customScrollBox{position:relative; height:100%; overflow:hidden}
+#brand_content2 .customScrollBox .container{position:relative; width:755px; top:0; float:left}
+#brand_content2 .customScrollBox .container .content {border:1px solid #fff}
+#brand_content2 .dragger_container{position:relative; width:5px; height:240px; float:left; margin:0px 0 0 0px; cursor:pointer;background:#e2e2e2}
+#brand_content2 .dragger{position:absolute; width:5px; height:50px; background:#e52142; text-align:center; line-height:20px; color:#666; overflow:hidden; cursor:pointer}
+#brand_content3 {margin-top:10px;padding:7px 0 0 9px;width:755px;height:240px}
+#brand_content3 .customScrollBox{position:relative; height:100%; overflow:hidden}
+#brand_content3 .customScrollBox:after {content:"";display:block;clear:both}
+#brand_content3 .customScrollBox .container{position:relative; width:745px; top:0; float:left}
+#brand_content3 .dragger_container{position:relative; width:5px; height:240px; float:left; margin:0 0 0 0px; cursor:pointer;background:#e2e2e2}
+#brand_content3 .dragger{position:absolute; width:5px; height:50px; background:#e52142; text-align:center; line-height:20px; color:#666; overflow:hidden; cursor:pointer}
+
+/* 통합검색 */
+/* search_form_view {position:absolute;z-index:100;padding:6px;left:102px;top:33px;width:235px;height:212px;border:2px solid #e42342;border-top:0;background:#fff;_left:104px}*/
+#search_form_view {z-index:100; .width:253px; width:249px; height:249px; margin-top:-2px; border:2px solid #e52142; background:#fff}
+#search_form_view { width /*\**/: 253px\9} /* ie 8 전용 핵 추가 */
+:root #search_form_view { width:249px \0/IE9; } /* ie 9 전용 핵 추가 */
+#SchSug {border-top:0; background:#fff; border-bottom:2px solid #e52142 !important}
+#search_form_view {color:#888}
+#search_form_view p {*zoom:1; border-bottom:1px solid #d5d5d5; padding-bottom:5px}
+#search_form_view p:after {content:""; display:block; clear:both}
+#search_form_view p span{float:left; text-align:center}
+#search_form_view p span.recom{position:relative; top:4px; width:166px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/search_bar_right.gif') no-repeat right 50%}
+#search_form_view p span.num{position:relative; top:4px; left:9px; width:52px}
+#search_form_view .content ul {position:relative; top:4px}
+#search_form_view .content ul li {*zoom:1;height:18px;margin-right:6px; margin-left:6px; margin-bottom:2px;font-size:12px;color:#888;*margin-bottom:-3px}
+#search_form_view .content ul li span {float:left}
+#search_form_view .content ul li span strong {color:#e51f42}
+#search_form_view .content ul li span.recom {padding-left:6px;width:151px}
+#search_form_view .content ul li span.num {/*padding-right:6px;*/width:auto;text-align:right; padding-left:28px;/*  position:relative; left:23px; top:1px; */}/* 2013.03.29 padding-left 23px -> 28px 수정 */
+#search_form_view .content ul li span.gray {width:29px; text-align:right; margin-right:2px}
+#search_form_view .content ul li a {font-size:12px;padding:4px 0;color:#888;display:block;height:11px;line-height:14px;cursor:pointer;_padding:0;_height:19px;_line-height:19px}
+#search_form_view .content ul li a:hover {text-decoration:none;background:#fe647e;color:#fff}
+#search_form_view .content ul li a:hover strong {color:#fff}
+/* 검색 스크롤 임시 잠금 guk
+#search_scroll .dragger_container{position:relative; width:5px; height:187px; float:left; margin:3px 0 0 0px; cursor:pointer;background:#e2e2e2}
+#search_scroll .dragger{position:absolute; width:5px; height:42px; background:#e42141; text-align:center; line-height:20px; color:#666; overflow:hidden; cursor:pointer}
+*/
+/* 2013.03.20 검색창 브랜드샵 바로가기 버튼 추가 */
+#search_form_view .content ul li.brand a:hover {text-decoration:none;background:none;}
+#search_form_view .content ul li.brand a:hover strong {color:#e51f42;}
+#search_form_view .content ul li span.gobtn {/*padding-right:6px;*/width:auto;text-align:right; padding-left:11px;/* position:relative; left:5px; top:1px */} /* 2013.03.29 padding-left 5px -> 11px 수정 */
+/*// 2013.03.20 검색창 브랜드샵 바로가기 버튼 추가 */
+
+.main_list {*zoom:1;position:relative; width:200px; margin: 0 32px 0 20px; text-align:left; height:300px}
+.main_list:after {content:"";display:block;clear:both}
+.main_list a {display:block; margin-top:30px}
+.main_list .icon {position:absolute; top:-2px; right:18px}
+.main_list .img_name00 {float:left; width:320px; display:block; }
+.main_list .theme_list li {text-align:left;width:200px; margin:0px; padding:0px;}
+.main_list .theme_list .product {width:200px}
+.main_list .theme_list a {margin-top:8px}
+.bestseller .bestview .main_list .theme_list li {border:0;padding:0 15px 0 24px;_padding:0 19px}
+.main_list .detail {float:left;  border:1px solid #ececec; width:240px; letter-spacing:-1px; height:26px; line-height:14px; padding:8px 5px; font-size:11px; color:#aeaeae; text-align:left; position:relative; top:5px; left:0; .margin:9px 0 0 0 !important; margin:9px 0 0 25px; word-wrap:break-word; .left:25px; *top:3px}
+:root .main_list .detail {top:7px \0/IE9}
+.main_list .theme_list {position:relative; top:3px !important;}
+.main_list .theme_list .product {margin-top:0}
+.main_list .theme_list .price {position:relative;top:3px; font-weight:normal; color:#000000;}
+
+.popcontent {z-index:100}
+
+/* 주문가능시간 확인*/
+.ordertime_N {height:236px; padding:18px 15px 10px 15px; border:3px solid #938074}
+.ordertime_N h1 {margin-bottom:16px; padding:0 0 11px 2px; border-bottom:1px solid #eaeaea; font-size:0; line-height:0}
+.ordertime_N div {margin-bottom:9px; padding:0 15px 12px; border-bottom:1px solid #eaeaea}
+.ordertime_N span.title_1 {position:relative; top:7px; margin-right:13px}
+.ordertime_N span.title_2 {position:relative; top:3px; margin-right:12px}
+.ordertime_N input {width:147px; height:auto; margin:0 6px 8px 0; padding:3px 0 3px 7px; border:1px solid #c61a37; color:#c61a37; font-size:14px; font-weight:bold}
+.ordertime_N select {/*border:1px solid #ccc;*/ padding-bottom:1px}
+.ordertime_N select.hour {margin-left:63px; margin-bottom:21px}
+.ordertime_N select.minute {margin-left:3px; margin-bottom:21px}
+.ordertime_N span.t_search {display:inline-block; margin:15px 0 0 80px}
+.ordertime_N p.guidance a {display:block; margin-bottom:2px}
+.ordertime_N span.b_close {position:absolute; top:12px; left:298px}
+.ordertime_N img.time_arrow {position:absolute; top:30px; left:319px}
+.ordertime_N table tr td {padding:2px 2px 2px 2px; .padding:0 0 0 0}
+
+/* 주문가능시간 조회 */
+.ordertime_Q {height:232px; padding:18px 15px 14px; border:3px solid #938074}
+.ordertime_Q h1 {margin-bottom:10px; padding:0 0 11px 2px; border-bottom:1px solid #eaeaea; font-size:0; line-height:0}
+.ordertime_Q ul li{background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/popup/renewal/blt_inqury_red.gif) no-repeat 0 4px;line-height:15px;border-bottom: 1px solid #EAEAEA;margin-bottom: 10px;padding: 0 0 5px 5px}
+.ordertime_Q ul li.btnbox {background:none;padding-bottom:19px;padding-left:3px}
+.ordertime_Q ul li.last {border-bottom:0}
+.ordertime_Q ul li p span {color:#c32e2e;font-weight:bold}
+.ordertime_Q span.b_close {position:absolute; top:12px; left:298px}
+.ordertime_Q img.time_arrow {position:absolute; top:30px; left:319px}
+
+#iframe_orderTime {width:325px; height:378px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/bg_iframe.gif') no-repeat left top}
+div.popInfo06 {top:560px !important;left:204px !important}
+iframe.select_bug {position: absolute; bottom:0; left:0; z-index:-1; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)}
+.popwrap {position:relative;z-index:1005;width:918px !important;margin:0 auto}
+.popwrap:after {content:"";display:block;clear:both}
+.list2 .theme_list a strong {font-size:11px;display:block;overflow:hidden;width:97px;white-space:nowrap}
+.list3 .theme_list a strong {font-size:11px;display:block;overflow:hidden;width:85px;white-space:nowrap}
+#SchSug .querylist .recom font {font-weight:bold !important}
+.ft11 {font-size:11px !important;letter-spacing:-2px !important}
+
+/* 리뉴얼 브랜드맵 로딩 */
+.loading {background:#fff; width:100%; height:100%; position:absolute; top:0; left:0}
+.loading img {margin:115px 0 0 355px}
+
+/* 브랜드맵  */
+.abc_view2 .text_select .etc_list li span {width: 26px;padding:3px 0 0 0 !important}
+.abc_view3 .text_select .etc_list li span {padding:3px 0 0 0 !important}
+
+
+/* 검색자동완성 */
+#search_form_view02 {z-index:1000; width:514px; height:200px; margin-top:-2px; padding:10px 10px 0 10px; border:2px solid #e52142; background:#fff; }
+#search_form_view02 {color:#888}
+#search_form_view02 a {text-decoration:none;}
+.sch_cate1 {float:left; width:141px;}
+.sch_cate1 ul {height:168px;}
+.sch_cate1 li {display:block; height:16px; padding:3px 2px 0 3px; color:#666; font-size:12px;}
+.sch_cate1 li span {color:#e51f42; font-weight:bold;}
+.sch_cate1 li p {display:inline; float:right;}
+.sch_cate1 li:hover, .sch_cate1 li:hover span {background:#fe647e; color:#fff;}
+.sch_cate1 div {height:15px; padding-top:5px; border-top:1px solid #cfcfcf;}
+.sch_cate1 div p {float:left; width:70px; padding-top:2px; line-height:15px; font-size:11px; letter-spacing:-0.1em; text-align:center;}
+.sch_cate1 div p.brd_l {border-right:1px solid #d3d3d3;}
+.sch_cate1 div p a:hover, .sch_cate1 div p a.scon {color:#e42141; font-weight:bold;}
+
+.sch_cate2 {float:left; width:230px; height:187px; padding:3px 0 0 21px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/ico_vdot01.gif') no-repeat 10px 0;}
+.sch_cate2 p {height:19px;}
+.sch_cate2 p a {font-size:12px; color:#666;}
+.sch_cate2 p a:hover {color:#e52142;}
+
+.sch_cate3 {float:left; width:101px; height:190px; padding-left:21px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/ico_vdot01.gif') no-repeat 10px 0;}
+.sch_cate3 dl {padding-top:12px;}
+.sch_cate3 dt {margin-bottom:8px;}
+.sch_cate3 dd p {font-size:11px; color:#666; line-height:14px;}
+.sch_cate3 .sch_price {font:bold 14px 'Verdana'; color:#c61a37;}
+
+/* 좌측 플로팅 배너 추가 */
+	/* 20130424_수정*/
+/*.leftFloatingBanner {position:absolute; top:0; left:-140px; margin-top:4px;} */
+#header .leftFloatingBanner {position:fixed;top:240px;left:3000px;}
+/* 2013.05.02 추가 */
+.leftFloatingBanner p.onedayP1 {padding-bottom:1px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/oneday_dotbg.gif') left bottom repeat-x;}
+.leftFloatingBanner p.onedayP2 {padding-bottom:1px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/oneday_dotbg.gif') left bottom repeat-x;}
+
+.leftFloatingBanner.bottom_line .onedayP1 {padding-bottom:0;background:none;border-bottom:1px solid #dedede;}
+.leftFloatingBanner.bottom_line .onedayP2 {border-bottom:1px solid #dedede;}
+
+.leftFloatingBanner .rolling_banner {position:relative;width:130px;height:191px;padding-bottom:8px;background-color:#fff;}
+.leftFloatingBanner .rolling_banner .banner_img {overflow:hidden;}
+.leftFloatingBanner .rolling_banner li img {position:absolute;left:0px;top:0px;z-index:10;}
+.leftFloatingBanner .rolling_banner li .btn {display:block;position:absolute;top:180px;left:10px;width:14px;height:4px;background-color:#c9c9c9;z-index:100;cursor:pointer;}
+.leftFloatingBanner .rolling_banner li.active .btn {top:176px;height:8px;background-color:#e52142;}
+
+.leftFloatingBanner .guerrilla_banner {position:relative;width:130px;height:165px;padding-bottom:8px;margin-bottom:8px;}
+.leftFloatingBanner .guerrilla_banner {padding-bottom:1px; background:url('https://schimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/oneday_dotbg.gif') left bottom repeat-x;}
+.leftFloatingBanner .guerrilla_banner .banner_img {overflow:hidden;}
+.leftFloatingBanner .guerrilla_banner li img {position:absolute;left:0px;top:0px;z-index:10;}
+.leftFloatingBanner .guerrilla_banner li .btn {display:block;position:absolute;bottom:10px;left:10px;width:14px;height:4px;background-color:#c9c9c9;z-index:100;cursor:pointer;}
+.leftFloatingBanner .guerrilla_banner li.active .btn {height:8px;background-color:#e52142;}
+
+.leftFloatingBanner.bottom_line .f_goods {border-bottom:1px solid #dedede;}
+.leftFloatingBanner.bottom_line .onedayP1 {border-bottom:1px solid #dedede;}
+
+
+/* 2013.05.02 추가 */
+
+/* 핫이슈 추가 */
+.hotIssue {position:relative; float:left; width:220px; height:369px; margin-bottom:30px; }
+.hotIssue h3 {border-bottom:0; }
+.hotIssue h3 a.more{ position:absolute; left:170px; top:20px; display:none;}
+.hotIssue .listBox {width:218px;border:1px solid #c6c3b9; border-top:0}
+.hotIssue li {border-top:1px solid #ddd; background-color:#fff;}
+.hotIssue li div img {width:218px; height:108px}
+
+
+.hotIssue li.first {border-top:none;}
+.hotIssue li .tit {display:block;height:29px;padding-left:20px;padding-top:14px;color:#656565;}
+.hotIssue li.on {margin-bottom:0px;position:relative;}
+.hotIssue li.on .tit {background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/btn_hotissue_on.gif") no-repeat 192px 14px;font-weight:bold;color:#e12241;border-bottom:1px solid #c6c3b9;}
+.hotIssue li.on .tit:active,
+.hotIssue li.on .tit:focus,
+.hotIssue li.on .tit:hover {text-decoration:none;}
+.hotIssue li div {display:none;width:218px;height:108px;overflow:hidden;}
+.hotIssue li div ul {*zoom:1;width:218px;}
+.hotIssue li div ul:after {content:"";display:block;clear:both}
+.hotIssue li div li {float:left;margin:0 11px 10px 0;padding:0;border-top:0;}
+
+/* 메인 레이어팝업 , 시스템 점검 포함 */
+.mainLayerPopup {position: absolute; top:566px; left:239px; z-index:1003; width:446px; height:560px; border:3px solid #000; background:#fff;}
+.mainLayerPopup ul {height:165px;border-bottom:1px solid #F3F3F3;}
+.mainLayerPopup ul li {float:left;width:148px;height:165px;border-right:1px solid #F3F3F3;}
+.mainLayerPopup ul li img {display:block;}
+.mainLayerPopup ul li.b3 {border-right:0;}
+.mainLayerPopup .banner {margin:13px 0 16px 15px;}
+.mainLayerPopup .banner img {display:block;}
+.mainLayerPopup .systemCheck {width:357px;height:56px;padding:13px 0 0 59px;margin:13px 0 16px 15px;background:#656565 url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/bg_systemCheck.gif') no-repeat 11px 16px;}
+.mainLayerPopup .systemCheck strong {display:block;margin-bottom:2px;font:bold 14px dotum;color:#FFFFFF;}
+.mainLayerPopup .systemCheck p {font:normal 11px/15px dotum;color:#BCBCBC;}
+.mainLayerPopup .systemCheck p em {font-weight:bold;text-decoration:underline;color:#fff;letter-spacing:-1px;}
+.mainLayerPopup .scrollWrap {padding-left:15px;}
+.mainLayerPopup .scrollWrap .t {display:block;margin-bottom:8px;}
+.mainLayerPopup .scrollWrap .customScrollBox {margin:0;position:relative; width:442px; height:203px; overflow:hidden;}
+.mainLayerPopup .scrollWrap .customScrollBox .container {position:relative; width:410px; top:0; float:left}
+.mainLayerPopup .scrollWrap .customScrollBox .content {clear:both}
+.mainLayerPopup .scrollWrap .dragger_container {position:relative; width:6px; height:203px; float:left; margin:0 0 0 0; cursor:pointer;background:#DDDDDD}
+.mainLayerPopup .scrollWrap .dragger {position:absolute; width:6px; height:100px; background:#878787; text-align:center; line-height:20px; color:#666; overflow:hidden; cursor:pointer}	
+.mainLayerPopup .btn1 {display:block;margin:7px 0 0 15px;}
+.mainLayerPopup .closeBar {position:absolute;left:0;bottom:0;width:434px;height:22px;padding:8px 0 0 12px;background-color:#EAEAEA;font:normal 11px dotum;color:#747474;}
+.mainLayerPopup .closeBar input {width:13px;height:13px;vertical-align:middle;margin-top:-2px;}
+.mainLayerPopup .closeBar .popclose {position:absolute;right:15px;top:11px;}
+
+
+
+
+
+
+/* add css class ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/*메인*/
+.lvip {width:199px; height:79px; position:absolute; left:720px; top:33px;}
+
+/* 한국관 */
+.korea_room{ clear:both;position:relative; width:905px; height:278px; margin-bottom:20px; border:1px solid #c3bfb5;}
+.korea_room p{ width:345px; float:left;}
+.korea_room .tab_list{ width:560px; height:37px; float:left;}
+.korea_room .tab_list ul li{ width:139px; height:26px; padding-top:10px; margin:0px; border-left:1px solid #c3bfb5; border-bottom:1px solid #c3bfb5; float:left; background-color:#ede8e3; color:#a6998b; text-align:center;}
+.korea_room .tab_list ul li.last{ width:139px; margin-right:0px; padding-right:0px;}
+.korea_room .tab_list ul li.on{background-color:#f3f1ed; background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/korea_room_tab.gif)  no-repeat 100px 15px; border-bottom:none;}
+.korea_room .tab_list ul li.on span{color:#ca2f49; font-weight:bold;} /* 20121129 수정 */
+.korea_room .tab_list ul li span{ font-family:"Microsoft YaHei"} /* 20121129 수정 */
+
+.korea_room .korea_room_box{ height:241px; float:left;  }
+.korea_room .korea_room_box ul { margin:20px 0 0 0; padding:0px;}
+.korea_room .korea_room_box ul li{ width:120px; height:190px; float:left; margin:0 9px 0 10px;}
+.korea_room .korea_room_box ul li.last{ margin-right:0px;}
+.korea_room .korea_room_box ul li p.img_thum{ width:120px; height:120px;}
+.korea_room .korea_room_box ul li p.img_thum a img{ width:118px; height:118px;  border:1px solid #e0e0e0;}
+.korea_room .korea_room_box ul li p.img_name{ width:140px; height:95px; overflow:hidden; text-align:center; line-height:18px; margin-left:-10px;}
+.korea_room .korea_room_box ul li p.img_name strong { width:120px; height:20px; overflow-y:hidden; position:relative;}
+.korea_room .korea_room_box ul li p.img_name strong a{color:#000;}
+.korea_room .korea_room_box ul li p.img_name .price{ width:120px; display:inline-block; color:#c41a37;position:relative; font-weight:bold; font-size:14px; font-family:Verdana, Arial, Helvetica, sans-serif; white-space:nowrap; }
+.korea_room .korea_room_box ul li p.img_name .product {width:120px; margin:2px 0; display:inline-block; line-height:12px;  overflow:hidden; white-space:normal;}
+.korea_room .korea_room_box ul li p.img_name .price font{ color:#9f9f9f; font-size:11px;}
+/* // 한국관 */
+
+/* 남성관,브랜드상품,쿠폰 */
+.themeshop_new { clear:both; height:217px;float:left; margin-bottom:0px; width:100%;}
+.themeshop_new .theme_tab_new {width:202px; float:left;}
+.themeshop_new .theme_tab_new ul{ margin:0px; padding:0px;}
+.themeshop_new .theme_right_box{ width:680px; height:216px; border-bottom:1px solid #d0cdc6; float:left; margin-left:25px;  }
+.themeshop_new .theme_right_box ul { margin:0px; padding:0px;}
+.themeshop_new .theme_right_box ul li{ width:120px; height:190px; float:left; margin-right:20px;}
+.themeshop_new .theme_right_box ul li.last{ margin-right:0px;}
+.themeshop_new .theme_right_box ul li p.img_thum{ width:120px; height:120px;}
+.themeshop_new .theme_right_box ul li p.img_thum a img{  width:118px; height:118px;  border:1px solid #e0e0e0;}
+.themeshop_new .theme_right_box ul li p.img_name{ width:120px; height:95px; overflow:hidden; text-align:center; line-height:18px;}
+.themeshop_new .theme_right_box ul li p.img_name strong { width:120px; overflow:hidden; position:relative;}
+.themeshop_new .theme_right_box ul li p.img_name strong a{color:#000;}
+.themeshop_new .theme_right_box ul li p.img_name .price{ overflow:hidden; }
+.themeshop_new .theme_right_box ul li p.img_name .price a{ width:120px; display:inline-block; color:#c61a37;position:relative; font-weight:normal; font-size:14px; font-family:"Microsoft YaHei";}
+.themeshop_new .theme_right_box ul li p.img_name .product {width:120px; height:16px; display:inline-block; overflow:hidden; }
+.themeshop_new .theme_right_box ul li p.img_name .product a{color:#939393;}
+/* // 남성관,브랜드상품,쿠폰 */
+
+
+/* 메인 배너
+div.bn { clear:both; width:907px; height:247px; margin:10px 0 20px 0; padding:0}
+div.bn div.group1 {float:left; width:677px; padding:0 8px 0 0; margin:10px 0 20px 2px;}
+div.bn div.group1 div { padding:0; margin:-2px}
+div.bn div.group1 div.bn1 { display:inline;width:195px; height:247px}
+div.bn div.group1 div.bn1 img { width:195px; height:247px; }
+div.bn div.group1 div.bn2 { display:inline;width:195px; height:247px}
+div.bn div.group1 div.bn2 img { width:195px; height:247px; }
+div.bn div.group1 div.bn3 { display:inline;width:287px; height:247px}
+div.bn div.group1 div.bn3 img { width:287px; height:247px; }
+div.bn div.group2 {float:right; width:220px; margin:10px 0 20px 0;}
+div.bn div.group2 div.bn1 { width:220px; height:82px}
+div.bn div.group2 div.bn1 img { width:220px; height:82px; }
+div.bn div.group2 div.bn2 { width:220px; height:82px}
+div.bn div.group2 div.bn2 img { width:220px; height:82px; }
+div.bn div.group2 div.bn3 { width:220px; height:82px}
+div.bn div.group2 div.bn4 img { width:220px; height:83px; }
+/* // 메인 배너 */
+
+
+/* 롤링 */
+#banner_01 {float:left;position:relative;width:205px;height:350px}
+#banner_02 {float:left;position:relative;margin-top:15px; margin-bottom:10px; display:inline;width:195px;height:247px;}
+#banner_03 {float:left;position:relative;margin-top:15px; margin-bottom:10px; width:195px;height:247px}
+#banner_03 .banner_num {right:13px}
+#banner_03 .banner_num2 {right:13px}
+#banner_04 {float:left;position:relative;margin-top:15px; margin-bottom:10px; width:287px;height:247px}
+.banner_img_list {position:absolute;z-index:0;overflow:hidden}
+.banner_img_list li a {display:none;background:#ccc}
+.banner_img_list li.on a{display:block}
+.banner_img_list li a.hidden {display:none}
+.banner_img_list li, .banner_num li {list-style:none;float:left}
+.banner_img_list li, .banner_num2 li {list-style:none;float:left}
+
+.banner_num {position:absolute;right:5px;bottom:7px}
+.banner_num:after {content:"";display:block;clear:both}
+.banner_num li {margin-right:2px;text-align:center}
+.banner_num li span {font-size:9px;display:block;padding:2px 3px 2px 2px;text-align:center;text-decoration:none;background:#4f4f4f;color:#a9a9a9 !important;line-height:9px;font-family:verdana,sans-serif;cursor:pointer}
+:root .banner_num li span {width:7px; height:9px; \0/IE9}
+.banner_num li.on span {color:#fff !important;background:#ff637d}
+
+.banner_num2 {position:absolute;right:5px;bottom:7px}
+.banner_num2:after {content:"";display:block;clear:both}
+/* 2012.07.02 ie7에서 보이지 않아 수정 */
+/*.banner_num2 li {margin-right:3px;text-align:center}*/
+
+.banner_num2 li {margin-right:3px;text-align:center; z-index:100; width:9px; height:9px; background:#d6d6d6;}
+.banner_num2 li.on {background:#e42141;}
+/* 2012.07.02 ie7에서 보이지 않아 수정 */
+.banner_num2 li span {display:inline-block; width:9px; height:9px; padding:0; margin:0; background:#d6d6d6; cursor:pointer; text-indent:-9999px;}
+.banner_num2 li.on span {background:#e42141;}
+
+#banner_02 li img {width:195px;height:247px}
+#banner_03 li img {width:195px;height:247px}
+#banner_04 li img {width:287px;height:247px}
+
+#banner_05 {float:left;margin-top:15px; margin-bottom:10px;  margin-left:10px;position:relative;width:220px;height:247px}
+#banner_05 li img {width:220px;}
+
+
+
+
+
+
+/* //add css class ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* 오늘 본 상품 (말풍선 추가 개선) 2013.02.28 */
+.quick_list li.today_new {*zoom:1;position:relative;border:0;margin-bottom:9px;padding:5px 0 0 0; background-color:#fff; border-bottom:1px solid #d0d0d0;}
+.quick_list li.today_new:after {content:"";display:block;clear:both}
+.quick_list li.today_new .t {margin:10px 0 6px 0;}
+.quick_list li.today_new .count {display:block;height:17px;color:#FF0000;text-align:center;}
+.quick_list li.today_new .todayList {padding:10px 0 3px 0;background:#f0f0f0;max-height:185px; width:auto; margin:5px;}
+*:first-child+html .quick_list li.today_new .todayList {padding:10px 8px;} 
+.quick_list li.today_new .todayList .thumb {display:block;width:50px;height:50px;}
+.quick_list li.today_new .todayList .noToday {color:#999;font-size:11px;line-height:14px;}
+.quick_list li.today_new .todayList * {text-decoration:none;}
+.quick_list li.today_new .todayList a {position:relative;display:block;height:50px;padding:0 0 0 9px;margin:0 0 7px 0;}
+*:first-child+html .quick_list li.today_new .todayList a {padding:0;}
+.quick_list li.today_new .todayList a .tooltip {position:absolute;right:8px;top:0;display:none;width:117px;height:45px;padding:5px 67px 0 9px;text-decoration:none;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/bg_tooltip.gif') no-repeat left top;}
+*:first-child+html .quick_list li.today_new .todayList a .tooltip {position:absolute;right:0;top:0;}
+.quick_list li.today_new .todayList a:hover .tooltip {display:block;text-align:left;}
+.quick_list li.today_new .todayList a .tooltip .name {display:block;width:115px;height:27px;font-size:11px;color:#fff;line-height:14px;overflow:hidden;}
+.quick_list li.today_new .todayList a .tooltip .price {display:block;width:115px;font-size:11px;color:#E52142;line-height:14px;overflow:hidden;font-weight:bold;margin-top:1px;}
+
+.quick_list li.today_new .todayButton {height:12px;background-color:#fff; width:auto; margin:-7px 5px 5px 5px;}
+.quick_list li.today_new .todayButton .up {float:left;padding:0;}
+.quick_list li.today_new .todayButton .down {float:right;padding:0;}
+
+/* 13.03.15 추가*/
+/*main_top_banner*/
+.main_top_banner {margin-top:-17px; height:69px; padding-left:12px; background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/main_topBg_0315.gif') repeat-x 0 0;}
+.main_top_banner p {text-align:center;} 
+
+/* 2013.06.18 환율계산기 추가 */
+#quickbanner .nm_tpl_exchange {background:#fff; border-right:1px solid #d0d0d0; border-left:1px solid #d0d0d0; display:block}
+
+#quickbanner .nm_tpl_exchange p{text-align:center; padding-top:8px;}
+#quickbanner .nm_tpl_exchange dl {background:#fff; height:42px; overflow:hidden; margin:1px auto 0 auto;width:71px; border:0; padding:3px 0 0 0;}
+
+#quickbanner .nm_tpl_exchange dt {background:#fff; float:left; width:9px; padding:0; margin-left:-1px;}
+#quickbanner .nm_tpl_exchange dt.dol {padding-left:1px; margin-left:0;}
+
+#quickbanner .nm_tpl_exchange dl dd {background:#fff; float:left; color:#444444; text-align:right; width:57px; padding:0 4px 0 0;}
+#quickbanner .nm_tpl_exchange dd input {border:1px solid #dddddd; width:45px;  height:12px; text-align:right; padding-right:3px;font-family:Verdana,sans-serif; font-size:10px;}
+#quickbanner .nm_tpl_exchange dd span {float:left; color:#444444; text-align:right; width:57px; padding:0 4px 0 0; font-family:Verdana,sans-serif; font-size:10px;}
+
+
+
+/* 2013-09-04 중문 메인 리뉴얼 시작 */
+#main_wrap.renewal {background-color:#fff;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_bg_re.jpg') no-repeat center 1109px;}
+#main_wrap.renewal #dablewidget_3xXAmPXG {overflow:hidden;height:384px;}
+.main_top_banner.common_renewal {height:60px;margin-top:-16px;padding-left:0;background-image:none;background-color:#ffdb58;}
+.main_top_banner.common_renewal p {width:907px;margin:0 auto;padding-left:12px;}
+.main_top_banner.common_renewal p.type_3 {overflow:hidden;}
+.main_top_banner.common_renewal p.type_3 a , .main_top_banner.common_renewal p.type_3 span {float:left;}
+#header.common_renewal {height:163px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/header_bg_re.gif') repeat-x 0 bottom;}
+#header.common_renewal .header_content {height:163px;margin-top:0;background-image:none;}
+#header.common_renewal .header_center {position:relative;height:128px;}
+#header.common_renewal .header_content p.unb_bookmark {left:2px;top:13px;}
+#header.common_renewal .header_content .lnb {left:0;top:128px;height:35px;}
+#header.common_renewal .header_center h1.rolling {margin-top:46px;}
+#header.common_renewal .header_content .unb {left:0;margin-top:11px;}
+#header.common_renewal .header_content .unb li {height:17px;margin-right:0;margin-left:12px;}
+#header.common_renewal .header_content .unb a {display:inline;height:17px;line-height:17px;color:#707070;font-size:11px;text-decoration:none;}
+#header.common_renewal .header_content .unb li.kor_btn {margin-left:10px;}
+#header.common_renewal .header_content .unb li.kor_btn a {float:left;margin-top:3px;}
+#header.common_renewal .header_content .unb li.kor_btn a img {float:left;}
+#header.common_renewal .header_content .search_box {position:absolute;left:293px;top:57px;width:358px;height:35px;margin-top:0;border:3px solid #e72144;}
+#header.common_renewal .header_content .search_box .search_select_view {top:31px;border:3px solid #e72144;}
+#header.common_renewal .header_content .search_box .search_select span {width:90px;padding:9px 0 11px 0;}
+#header.common_renewal .header_content .search_box .search_select span a {width:80px;padding-left:10px;color:#e52142;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/search_list_bg_renewal.gif') no-repeat 83px 50%;}
+#header.common_renewal .header_content .search_box #SearchForm input {font-size:14px;font-weight:bold;color:#afaca9;}
+#header.common_renewal .header_content .search_box .search_select {width:90px;margin:0;}
+#header.common_renewal .header_content .search_box #SearchForm {width:229px;margin-top:6px;}
+#header.common_renewal .header_content .search_box #SearchForm #search_form {width:214px;}
+#header.common_renewal .header_content .search_box .search_btn {float:right;}
+#header.common_renewal .lvip {position:absolute;left:auto;top:auto;right:0;bottom:0;width:170px;height:90px;}
+#header.common_renewal .lclass {position:absolute;left:auto;top:auto;right:0;bottom:20px;width:163px;height:61px;}
+#header.common_renewal .hankki {position:absolute;left:auto;top:auto;right:0;bottom:31px;}
+#header.common_renewal .header_content .gnb {position:absolute;right:0;bottom:-25px;margin-top:0;}
+#header.common_renewal .header_content .gnb li {height:14px;;margin-left:18px;margin-right:0;}
+#header.common_renewal .header_content .gnb li a {padding:0;vertical-align:top;}
+#header.common_renewal .header_content .lnb {width:191px;margin-left:0;}
+#header.common_renewal .header_content .lnb h2 {width:100px;height:35px;}
+#header.common_renewal .header_content .lnb .brand_p {height:35px;}
+#header.common_renewal .header_content .lnb .brand_p {left:100px;}
+#header.common_renewal .header_content .lnb .lnbbox {top:35px;width:191px;height:282px;padding-right:0;background-image:none;background-color:#e52142;}
+#header.common_renewal .header_content .lnb ul.dep1 {width:94px;padding-top:9px;}
+#header.common_renewal .header_content .lnb ul.dep1 li {height:27px;margin-bottom:3px;}
+#header.common_renewal .header_content .lnb ul li .dep2 li {*float:left;height:20px;margin-bottom:2px;}
+#header.common_renewal .header_content .lnb ul li .dep2 li.banner {*float:none;left:8px;height:96px;}
+#header.common_renewal .header_content .lnb ul li .dep2 {left:100px;height:401px;padding:11px 8px 0;border:1px solid #303030;}
+#header.common_renewal .header_content .lnb ul li .dep2 .dep3 {top:-1px;height:401px;padding:11px 8px 0;border-top:1px solid #303030;border-bottom:1px solid #303030;border-right:1px solid #303030;}
+#header.common_renewal .header_content .lnb ul li .dep2 .dep3 .dep4 {top:-1px;height:401px;padding:11px 8px 0;border-top:1px solid #303030;border-bottom:1px solid #303030;border-right:1px solid #303030;}
+#header.common_renewal .lnbbox .list4 {width:278px;height:412px;padding:0 10px 0 10px;}
+#header.common_renewal .lnbbox .viewlist {right:-716px;border-top:1px solid #303030;border-bottom:1px solid #303030;border-right:1px solid #303030;}
+#header.common_renewal .lnbbox .list4 .theme_list {width:278px;}
+#header.common_renewal .lnbbox .list4 .theme_list p.img_thum {width:139px;margin-bottom:4px;}
+#header.common_renewal .lnbbox .viewlist .theme_list li.first {margin:14px 0 18px 0;}
+#header.common_renewal .lnbbox .viewlist .theme_list li {margin:14px 0 18px 0;}
+#header.common_renewal .lnbbox .list2 {width:448px;height:412px;}
+#header.common_renewal .lnbbox .list2 .theme_list {margin-top:4px;}
+#header.common_renewal .lnbbox .list4 .theme_list p.img_name {width:139px;height:61px;padding:0;text-align:center;}
+#header.common_renewal .theme_list a strong {display:inline-block;width:100px;margin-left:0;font-weight:normal;}
+#header.common_renewal .lnbbox .list4 .theme_list p.img_name .product {display:inline-block;width:100px;height:27px;margin:3px 0 0 0;color:#666;}
+#header.common_renewal .lnbbox .list4 .theme_list p.img_name .price {display:inline-block;width:100px;margin-top:5px;}
+#header.common_renewal .header_content .lnb .brand_nav {position:relative;width:76px;height:262px;padding:9px 0 0 5px;}
+#header.common_renewal .header_content .lnb .brand_nav ul {width:65px;height:221px;padding:39px 0 0 9px;border:1px solid #f32749;background-color:#c61936;}
+#header.common_renewal .header_content .lnb .brand_nav ul li {line-height:19px;padding:0;margin:0;}
+#header.common_renewal .header_content .lnb .brand_nav ul li a {color:#fff;margin-left:0;letter-spacing:0;}
+#header.common_renewal .header_content .lnb .brand_nav .b_txt {position:absolute;left:14px;top:19px;}
+#header.common_renewal .header_content .lnb .brand_nav p.btn {width:40px;height:15px;top:auto;left:15px;bottom:12px;}
+#header.common_renewal .header_content .lnb .lnb_banner {position:absolute;left:0px;bottom:1px;width:191px;height:132px;overflow:hidden;}
+#header.common_renewal .header_content .lnb .lnb_banner a,
+#header.common_renewal .header_content .lnb .lnb_banner img {display:block;}
+#header.common_renewal .header_content .brand_view {width:807px;height:414px;top:163px;left:100px;}
+#header.common_renewal .header_content .brand_view .brand_move {width:805px;height:412px;border:1px solid #303030;}
+#header.common_renewal .brand_header {background-color:#303030;}
+#header.common_renewal .brand_header .brand_searchform label {color:#fff;}
+#header.common_renewal #brand_content {padding:0 0 0 9px;}
+#header.common_renewal .brand_header .brand_searchform {margin-right:222px;padding:8px 0 0 20px;}
+#header.common_renewal .brand_header .brand_searchform #brand_search {width:133px;margin-right:1px;border:1px solid #fff;}
+#header.common_renewal .brand_header .brand_searchform label {top:1px;margin-right:22px;font-size:12px;}
+#header.common_renewal .ca_group {padding-top:14px;}
+#header.common_renewal #brand_content2 .dragger_container {height:295px;}
+#header.common_renewal .header_content .brand_view .close {top:13px;right:9px;}
+#header.common_renewal .brand_header .category_view {width:774px;top:38px;left:16px;}
+#header.common_renewal .brand_header .category_view .ca_list {width:774px;}
+#header.common_renewal .brand_header .category_view .ca_sub_list {width:756px;}
+#header.common_renewal .brand_header .abc_view {width:774px;left:16px;top:38px;}
+#header.common_renewal #brand_content2 {width:770px;height:295px;}
+#header.common_renewal #brand_content2 .customScrollBox .container {width:765px;}
+
+#middle.middle_renewal {width:907px;padding-left:12px;margin-top:-16px;padding-bottom:0;}	
+.middle_renewal .lnb_banner {position:absolute;left:12px;top:282px;width:191px;height:132px;overflow:hidden;}
+.middle_renewal .lnb_banner a,
+.middle_renewal .lnb_banner img {display:block;}
+.middle_renewal .main_banner {overflow:hidden;position:relative;width:716px;height:414px;margin-left:191px;}
+.middle_renewal .main_banner .img_cnt {overflow:hidden;position:absolute;left:0;top:0;width:716px;height:384px;}
+.middle_renewal .main_banner .bottom_btn {position:absolute;left:0;bottom:0;width:716px;height:30px;}
+.middle_renewal .main_banner .bottom_btn li {float:left;width:119px;height:30px;}
+.middle_renewal .main_banner .bottom_btn li a {display:block;width:119px;height:22px;padding-top:8px;text-align:center;color:#fff;background-color:#626262;text-decoration:none;}
+.middle_renewal .main_banner .bottom_btn li.last a {width:121px;}
+.middle_renewal .main_banner .bottom_btn li.on a {font-weight:bold;background-color:#e1002a;}
+.middle_renewal .main_event_banner {width:907px;height:128px;}
+.middle_renewal .main_event_banner li {float:left;border-left:1px solid #dcdcdc;}
+.middle_renewal .main_event_banner li:first-child {border-left:none;}
+
+.middle_renewal .main_plan_content {overflow:hidden;position:relative;width:907px;height:352px;}
+.middle_renewal .main_plan_content .left_banner {float:left;width:226px;height:312px;}
+.middle_renewal .main_plan_content .left_banner li {float:left;}
+.middle_renewal .main_plan_content .center_banner {position:relative;float:left;width:435px;height:352px;}
+.middle_renewal .main_plan_content .center_banner .img_cnt {position:absolute;left:0;top:0;width:435px;height:352px;}
+.middle_renewal .main_plan_content .center_banner .btn_cnt {position:absolute;left:29px;bottom:52px;}
+.middle_renewal .main_plan_content .center_banner .btn_cnt li {float:left;margin-right:4px;}
+.middle_renewal .main_plan_content .center_banner .btn_cnt li a {display:block;width:16px;height:16px;color:#fff;text-align:center;background-color:#626262;text-decoration:none;}
+.middle_renewal .main_plan_content .center_banner .btn_cnt li.on a {background-color:#e1002a;}
+.middle_renewal .main_plan_content .right_banner {float:right;width:225px;height:296px;padding-top:13px;border-top:3px solid #222;}
+.middle_renewal .main_plan_content .right_banner .sale_btn {position:relative;width:223px;height:242px;margin-top:15px;border:1px solid #dcdcdc;}
+.middle_renewal .main_plan_content .right_banner .sale_btn li {float:left;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/sale_bg_re.gif") no-repeat 0 0;}
+.middle_renewal .main_plan_content .right_banner .sale_btn .sale_1 , .middle_renewal .main_plan_content .right_banner .sale_btn .sale_3 {width:112px;height:81px;}
+.middle_renewal .main_plan_content .right_banner .sale_btn .sale_2 , .middle_renewal .main_plan_content .right_banner .sale_btn .sale_4 {width:111px;height:81px;}
+.middle_renewal .main_plan_content .right_banner .sale_btn .sale_5 {width:112px;height:80px;}
+.middle_renewal .main_plan_content .right_banner .sale_btn .sale_6 {width:111px;height:80px;}
+.middle_renewal .main_plan_content .right_banner .active_btn {display:none;position:absolute;cursor:pointer;}
+
+.center_banner.renewal .big_btn_cnt {position:relative;z-index:100;}
+.center_banner.renewal .big_btn_cnt .left_btn {display:block;position:absolute;left:0;top:132px;width:25px;height:48px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/center_banner_left.png") no-repeat 0 0;}
+.center_banner.renewal .big_btn_cnt .left_btn:hover , .center_banner.renewal .big_btn_cnt .right_btn:hover {background-position:-25px 0;}
+.center_banner.renewal .big_btn_cnt .right_btn {display:block;position:absolute;right:0;top:132px;width:25px;height:48px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/center_banner_right.png") no-repeat 0 0;}				
+.center_banner.renewal .num_cnt {position:absolute;left:35px;top:284px;}
+.center_banner.renewal .num_cnt .l_num {display:inline-block;height:14px;line-height:13px;padding-right:6px;font-weight:bold;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/center_banner_slash.png") no-repeat right 1px;color:#e52142;}
+.center_banner.renewal .num_cnt .r_num {display:inline-block;height:14px;line-height:13px;color:#626262;}
+
+.middle_renewal .k_style {overflow:hidden;margin-top:35px;}
+.middle_renewal .k_style h3 {height:20px;}
+.middle_renewal .k_style .style_content {width:907px;hegiht:331px;margin-top:6px;}
+.middle_renewal .k_style .style_content .style_banner_1 {float:left;width:191px;height:331px;}
+.middle_renewal .k_style .style_content .middle_cnt {overflow:hidden;float:left;width:525px;height:309px;padding-top:20px;border-top:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;}
+.middle_renewal .k_style .style_content .style_banner_2 {float:left;width:191px;height:331px;}
+.middle_renewal .k_style .style_content .middle_cnt .list_goods {overflow:hidden;height:210px;}
+.middle_renewal .k_style .style_content .middle_cnt .s_banner_1 {overflow:hidden;}
+.middle_renewal .k_style .style_content .middle_cnt .s_banner_2 {overflow:hidden;display:none;}
+.middle_renewal .k_style .style_content .middle_cnt .list_goods li {float:left;margin:0 0 10px 20px;}
+.middle_renewal .k_style .style_content .middle_cnt .list_goods li a {display:block;width:242px;height:100px;text-decoration:none;}
+.middle_renewal .k_style .style_content .middle_cnt .list_goods li a img {float:left;margin-right:10px;}
+.middle_renewal .k_style .style_content .middle_cnt .list_goods .main_txt_cnt {float:left;margin-top:15px;cursor:pointer;}
+.middle_renewal .k_style .style_content .middle_cnt .list_banner {overflow:hidden;float:left;width:513px;height:78px;margin:20px 0 0 6px;border-top:1px solid #ebebeb;}
+.middle_renewal .k_style .style_content .middle_cnt .list_banner li {overflow:hidden;float:left;}
+.middle_renewal .main_txt_cnt {display:block;width:120px;height:72px;text-align:left;}
+.middle_renewal .main_txt_cnt .t_txt {overflow:hidden;display:block;height:14px;font-size:12px;line-height:14px;color:#333;}
+.middle_renewal .main_txt_cnt .m_txt {overflow:hidden;display:block;height:28px;margin-top:4px;font-size:12px;line-height:14px;color:#666;}
+.middle_renewal .main_txt_cnt .b_txt {overflow:hidden;display:block;height:16px;margin-top:6px;}
+.middle_renewal .main_txt_cnt .b_txt .d_txt {font-size:14px;font-weight:bold;color:#e1002a;}
+.middle_renewal .main_txt_cnt .b_txt .w_txt {position:relative;left:4px;top:-2px;font-size:12px;color:#666;}
+
+.middle_renewal .best_brand {overflow:hidden;margin-top:38px;}
+.middle_renewal .best_brand .brand_top {height:17px;}
+.middle_renewal .best_brand h3 {float:left;height:17px;}
+.middle_renewal .best_brand .more_btn {float:right;margin-top:6px;}
+.middle_renewal .best_brand .brand_list {overflow:hidden;float:left;width:907px;height:429px;margin-top:9px;border-top:3px solid #222;border-bottom:1px solid #d9d9d9;}
+.middle_renewal .best_brand .brand_list .brand_content {float:left;width:226px;height:429px;border-left:1px solid #d9d9d9;}
+.middle_renewal .best_brand .brand_list .brand_content:first-child {border-left:none;}
+.middle_renewal .best_brand .brand_list .brand_content .img_cnt {position:relative;height:149px;}
+.middle_renewal .best_brand .brand_list .brand_content .img_cnt .best_btn {position:absolute;left:0;top:0;}
+.middle_renewal .best_brand .brand_content .b_list {width:215px;padding:12px 0 0 11px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/brand_bullet.gif') repeat-x 0 0;}
+.middle_renewal .best_brand .brand_content .b_list li {margin-top:10px;}
+.middle_renewal .best_brand .brand_content .b_list li:first-child {margin-top:0px;}
+.middle_renewal .best_brand .brand_content .b_list a {display:block;width:215px;height:80px;text-decoration:none;}
+.middle_renewal .best_brand .brand_content .b_list a img {float:left;margin-right:9px;}
+.middle_renewal .best_brand .brand_content .b_list .main_txt_cnt {float:left;margin-top:5px;cursor:pointer;}
+
+.middle_renewal .category_content {margin-top:40px;}
+.middle_renewal .category_content h3 {height:17px;}
+.middle_renewal .category_content .c_list {overflow:hidden;width:907px;height:190px;}
+.middle_renewal .category_content .c_list .img_cnt {float:left; width:196px;}
+.middle_renewal .category_content .c_list .list_cnt {overflow:hidden;float:left;width:711px;height:173px;padding-top:15px;}
+.middle_renewal .category_content .c_list .list_cnt li {overflow:hidden;float:left;width:120px;height:173px;margin-left:50px;}
+.middle_renewal .category_content .c_list .list_cnt li:first-child {margin-left:41px;}
+.middle_renewal .category_content .c_list .list_cnt li a {display:block;width:120px;height:80px;text-align:center;text-decoration:none;cursor:pointer;}
+.middle_renewal .category_content .c_list .list_cnt .main_txt_cnt {text-align:center;margin-top:3px;}
+.middle_renewal .category_content .c_list {margin-top:24px;}
+.middle_renewal .category_content .c_list.item_1 {margin-top:10px;}
+.middle_renewal .category_content .c_list.item_1 .list_cnt {border-top:2px solid #ff9999;}
+.middle_renewal .category_content .c_list.item_2 .list_cnt {border-top:2px solid #ffca67;}
+.middle_renewal .category_content .c_list.item_3 .list_cnt {border-top:2px solid #58b6ff;}
+.middle_renewal .category_content .c_list.item_4 .list_cnt {border-top:2px solid #66dadb;}
+.middle_renewal .buying_content {overflow:hidden;margin-top:39px;}
+.middle_renewal .buying_content .buying_top {height:17px;}
+.middle_renewal .buying_content h3 {float:left;height:17px;}
+.middle_renewal .buying_content .more_btn {float:right;margin-top:5px;}
+.middle_renewal .buying_content .banner_cnt {overflow:hidden;float:left;width:907px;height:332px;margin-top:8px;border-top:3px solid #000;border-bottom:1px solid #474747;}
+.middle_renewal .buying_content .banner_cnt .left_cnt {overflow:hidden;float:left;width:227px;height:332px;}
+.middle_renewal .buying_content .banner_cnt .left_cnt li {width:226px;height:110px;padding:0 1px 1px 0;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/buying_bg_01.gif') no-repeat 0 0;}
+.middle_renewal .buying_content .banner_cnt .center_cnt {overflow:hidden;float:left;width:443px;height:322px;padding:10px 0 0 10px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/buy_patten.gif') repeat 0 0;}
+.middle_renewal .buying_content .banner_cnt .center_cnt li {width:433px;height:155px;margin-bottom:2px;}
+.middle_renewal .buying_content .banner_cnt .right_cnt {overflow:hidden;float:left;width:227px;height:332px;}
+.middle_renewal .buying_content .banner_cnt .right_cnt li {width:226px;height:110px;padding:0 0 1px 1px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/buying_bg_02.gif') no-repeat 0 0;}
+.middle_renewal .recommend_content {overflow:hidden;margin-top:38px;}
+.middle_renewal .recommend_content .recommend_top {height:18px;}
+.middle_renewal .recommend_content h3 {float:left;height:17px;}
+.middle_renewal .recommend_content .more_btn {float:right;margin-top:8px;}
+.middle_renewal .recommend_content .banner_list {overflow:hidden;float:left;width:907px;height:300px;margin-top:8px;border-top:3px solid #000;}
+.middle_renewal .recommend_content .banner_list li {float:left;}
+
+#main_wrap.renewal #information {padding:0 0 0 12px;margin-top:55px;border-top:1px solid #ececec;background-color:#f9f9f9;}
+#main_wrap.renewal .information_content {width:907px;margin:0 auto;}
+#main_wrap.renewal .information_content .top_cnt {position:relative;height:51px;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt {position:absolute;left:0;top:21px;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .txt {float:left;margin-right:14px;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list {overflow:hidden;position:relative;float:left;width:396px;height:14px;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list .r_cnt {width:379px;height:14px;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list .r_cnt .n_txt {overflow:hidden;float:left;width:315px;height:14px;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list .r_cnt a {cursor:pointer;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list .r_cnt a:hover {text-decoration:underline;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list .r_cnt .data {float:left;width:64px;height:14px;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list .r_cnt li {float:left;overflow:hidden;height:14px;line-height:14px;font-size:11px;color:#727272;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list .u_btn {position:absolute;right:0;top:0;}
+#main_wrap.renewal .information_content .top_cnt .rolling_txt .list .d_btn {position:absolute;right:0;top:10px;}
+#main_wrap.renewal .information_content .top_cnt .sns_cnt {float:right;margin-top:19px;}
+#main_wrap.renewal .information_content .top_cnt .sns_cnt span {float:left;}
+#main_wrap.renewal .information_content .top_cnt .sns_cnt ul {float:left;}
+#main_wrap.renewal .information_content .top_cnt .sns_cnt ul li {float:left;margin-left:7px;}
+#main_wrap.renewal .information_content .top_cnt .sns_cnt ul li.icon_1 {margin-left:13px;}
+#main_wrap.renewal .information_content .top_cnt .sns_cnt ul li.icon_5 {margin-left:6px;}
+#main_wrap.renewal .information_content .top_cnt .sns_cnt ul li.icon_6 {margin-left:6px;}
+#main_wrap.renewal .information_content .top_cnt .sns_cnt ul li.icon_7 {margin-left:6px;}
+#main_wrap.renewal .information_content .site_cnt {height:223px;padding-top:22px;border-top:1px solid #e8e8e8;}
+#main_wrap.renewal .information_content .site_cnt .notice_txt {float:right;width:293px;height:183px;padding:12px 0 0 9px;border:1px solid #ddd;font-size:11px;color:#727272;}
+/*2013-10-07 font 추가*/
+#main_wrap.renewal .information_content .site_cnt .notice_txt .title {display:inline-block;height:14px;line-height:14px;font-size:14px;font-weight:bold;color:#252525;}
+#main_wrap.renewal .information_content .site_cnt .notice_txt .b_txt {font-weight:bold;}
+#main_wrap.renewal .information_content .site_cnt .notice_txt .r_txt {color:#e52142;}
+#main_wrap.renewal .information_content .site_cnt .notice_txt .txt_01 {margin-top:7px;line-height:14px;}
+#main_wrap.renewal .information_content .site_cnt .notice_txt .txt_02 {margin-top:8px;line-height:14px;}
+#main_wrap.renewal .information_content .site_cnt .notice_txt .txt_03 {margin-top:8px;line-height:14px;}
+#main_wrap.renewal .information_content .site_cnt .notice_txt .txt_04 {margin-top:8px;line-height:14px;}
+/*//2013-10-07 font 추가*/
+#main_wrap.renewal .information_content .site_cnt .site_list {float:left;width:603px;padding-top:6px;}
+#main_wrap.renewal .information_content .site_cnt .site_list .sitemap_1 {float:left;width:151px;height:190px;}
+#main_wrap.renewal .information_content .site_cnt .site_list .sitemap_2 {float:left;width:151px;height:190px;border-left:1px solid #e8e8e8;}
+#main_wrap.renewal .information_content .site_cnt .site_list .sitemap_3 {float:left;width:150px;height:190px;border-left:1px solid #e8e8e8;}
+#main_wrap.renewal .information_content .site_cnt .site_list .sitemap_4 {float:left;width:148px;height:190px;border-left:1px solid #e8e8e8;}
+#main_wrap.renewal .information_content .site_cnt .site_list .line_2 {margin-top:13px;}
+#main_wrap.renewal .information_content .site_cnt .site_list li {width:137px;height:17px;padding-left:14px;margin-bottom:1px;}
+#main_wrap.renewal .information_content .site_cnt .site_list .sitemap_2 li {padding-left:15px;}
+#main_wrap.renewal .information_content .site_cnt .site_list .sitemap_4 li {padding-left:16px;}
+#main_wrap.renewal .information_content .site_cnt .site_list li a {display:block;height:17px;line-height:17px;font-size:11px;color:#727272;}
+#main_wrap.renewal .information_content .site_cnt .site_list .title {font-weight:bold;color:#252525;font-size:12px;}
+
+#footer.common_renewal {padding:0;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/footer_bg_re.gif') repeat-x 0 0;}
+#footer.common_renewal .footer_content {position:relative;}
+#footer.common_renewal .footer_content .top_cnt {height:36px;}
+#footer.common_renewal .footer_content .top_cnt .link_txt {float:left;margin-top:12px;}
+#footer.common_renewal .footer_content .top_cnt .link_txt li {float:left;height:14px;margin-right:16px;}
+#footer.common_renewal .footer_content .top_cnt .link_txt li a {display:block;height:14px;line-height:14px;font-size:11px;color:#252525;}
+#footer.common_renewal .footer_content .bottom_cnt {position:relative;height:178px;}
+#footer.common_renewal .footer_content .bottom_cnt .logo {position:absolute;left:0;top:44px;}
+#footer.common_renewal .footer_content .bottom_cnt .address {float:none;margin-top:0;position:absolute;left:227px;top:22px;}
+/*2013-10-07 font 추가*/
+#footer.common_renewal .footer_content .bottom_cnt .address .t_txt {font-style:normal;font-size:11px;line-height:15px;color:#9c9c9c;}				
+#footer.common_renewal .footer_content .bottom_cnt .address .b_txt {margin-top:8px;font-style:normal;font-size:11px;line-height:15px;color:#9c9c9c;}
+#footer.common_renewal .footer_content .bottom_cnt .address .c_font {color:#666;}
+/*//2013-10-07 font 추가*/
+#footer.common_renewal .footer_content .top_cnt .link_txt li.familysite {position:absolute;top:8px;right:0;height:18px;margin:0;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/fnb_family_select_bg_up2.gif') no-repeat 97% 50% #fff;border:1px solid #dddddd;padding-top: 0;font-weight:bold;font-family:verdana;font-size:10px;color:#707070;}
+#footer.common_renewal .footer_content .top_cnt .link_txt li.familysite a {display:block;width:136px;height:18px;line-height:18px;padding:0 0 0 12px;font-weight:bold;font-family:verdana;font-size:10px;color:#666;}
+#footer.common_renewal #familyview {display:none;z-index:545;position:absolute;right:0;top:-219px;padding:8px 0 5px 0;background-color:#fff;width:148px;height:206px;border:1px solid #dddddd;}
+#footer.common_renewal #familyview a.f_close {display:block;width:124px;padding:0 5px 0 12px;color:#707070;margin-bottom:5px;font-size:11px;font-family:'Verdana';font-weight:bold;}
+#footer.common_renewal #familyview ul {width:140px;height:188px;overflow-y:scroll;scrollbar-face-color:#bab9b9;scrollbar-shadow-color:#fff;scrollbar-highlight-color:#fff;scrollbar-3dlight-color:#fff;scrollbar-darkshadow-color:#fff;		scrollbar-track-color:#fff;scrollbar-arrow-color:#fff;}
+#footer.common_renewal #familyview li {height:16px;padding:0;margin:0 0 1px 1px;}
+#footer.common_renewal #familyview li.twin a {letter-spacing:-2px;}
+#footer.common_renewal #familyview li a {font-weight:normal;text-decoration:none;display:block;font-size:11px;height:10px;padding:4px 0 2px 7px;color:#a2a2a2;line-height:16px;}
+#footer.common_renewal #familyview a.f_close {display:block;width:124px;padding:0 5px 0 12px;color:#707070;margin-bottom:5px;font-size:11px;font-family:'Verdana';font-weight:bold;}
+#footer.common_renewal #familyview a.f_close .family_close {position:absolute;top:13px;right:12px;}
+#footer.common_renewal #familyview li a:hover {background-color:#fff;color:#666;text-decoration:underline;}
+
+/* 2013-09-04 중문 메인 리뉴얼 끝 */
+
+/*2013-10-17 메인 푸터 오픈후 수정*/ /*2014-07-31 수정*/
+#main_wrap.renewal .information_content .site_cnt_img {overflow:hidden;padding:22px 0 0 0;border-top:1px solid #e8e8e8;}
+#main_wrap.renewal .information_content .site_cnt_img .site_list {float:left;}
+#main_wrap.renewal .information_content .site_cnt_img .site_list li {height:12px;padding-bottom:6px;}
+#main_wrap.renewal .information_content .site_cnt_img .site_list li.line_2 {padding-top:12px;}
+#main_wrap.renewal .information_content .site_cnt_img .sitemap_1 {float:left;width:136px;height:177px;margin-top:9px;padding-left:3px;}
+#main_wrap.renewal .information_content .site_cnt_img .sitemap_2 {float:left;width:136px;height:177px;margin-top:9px;padding-left:15px;border-left:1px solid #e8e8e8;}
+#main_wrap.renewal .information_content .site_cnt_img .sitemap_3 {float:left;width:136px;height:177px;margin-top:9px;padding-left:15px;border-left:1px solid #e8e8e8;}
+#main_wrap.renewal .information_content .site_cnt_img .sitemap_4 {float:left;width:130px;height:177px;margin-top:9px;padding-left:15px;border-left:1px solid #e8e8e8;}
+#main_wrap.renewal .information_content .site_cnt_img .notice_txt {float:right;width:301px;padding:12px 0 12px 11px;border:1px solid #dddddd;}
+#main_wrap.renewal .information_content .site_cnt_img .notice_txt_1 {float:right;width:263px;padding:0;margin-top:9px;}/*2014-07-15 추가*/
+#main_wrap.renewal .information_content .site_cnt_img .footer_banner_mark {float:right;overflow:hidden;width:315px;padding:0;margin-top:9px;}
+#main_wrap.renewal .information_content .site_cnt_img .footer_banner_mark li {float:left;}
+#main_wrap.renewal .information_content .site_cnt_img .footer_banner_mark li:first-child {padding-right:11px;}
+#footer.common_renewal .footer_content .bottom_cnt .address_txt {position:absolute;left:226px;top:25px;}
+/*//2013-10-17 메인 푸터 오픈후 수정*/ /*2014-07-31 수정*/
+
+/*2013-10-23 ss 배너 개선*/
+#quickbanner.renewal {position:fixed;width:93px;left:3000px;}
+#quickbanner.renewal .sky_banner_icon {margin-bottom:5px;}
+#quickbanner.renewal .nm_tpl_exchange {border:2px solid #e42141;}
+#quickbanner.renewal .btn_top {width:93px;background-image:none;}
+
+#quickbanner.renewal .quick_list {padding-top:0;border:1px solid #e8e8e8;background-color:#fff;}
+#quickbanner.renewal .quick_list li {border-bottom:1px solid #e8e8e8;background-color:#fff;vertical-align:top;}
+#quickbanner.renewal .quick_list li.last {border-bottom:none;border-top:1px solid #e8e8e8;background-color:#fff;}
+#quickbanner.renewal .quick_list li a {display:block;padding:0;*height:11px;}
+#quickbanner.renewal .quick_list li {padding:8px 0 7px 0;}			
+#quickbanner.renewal .quick_list li.today_new {margin:0;padding:0;}
+#quickbanner.renewal .quick_list li.today_new .t {height:11px;margin:0;padding:7px 0 5px 0;background-color:#f1f1f1;}
+#quickbanner.renewal .quick_list li.today_new .count {height:12px;margin-bottom:7px;padding-bottom:4px;background-color:#f1f1f1;color:#e42141;font-size:11px;line-height:12px;font-weight:bold;font-family:Tahoma;vertical-align:top;}
+#quickbanner.renewal .quick_list li.today_new .todayList {max-height:122px;margin:0;padding:0 0 0 0;background-color:#fff;}
+#quickbanner.renewal .quick_list li.today_new .todayList .noToday {padding:24px 0 22px 0;background-color:#f1f1f1;}
+#quickbanner.renewal .quick_list li.shoppinguide {border-bottom:none;border-bottom-width:0px;background-color:#fff;}			
+#quickbanner.renewal .quick_list li.today_new .todayList .thumb {display:inline-block;width:53px;height:53px;}			
+#quickbanner.renewal .quick_list li.today_new .todayList a {height:53px;margin-bottom:16px;}
+#quickbanner.renewal .quick_list li.today_new .todayList a .tooltip {right:18px;width:121px;height:48px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/tooltip_txt_bg.png') no-repeat left top}			
+#quickbanner.renewal .quick_list li.today_new .todayButton {position:relative;margin:-8px 13px 0 13px;padding-bottom:8px;z-index:10;*margin-top:8px;}
+#quickbanner.renewal .quick_list li.user_class {padding:7px 0 0 0;}
+#quickbanner.renewal .quick_list li.user_class .user {height:12px;font:bold 12px/12px Dotum;color:#000;}
+#quickbanner.renewal .quick_list li.user_class .user_icon {height:16px;margin:3px 0 2px 0;}			
+#quickbanner.renewal .quick_list li.user_class .user_point {height:34px;margin-top:10px;}
+#quickbanner.renewal .quick_list li.user_class .user_point .c_num {display:inline-block;margin-top:3px;font:bold 12px Tahoma;color:#e42141;}
+#quickbanner.renewal dl dt {padding-bottom:0;clear:both;}
+#quickbanner.renewal dl {padding-bottom:3px;}
+#quickbanner.renewal dl dd {height:14px;padding-left:12px;font-size:12px;}
+#quickbanner.renewal dl dd strong {font-family:Tahoma;}			
+#quickbanner.renewal .nm_tpl_exchange dl {height:37px;padding:5px 0 0 0;}
+#quickbanner.renewal .nm_tpl_exchange dl dd {padding:0;}
+
+#quickbanner.renewal .quick_list li.shoppinguide.notice_guide {padding:8px 0;border-bottom:1px solid #e8e8e8;backgroud-color:#f5f5f5;*height:26px;}
+#quickbanner.renewal .quick_list li.shoppinguide.notice_guide .txt_btn {position:relative;z-index:9999999;}
+#quickbanner.renewal .quick_list li.shoppinguide.notice_guide .notice_guide_pop {display:none;position:absolute;top:-17px;left:-467px;z-index:1100;padding:21px 27px 20px 25px;border:3px solid #938074;background:#fff;z-index:999999;}
+#quickbanner.renewal .quick_list li.shoppinguide.notice_guide .arrow {display:none;position:absolute;top:7px;right:90px;z-index:9999999;}
+#quickbanner.renewal .quick_list li.shoppinguide.notice_guide .notice_guide_pop .close_btn {position:absolute;top:9px;right:13px;}
+
+#quickbanner.renewal .quick_list .tmall_content {position:relative;padding:0;background-color:#f2ead6;text-align:center;}
+#quickbanner.renewal .quick_list .tmall_content .view_point .point {font-weight:bold;color:#e42141;}
+#quickbanner.renewal .quick_list .tmall_content .view_point a {display:inline-block;padding:0 5px 0 0;}
+#quickbanner.renewal .quick_list .tmall_content .before_point .top_txt {display:block;height:43px;padding:17px 0 0 0;}
+#quickbanner.renewal .quick_list .tmall_content .after_point .top_txt {display:block;height:28px;padding:12px 0 0 0;text-decoration:none;}
+#quickbanner.renewal .quick_list .tmall_content .after_point .top_txt .point {display:block;margin-top:1px;font-weight:bold;font-family:"Tahoma";color:#e42141;}
+#quickbanner.renewal .quick_list .tmall_content .after_point .view_point {display:block;padding:8px 0 7px 0;}
+
+#quickbanner.renewal .quick_list .user_point .point_txt {height:11px;}
+#quickbanner.renewal .quick_list .user_point .point_txt a {display:inline;text-decoration:none;}
+#quickbanner.renewal .quick_list .user_point .point_txt a.r_txt {position:relative;top:-1px;left:2px;}
+#quickbanner.renewal .quick_list .user_point .point_pop {position:absolute;left:-325px;top:303px;}
+
+/*말배너 추가*/
+.horse_quick_banner {position:fixed;left:10000px;bottom:0;width:289px;height:201px;background:url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/horse_banner_bg.png') no-repeat 0 bottom;z-index:100;}
+.horse_quick_banner .horse_cnt {position:absolute;left:38px;top:20px;}
+.horse_quick_banner .txt_cnt {position:absolute;left:177px;top:132px;}
+.horse_quick_banner .xbtn {position:absolute;left:258px;top:0;}
+
+/*하단 플로팅 배너 공통 추가*/
+.floting_quick_banner {position:fixed;left:10000px;bottom:0;width:220px;height:202px;z-index:100;}
+.floting_quick_banner .main_img_cnt {position:absolute;left:87px;top:20px;}/*2014-04-09 left:38px 에서 left:87px 으로 수정*/
+.floting_quick_banner .txt_cnt {position:absolute;left:177px;top:132px;}
+.floting_quick_banner .xbtn {position:absolute;left:258px;top:0;}
+
+/* 구글 번역(번체) 추가 */
+.header_content .unb li.translate,
+.header_content .unb li.korlink {margin-top:-2px;}
+#google_translate_element {margin-right:-8px;}
+#google_translate_element .goog-te-gadget-icon {width:13px; height:13px;}
+#google_translate_element .goog-te-gadget-simple {height:18px; padding:0; overflow:hidden; border:1px solid #E8E8E8;}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {border-color:#E8E8E8 !important; color:#000 !important; }
+#google_translate_element .goog-te-gadget-simple a {line-height:17px !important; color:#444444 !important;}
+
+/* 외국어 해더 추가 */
+.nm_main .unb li.infor.renewal a {position:relative;top:-4px; left:0;}
+.nm_main .unb li.infor.renewal .lang_menu a {top:0;}			
+.header_content .unb .infor.renewal ul {width:88px;top:18px;right:0;padding:8px 0 1px 0;border-color:#e52142;}
+.header_content .unb .infor.renewal ul li {width:88px;height:15px;padding-left:0;background:none;}
+.header_content .unb .infor.renewal ul li a {color:#303030;vertical-align:middle;}
+.header_content .unb .infor.renewal ul li.bnt_3 {margin-top:-2px !important;}
+.header_content .unb .infor.renewal ul li.bnt_4 {margin-top:0px !important;}
+.header_content .unb .infor.renewal ul li.bnt_1 a {display:block;padding-left:26px;}
+.header_content .unb .infor.renewal ul li.bnt_2 a {display:block;padding-left:27px;}
+.header_content .unb .infor.renewal ul li.bnt_3 a {display:block;padding-left:27px;}
+.header_content .unb .infor.renewal ul li.bnt_4 a {display:block;padding-left:24px;}
+.header_content .unb li.infor.renewal a {top:-3px;left:0;}				
+#header.common_renewal .header_content .unb .infor.renewal li {margin:0;}
+
+/* 셀렉트 박스 플러그인 추가 */
+.selComp{ position:relative;line-height:19px;width:100px;height:16px;padding:2px;margin:-5px 0 3px 10px;border:1px solid #D2D2D2;background:#ffffff;}
+.sortSelect .selComp {*margin-top:0;*top:-3px;}
+.selComp a.btn_sel{display:block;*zoom:1; font-size:11px}
+.selComp a.btn_sel:after{content:"";display:block;clear:both}
+.selComp span.cnt{overflow:hidden;width:auto;height:16px}
+.selComp span.arrow{float:right;display:block;text-indent:-9999px;width:16px;height:19px; background:white url('http://chimg.lottedfs.com/static-root/cn_cdn/images/common/renewal/select_history.gif') no-repeat right center}
+.selComp span.arrow{position:absolute; top:1px; right:1px;}
+.selComp .sel_list_wrap{display:none;overflow-x:hidden;overflow-y:scroll;position:absolute;top:20px;left:-1px;width:100%;max-height:122px;height:expression(this.scrollHeight > 120 ? '120' :'auto' );background:white;border:1px solid #D2D2D2}
+.selComp .sel_list_wrap .sel_list li{width:100%;padding:2px 2px 0 2px}
+.selComp .sel_list_wrap .sel_list li.on{background-color:#eee}
+.selComp .sel_list_wrap .sel_list li a{display:block;overflow:hidden;height:16px}
+.selComp .sel_list_wrap .sel_list li a:hover, .selComp .sel_list_wrap .sel_list li a:focus{background-color:#eee; text-decoration:underline}
+
+.selComp_W80 { width:80px !important; }
+.selComp_W90 { width:90px !important; }
+.selComp_W125 { width:125px !important; }
+.selComp_W150 { width:150px !important; }
+.selComp_W200 { width:200px !important; }
+.selComp_W450 { width:450px !important; }
+
+#wa_event_wrap .Ebottom {position:relative;width:100%;height:24px;overflow:hidden;background-color:#f0f0f0; border-top:1px solid #e2e2e2}
+#wa_event_wrap .Ebottom ul {position:absolute;right:0;top:0;}
+#wa_event_wrap .Ebottom ul li {float:left;height:16px; padding:0; border-left:1px solid #cacaca; margin-top:4px;}
+#wa_event_wrap .Ebottom ul li a {display:block;height:15px;padding:2px 15px 0 13px;}
+
+
+.screen_out {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px;}		
+
+/* input + label 공통*/
+.common_label_text {position:relative;}
+.common_label_text label {display:none;position:absolute;left:20px;top:2px;font:normal 14px/40px "Microsoft YaHei", sans-serif;}
+.common_label_text input {padding-left:19px;font:normal 14px/40px "Microsoft YaHei", sans-serif;border:1px solid #c7c7c7;}
+
+/* checkbox 공통 디자인 */
+.common_checkbox {display:inline-block;padding-left:20px;line-height:16px;}
+.common_checkbox .btn_comm {position:absolute;left:0;top:0;width:15px;height:15px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/d_check_box.gif") no-repeat 0 0;}
+.common_checkbox.on .btn_comm {position:absolute;left:0;top:0;width:15px;height:15px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/d_check_box.gif") no-repeat -15px 0;}
+
+/* radio 공통 디자인 */
+.common_radio_input {float:left;position:relative;margin-right:16px;padding-left:23px;line-height:25px;cursor:pointer;}
+.common_radio_input .btn_comm {display:block;position:absolute;top:5px;left:3px;width:15px;height:15px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/d_raido.gif") no-repeat 0 0;}
+.common_radio_input.on .btn_comm {background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/d_raido.gif") no-repeat -15px 0;}
+
+/* select box 공통 디자인 */
+.selbox_comm {position:relative;z-index:100;width:138px;height:28px;border:1px solid #c7c7c7;cursor:pointer}
+.selbox_comm.open {z-index:200}
+.selbox_comm .ico_comm {display:block;height:100%;margin-right:8px;padding-right:14px;font-size:12px;line-height:28px;color:#666;background-color:#fff;text-indent:7px;text-decoration:none;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/pop/select_bullet.gif") no-repeat right 9px;}
+.selbox_comm .list_option {display:none;overflow:hidden;overflow-y:auto;position:absolute;left:-1px;width:100%;max-height:98px;border:1px solid #c7c7c7;background-color:#fff;text-indent:7px}
+.selbox_comm .list_option a {display:block;height:25px;line-height:25px;white-space:nowrap}
+.selbox_comm.open .list_option {display:block}
+
+/* 로그인 웹 */
+.login_form_wrap {margin-top:55px;}
+.login_form_wrap .top_txt {display:block;padding-bottom:14px;border-bottom:2px solid #363847;text-align:center;}
+.login_form_wrap .login_content {padding:54px 126px 0 127px;}
+.login_form_wrap .login_form {position:relative;}
+.login_form_wrap .login_form .t_txt {position:relative;padding:6px 0 17px 0;border-bottom:1px solid #333;}
+.login_form_wrap .login_form .t_txt .icon {position:absolute;right:0;top:0;}				
+.login_form_wrap .center_input_content {position:relative;overflow:hidden;padding:20px 20px 12px 20px;border-bottom:1px solid #ccc;}
+.login_form_wrap .center_input_content .input_area {overflow:hidden;}
+.login_form_wrap .center_input_content .input_area .list_ul {float:left;width:460px;height:98px;}
+.login_form_wrap .center_input_content .input_area .id_input , .login_form_wrap .center_input_content .input_area .psw_input {width:439px;height:40px;}	
+.login_form_wrap .center_input_content .input_area .list_ul .id_list {margin-bottom:10px;}				
+.login_form_wrap .center_input_content .input_area .send_btn {float:right;}
+.login_form_wrap .center_input_content .input_area .error_txt {position:absolute;left:20px;top:20px;width:440px;height:70px;padding:28px 0 0 20px;background-color:#eee;}				
+.login_form_wrap .login_content .join_area {clear:both;overflow:hidden;position:relative;margin-top:10px;padding-bottom:15px;border-bottom:1px solid #eee;}
+.login_form_wrap .login_content .join_area .common_checkbox {position:absolute;left:0;top:0;}
+.login_form_wrap .login_content .join_area .btn_list {float:right;}
+.login_form_wrap .login_content .join_area .btn_list li {float:left;margin-left:5px;}
+.login_form_wrap .login_content .join_area .b_txt {float:left;width:100%;margin-top:16px;font-size:11px;line-height:18px;color:#767676;}
+.login_form_wrap .bottom_content {margin-top:60px;}
+.login_form_wrap .bottom_content .d_txt {margin-top:17px;}
+.login_form_wrap .login_content .point_txt {margin-top:20px;}
+.login_form_wrap .login_content .point_txt .list {margin-top:14px;}
+.login_form_wrap .login_content .point_txt .list li {padding-left:9px;margin-bottom:4px;line-height:16px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/mlogin_list_blute.gif") no-repeat 0 6px;}
+.login_form_wrap .notice_content {margin-top:60px;padding-bottom:20px;}
+.login_form_wrap .notice_content .b_area {padding:19px 19px 12px 19px;background-color:#eee;}
+.login_form_wrap .notice_content .t_txt {font-weight:bold;color:#333;}
+.login_form_wrap .notice_content .list {margin-top:4px;}
+.login_form_wrap .notice_content .list li {padding-left:11px;margin-bottom:4px;font-size:11px;line-height:16px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/mlogin_list_blute.gif") no-repeat 1px 6px;}
+
+/* 로그인 팝업 */
+#login_pop_wrap {position:relative;width:550px;}
+#login_pop_wrap .login_tit {padding:12px 0 10px 19px;border-bottom:2px solid #e61c38}
+#login_pop_wrap .login_tit .tit_lpoint {position:absolute;right:20px;top:18px;}
+#login_pop_wrap .login_pop_content .top_text_cnt {padding:28px 20px 0 20px}
+#login_pop_wrap .login_pop_content .top_text_cnt .tit_login{text-align:center}
+#login_pop_wrap .login_pop_content .login_tab {position:relative;padding:30px 25px 20px 25px;border-bottom:1px solid #ccc;}
+#login_pop_wrap .login_pop_content .login_tab .menu1{position:absolute;left:0;top:0}
+#login_pop_wrap .login_pop_content .login_tab .menu2{position:absolute;left:152px;top:0}
+#login_pop_wrap .login_pop_content .login_tab .mem_cont {position:relative;}
+#login_pop_wrap .login_pop_content .login_tab .mem_cont .top_text {position:relative;width:460px;height:98px;}
+#login_pop_wrap .login_pop_content .login_tab .error_txt {position:absolute;left:0;top:0;width:429px;height:69px;padding:29px 0 0 31px;background-color:#eee;}
+#login_pop_wrap .login_pop_content .tab_list {position:relative;height:40px;margin-top:29px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/pop/tab_line.gif") repeat-x 0 0;}
+#login_pop_wrap .login_pop_content .tab_list li {float:left;}
+#login_pop_wrap .login_pop_content .login_tab .id_input , #login_pop_wrap .login_pop_content .login_tab .psw_input {width:439px;height:40px;}
+#login_pop_wrap .login_pop_content .login_tab .list_ul li:first-child {margin-bottom:10px;}
+#login_pop_wrap .login_pop_content .login_tab .mem_cont .check_area {position:relative;margin-top:10px;}
+#login_pop_wrap .login_pop_content .login_tab .mem_cont .btn_login {display:block;margin-top:20px;}
+#login_pop_wrap .login_pop_content .login_tab .mem_cont .login_srch {margin-top:25px;text-align:center;}
+#login_pop_wrap .login_pop_content .login_tab .mem_cont .login_srch .t_txt {font:bold 14px/20px "Microsoft YaHei", sans-serif;color:#333;}
+#login_pop_wrap .login_pop_content .login_tab .mem_cont .login_srch .srch_btn {margin-top:10px;}
+#login_pop_wrap .login_pop_content .login_tab .mem_cont .login_srch .srch_btn li {display:inline-block;vertical-align:top;zoom:1;*display:inline;*margin:0 2px;}
+#login_pop_wrap .login_pop_content .nonmem_cont {position:relative;}
+#login_pop_wrap .login_pop_content .nonmem_cont .txt {margin-top:15px;padding-left:11px;background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/member/pop/bul.gif") no-repeat 0 5px;color:#767676;}
+#login_pop_wrap .login_pop_content .nonmem_cont .btn_norder {display:block;margin-top:25px;}
+#login_pop_wrap .login_pop_content .nonmem_cont .btn_norderlst {display:block;margin-top:8px;}
+#login_pop_wrap .login_pop_content .login_bmcont {position:relative;padding:20px;}
+#login_pop_wrap .login_pop_content .login_bmcont .c_txt {overflow:hidden;margin-top:17px;}
+#login_pop_wrap .login_pop_content .login_bmcont .c_txt .txt_lpoint {float:left;color:#767676;}
+#login_pop_wrap .login_pop_content .login_bmcont .c_txt .btn_joinus {float:right;margin-top:2px;} 
+
+/* 비회원 주문 내역 팝업 */
+#login_pop_wrap .norder_lst{margin:0 20px;text-align:center}
+#login_pop_wrap .norder_lst h4 {padding:28px 0 21px 0;text-align:center;border-bottom:1px solid #363847}
+#login_pop_wrap .norder_lst .ntxt{margin:28px 0 20px 0;font-size:14px;color:#767676;letter-spacing:-1px}
+#login_pop_wrap .norder_lst .niput_cont{padding:0 25px;}
+#login_pop_wrap .norder_lst .niput_cont .t_nlogin{display:block;width:460px;height:44px;padding:0;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/member/pop/bg_input.jpg) no-repeat;border:none}
+#login_pop_wrap .norder_lst #nlogin_opw{margin:10px 0}
+#login_pop_wrap .btn_nlogin{display:block;margin-top:30px;padding-bottom:20px;border-bottom:1px solid #ccc}
+#login_pop_wrap .login_pop_content .niput_cont .order_input , #login_pop_wrap .login_pop_content .niput_cont .psw_input {width:439px;height:40px;}
+#login_pop_wrap .login_pop_content .niput_cont .list_ul li:first-child {margin-bottom:10px;}
+
+/* 비회원 주문 하기 팝업 */
+#login_pop_wrap .nonorder_lst{margin:0 20px}
+#login_pop_wrap .nonorder_lst .txt{margin:16px 0 0 0;padding-left:10px;color:#767676;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/member/pop/bul.gif) no-repeat 0 5px}
+#login_pop_wrap .nonorder_lst .txt2{margin:10px 0 16px 0}
+#login_pop_wrap .nonorder_lst h4{padding:28px 0 21px 0;text-align:center;border-bottom:1px solid #363847}
+#login_pop_wrap .nonorder_lst .norder_table {width:100%;border-top:1px solid #ccc;border-bottom:1px solid #ccc}
+#login_pop_wrap .nonorder_lst .norder_table th {width:153px;padding:0 0 0 11px;background:#eee;text-align:left;border-bottom:1px solid #ccc}
+#login_pop_wrap .nonorder_lst .norder_table td {padding:12px 0 12px 11px;border-bottom:1px solid #ccc}
+#login_pop_wrap .nonorder_lst .norder_table td .pw_txt {font-size:11px;line-height:13px;color:#767676}
+#login_pop_wrap .nonorder_lst .btn_cont {margin-top:30px;text-align:center;}
+#login_pop_wrap .nonorder_lst .btn_cont a:first-child {margin-right:4px;}
+#login_pop_wrap .norder_table .last_name , #login_pop_wrap .norder_table .first_name , #login_pop_wrap .norder_table .china_name {width:137px;height:21px;padding-left:5px;}
+#login_pop_wrap .norder_table .chian_text_list {margin-top:5px;}
+#login_pop_wrap .norder_table .list_ul li {position:relative;float:left;margin-right:8px;}
+#login_pop_wrap .norder_table .list_ul label {position:absolute;left:6px;top:2px;font:normal 12px/22px "Microsoft YaHei", sans-serif;color:#999;}
+#login_pop_wrap .norder_table .list_ul input {font:normal 12px/22px "Microsoft YaHei", sans-serif;color:#666;}
+#login_pop_wrap .selbox_comm.s_num_1 {float:left;width:68px;height:23px;margin-right:8px;}
+#login_pop_wrap .selbox_comm.s_num_1 .ico_comm {line-height:23px;color:#999;}
+#login_pop_wrap .selbox_comm.s_num_2 {float:left;width:68px;height:23px;margin-right:8px;}
+#login_pop_wrap .selbox_comm.s_num_2 .ico_comm {line-height:23px;color:#999;}
+#login_pop_wrap .selbox_comm.s_num_3 {float:left;width:68px;height:23px;margin-right:8px;}
+#login_pop_wrap .selbox_comm.s_num_3 .ico_comm {line-height:23px;color:#999;}
+#login_pop_wrap .selbox_comm.s_num_4 {float:left;width:78px;height:23px;}
+#login_pop_wrap .selbox_comm.s_num_4 .ico_comm {line-height:23px;color:#999;}
+#login_pop_wrap .selbox_comm.coun_select {width:205px;height:23px;}
+#login_pop_wrap .selbox_comm.coun_select .ico_comm {line-height:23px;color:#999;}
+#login_pop_wrap .norder_table .common_label_text.psw_list {float:none;display:block;}
+#login_pop_wrap .norder_table .common_label_text.psw_list input {width:199px;height:21px;padding-left:5px;}
+#login_pop_wrap .norder_table .pw_txt {margin-top:5px;}
+
+/* 2015.07.29 푸터개선 */
+#footer.new {background:#f5f5f5; border-top:2px solid #ececec;}
+#footer.new .footer_content_top {background:#fff; padding:45px 0 10px 0; position:relative;}
+#footer.new .footer_content_top .link_txt {width:907px; margin:0 auto; height:13px;}
+#footer.new .footer_content_top .link_txt li {float:left; margin-right:40px;}
+#footer.new .footer_content_top .link_txt li:first-child {margin-left:7px;}
+#footer.new .footer_content_top .link_txt li a {display:block;}
+
+#footer.new .footer_content .top_cnt {height:auto;}
+#footer.new .footer_content .top_cnt .link_txt {float:right; margin:0;}
+#footer.new .footer_content .top_cnt .link_txt li.familysite {top:22px; width:160px; height:25px; background-color:none; background-image:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/footer_lnb_off.gif); border:none;}
+#footer.new .footer_content .top_cnt .link_txt li.familysite a {width:160px; height:25px; padding:0; text-indent:-999em;}
+#footer.new #familyview {top:-199px; z-index:10; width:157px; border-color:#999;}
+#footer.new #familyview a.f_close {padding-left:8px;}
+#footer.new #familyview ul {width:147px;}
+#footer.new #familyview li a {color:#666;}
+
+#footer.new .footer_content .bottom_cnt {padding-top:22px; padding-bottom:20px; height:auto;}
+#footer.new .footer_content .bottom_cnt .logo {display:block; margin-bottom:12px; position:relative; top:0; left:0;}
+#footer.new .footer_content .bottom_cnt .txt_info {line-height:18px; margin-top:7px; font-size:11px;}
+#footer.new .footer_content .bottom_cnt .d_notice {font-size:11px; color:#333; line-height:18px; margin:9px 0 23px; font-size:11px;}
+#footer.new .footer_content .bottom_cnt .link {display:inline-block; height:13px; padding:0 5px 0 6px; line-height:13px; border:1px solid #999; font-size:11px; text-decoration:none; color:#858585;}
+#footer.new .footer_content .bottom_cnt .link2 {text-decoration:underline;}
+#footer.new .footer_content .bottom_cnt .txt_copy {font-size:10px;}
+
+#footer.new .footer_content .bottom_cnt .content_layer {display:none; position:absolute; left:275px; top:-62px; z-index:2; width:545px; padding:18px 10px 14px 16px; border:3px solid #938074; background:#fff;}
+#footer.new .footer_content .bottom_cnt .txt_cnt {padding:0 0 0 49px; color:#666;}
+#footer.new .footer_content .bottom_cnt .txt_cnt p {margin-top:7px; line-height:18px; color:#666;}
+#footer.new .footer_content .bottom_cnt .txt_cnt p strong {display:inline-block; text-indent:-10px;}
+#footer.new .footer_content .bottom_cnt .txt_cnt p.txt2 {margin-left:105px;}
+#footer.new .footer_content .bottom_cnt .txt_cnt p.txt2 strong {text-indent:0; margin-left:-115px;} 
+#footer.new .footer_content .bottom_cnt .txt_cnt p.txt3 {margin-left:58px;}
+#footer.new .footer_content .bottom_cnt .txt_cnt p.txt3 strong {text-indent:0; margin-left:-68px;}
+#footer.new .footer_content .bottom_cnt .close_btn {position:absolute; right:10px; top:12px;}
+
+/* 브라우저 접속장애 팝업 */
+.layer_pop_browser {position:relative;width:100%;z-index:100000}
+.layer_pop_browser .brow_bg {display:inline-block;position:absolute;width:100%;height:4350px;margin-top:-60px;background:#333;opacity:0.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50);z-index:100001}
+.layer_pop_browser .brow_cont {position:absolute;left:50%;margin-top:391px;margin-left:-235px;z-index:100010}
+
+/* 오류페이지 개선 */
+#re_error {text-align:center; background:url("http://chimg.lottedfs.com/static-root/cn_cdn/images/error/re_bg.gif") no-repeat center top; margin:90px auto 60px;}
+#re_error .txt {padding-top:170px;}
+#re_error .btn {margin:40px auto 50px;}
+#re_error .btn a {margin:0 5px;}
+#re_error .box {border:1px solid #d7d7d7; width:630px; padding:25px 0; margin:0 auto;}
+
+/* 2016-03-10 중문 메인 리뉴얼 시작 */
+#quickbanner.renewal.v_2 {width:90px;}
+#main_wrap.renewal.v_2 {overflow:hidden;min-width:919px;background:none;}
+#main_wrap.renewal.v_2 #dablewidget_3xXAmPXG {height:auto;}
+#quickbanner.renewal.v_2 .sky_banner_icon {margin-bottom:7px;}
+#quickbanner.renewal.v_2 .order_time {padding:8px 0;border:1px solid #d5d5d5;border-bottom:none;background:#fff;text-align:center;}
+#quickbanner.renewal.v_2 .order_time a {display:block;}
+#quickbanner.renewal.v_2 dl.nm_exchange {padding:9px 0 6px 0;border-left:1px solid #d5d5d5;border-right:1px solid #d5d5d5;background:#ebebeb;}
+#quickbanner.renewal.v_2 dl.nm_exchange dt {text-align:center;color:#666;}
+#quickbanner.renewal.v_2 dl.nm_exchange dd {padding-left:9px;background:#ebebeb;color:#666;}
+#quickbanner.renewal.v_2 dl.nm_exchange dd.txt_1 {margin-top:3px;}
+#quickbanner.renewal.v_2 .nm_tpl_exchange {padding-bottom:3px;border:none;border-left:1px solid #d5d5d5;border-right:1px solid #d5d5d5;background:#ebebeb;}
+#quickbanner.renewal.v_2 .nm_tpl_exchange > p {width:84px;margin:0 auto;background:#fff;}
+#quickbanner.renewal.v_2 .nm_tpl_exchange dl {width:78px;margin-top:0;padding:6px 0 1px 6px;}
+#quickbanner.renewal.v_2 .nm_tpl_exchange dd input {width:50px;height:14px;margin-left:5px;font-size:11px;color:#999;}
+#quickbanner.renewal.v_2 .nm_tpl_exchange dd span {width:59px;font-size:11px;color:#4c4c4c;}
+#quickbanner.renewal.v_2 .nm_tpl_exchange dl dd {height:18px;}
+#quickbanner.renewal.v_2 .quick_list {border:1px solid #d5d5d5;border-top:none;}
+#quickbanner.renewal.v_2 .quick_list li {width:74px;padding:8px 0 8px 0;border-bottom:1px solid #d5d5d5;}
+#quickbanner.renewal.v_2 .quick_list .tmall_content {background:none;}
+#quickbanner.renewal.v_2 .quick_list .tmall_content .before_point .top_txt {height:auto;padding:0;}
+#quickbanner.renewal.v_2 .quick_list li.shoppinguide {border-bottom:none;}
+#quickbanner.renewal.v_2 .quick_list li.shoppinguide.notice_guide {border-bottom:1px solid #d5d5d5;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner {width:88px;padding:8px 0 6px 0;border-top:1px solid #d5d5d5;border-bottom:none;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner.today_goods {padding-top:10px;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner .top_txt > span {display:block;text-align:center;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner .count {display:block;font-size:12px;font-weight:bold;color:#da2a1c;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner .banner_content {overflow:hidden;position:relative;height:80px;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner .banner_content ul {margin-top:4px;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner .banner_content li {display:none;width:60px;height:60px;margin:0 auto;padding:0;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner .banner_content li.on {display:block;}		
+#quickbanner.renewal.v_2 .quick_list .rss_banner .banner_content li img {width:60px;height:60px;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner .banner_content .left_btn {position:absolute;left:8px;top:45px;}
+#quickbanner.renewal.v_2 .quick_list .rss_banner .banner_content .right_btn {position:absolute;right:8px;top:45px;}
+#quickbanner.renewal.v_2 .quick_list .tmall_content .after_point .top_txt {padding:0;}
+#quickbanner.renewal.v_2 .quick_list .tmall_content .after_point .view_point {padding-bottom:0;}
+
+#middle.v_2 .goods_detail {display:block;position:relative;width:150px;height:123px;padding:172px 5px 0 5px;text-decoration:none;}
+#middle.v_2 .goods_detail .img {position:absolute;left:0;top:0;width:160px;height:160px;}
+#middle.v_2 .goods_detail > span {display:block;text-align:left;}
+#middle.v_2 .goods_detail .txt_h {overflow:hidden;height:19px;margin-top:0px;font-size:12px;line-height:18px;letter-spacing:-0.5px;color:#1a1a1a;word-break:break-all;}
+#middle.v_2 .goods_detail .txt_d {overflow:hidden;height:32px;font-size:12px;line-height:16px;letter-spacing:-0.5px;color:#999;break-all;}
+#middle.v_2 .goods_detail .price {margin-top:2px;}
+#middle.v_2 .goods_detail .p_1 {font-size:14px;font-weight:bold;line-height:20px;color:#da291c;}
+#middle.v_2 .goods_detail .p_2 {position:relative;top:0px;font-size:12px;line-height:17px;color:#999;}
+
+#middle.v_2 {position:static;width:907px;padding-left:12px;margin-top:-16px;padding-bottom:0;}
+#middle.v_2 .title_h2 {position:relative;height:30px;padding-left:4px;}
+#middle.v_2 .title_h2 span {display:inline-block;line-height:28px;font-size:20px;font-weight:normal;color:#1a1a1a;}
+#middle.v_2 .title_h2 .more_btn {display:block;position:absolute;right:5px;bottom:5px;width:33px;height:13px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_more_btn.png) no-repeat 0 0;text-indent:-9999px;}
+#middle.v_2 .item_info .ico_comm {display:inline-block;margin-left:4px;*display:block;*float:none;}
+#middle.v_2 .item_info .ico_comm:first-child {margin-left:0;}
+#middle.v_2 .main_banner_content {height:414px;}
+#middle.v_2 .main_banner_content .banner_area {overflow:hidden;position:absolute;width:100%;left:0;right:0;height:414px;}
+#middle.v_2 .main_banner_content .banner_area .inner_box {position:relative;width:100%;margin:0 auto;height:414px;}
+#middle.v_2 .main_banner_content .banner_area .banner_list li {display:none;}
+#middle.v_2 .main_banner_content .banner_area .banner_list li.on {display:block;}
+#middle.v_2 .main_banner_content .banner_area .banner_list li a {display:block;width:907px;margin:0 auto;}
+#middle.v_2 .main_banner_content .banner_area .banner_list li a img {margin-left:-340px;}
+#middle.v_2 .main_banner_content .indicator_wrap {position:absolute;left:50%;top:0;width:907px;margin-left:-448px;}
+#middle.v_2 .main_banner_content .indicator_wrap .indicator_content {position:absolute;left:50%;top:368px;height:24px;margin-left:5px;padding-left:11px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_topicon_lbg.png) no-repeat 0 0;}
+#middle.v_2 .main_banner_content .indicator_wrap .indicator_content .icon_cnt {height:24px;padding:0 11px 0 0;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_topicon_rbg.png) no-repeat right 0;}
+#middle.v_2 .main_banner_content .indicator_wrap .indicator_content .icon_cnt .btn {height:16px;padding:8px 4px 0 0;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_topicon_cbg.png) repeat-x 0 0;}
+#middle.v_2 .main_banner_content .indicator_wrap .indicator_content .icon_cnt .btn a {float:left;width:8px;height:8px;margin-left:7px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_topicon_bullet.png) no-repeat -18px 0;}
+#middle.v_2 .main_banner_content .indicator_wrap .indicator_content .icon_cnt .btn a:first-child {margin-left:5px;}
+#middle.v_2 .main_banner_content .indicator_wrap .indicator_content .icon_cnt .btn a.on {width:18px;background-position:0 0;}
+#middle.v_2 .event_banner_content {position:relative;width:907px;height:600px;margin-top:50px;background:#f5f5f5;}
+#middle.v_2 .event_banner_content .banner_area_1 {overflow:hidden;position:absolute;left:0;top:0;width:387px;height:390px;}
+#middle.v_2 .event_banner_content .banner_area_1 li {display:none;}
+#middle.v_2 .event_banner_content .banner_area_1 li.on {display:block;}
+#middle.v_2 .event_banner_content .banner_area_2 li {position:absolute;width:248px;height:178px;border:1px solid #e6e6e6;}
+#middle.v_2 .event_banner_content .banner_area_2 li.n_1 {left:387px;top:10px;}
+#middle.v_2 .event_banner_content .banner_area_2 li.n_2 {left:647px;top:10px;}
+#middle.v_2 .event_banner_content .banner_area_2 li.n_3 {left:387px;top:200px;}
+#middle.v_2 .event_banner_content .banner_area_2 li.n_4 {left:647px;top:200px;}
+#middle.v_2 .event_banner_content .banner_area_2 li img {width:248px;height:178px;}
+#middle.v_2 .event_banner_content .banner_area_3 {position:absolute;left:10px;top:390px;border:1px solid #e6e6e6;}
+#middle.v_2 .event_banner_content .banner_area_4 {position:absolute;left:387px;top:390px;border:1px solid #e6e6e6;}
+#middle.v_2 .event_banner_content .banner_area_4 li {display:none;}
+#middle.v_2 .event_banner_content .banner_area_4 li.on {display:block;}
+#middle.v_2 .event_banner_content .indicator {overflow:hidden;position:absolute;right:0;top:0;height:6px;}
+#middle.v_2 .event_banner_content .indicator .icon {float:right;margin-right:0px;}
+#middle.v_2 .event_banner_content .indicator .icon a {display:block;float:left;width:6px;height:6px;margin-left:3px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/banner_indi_icon.png) no-repeat -6px 0;}
+#middle.v_2 .event_banner_content .indicator .icon a.on {background-position:0 0;}
+#middle.v_2 .event_banner_content .banner_area_1 .indicator {top:20px;}
+#middle.v_2 .event_banner_content .banner_area_1 .indicator .icon {margin-right:20px;}
+#middle.v_2 .event_banner_content .banner_area_4 .indicator {top:9px;}
+#middle.v_2 .event_banner_content .banner_area_4 .indicator .icon {margin-right:9px;}
+#middle.v_2 .guerilla_banner_content {position:relative;margin-top:50px;}
+#middle.v_2 .guerilla_banner_content .after {position:relative;}
+#middle.v_2 .guerilla_banner_content .banner_1 {position:absolute;left:545px;top:10px;}
+#middle.v_2 .guerilla_banner_content .banner_2 {position:absolute;left:680px;top:10px;}
+#middle.v_2 .box_timesale_banner {position:relative;margin-top:50px;}
+#middle.v_2 .box_timesale_banner a {text-decoration:none;}
+#middle.v_2 .box_timesale_banner .sale_txt {position:absolute;left:0;top:0;width:32px;height:45px;padding:7px 17px 0 0;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/banner_sale_flag.png) no-repeat 0 0;font-size:18px;font-family:Verdana, sans-serif;font-weight:bold;color:#fff;}
+#middle.v_2 .box_timesale_banner .top_content {overflow:hidden;height:270px;}
+#middle.v_2 .box_timesale_banner .top_content .right_area {float:right;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail {width:163px;height:210px;padding:60px 20px 0 306px;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail > span {text-align:left;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail > span.sale_txt {text-align:right;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail .img {left:16px;width:270px;height:270px;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail .txt_h {height:30px;margin-top:0;font-size:20px;line-height:30px;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail .txt_d {height:40px;margin-top:5px;font-size:14px;line-height:18px;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail .txt_t {margin-top:21px;font-size:14px;letter-spacing:-0.5px;color:#da291c;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail .price {margin-top:11px;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail .p_1 {font-size:22px;}
+#middle.v_2 .box_timesale_banner .top_content .right_area .goods_detail .p_2 {left:3px;top:0;font-size:14px;}
+#middle.v_2 .box_timesale_banner .top_content .left_area {float:left;width:379px;height:245px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_timesale_bg.jpg) no-repeat 0 0;}
+#middle.v_2 .box_timesale_banner .list_banner_content {overflow:hidden;position:relative;height:140px;margin-top:30px;padding:0 25px;}
+#middle.v_2 .box_timesale_banner .list_banner_content .banner_list {display:none;overflow:hidden;width:858px;height:140px;}
+#middle.v_2 .box_timesale_banner .list_banner_content .banner_list.on {display:block;}
+#middle.v_2 .box_timesale_banner .list_banner_content .banner_list li {float:left;margin-left:12px;}
+#middle.v_2 .box_timesale_banner .list_banner_content .banner_list li:first-child {margin-left:0;}
+#middle.v_2 .box_timesale_banner .list_banner_content .banner_list .goods_detail {width:138px;height:115px;padding:25px 0 0 140px;}
+#middle.v_2 .box_timesale_banner .list_banner_content .banner_list .goods_detail > span {text-align:left;}
+#middle.v_2 .box_timesale_banner .list_banner_content .banner_list .goods_detail > span.sale_txt {text-align:right;}
+#middle.v_2 .box_timesale_banner .list_banner_content .goods_detail .txt_h {margin-top:0;}
+#middle.v_2 .box_timesale_banner .list_banner_content .goods_detail .txt_d {margin-top:1px;font-size:12px;letter-spacing:0;}
+#middle.v_2 .box_timesale_banner .list_banner_content .goods_detail .price {margin-top:15px;}
+#middle.v_2 .box_timesale_banner .list_banner_content .goods_detail .p_1 {font-size:18px;}
+#middle.v_2 .box_timesale_banner .list_banner_content .goods_detail .p_2 {left:2px;top:0px;font-size:12px;color:#999;}
+#middle.v_2 .box_timesale_banner .list_banner_content .banner_list .goods_detail .img {width:140px;height:140px;}
+#middle.v_2 .box_timesale_banner .left_btn {position:absolute;left:0;top:45px;width:25px;height:50px;}
+#middle.v_2 .box_timesale_banner .left_btn span {display:block;width:10px;height:18px;margin-top:16px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_new_lbtn.png) no-repeat 0 0;text-indent:-9999px;}
+#middle.v_2 .box_timesale_banner .right_btn {position:absolute;right:0;top:45px;width:25px;height:50px;}
+#middle.v_2 .box_timesale_banner .right_btn span {display:block;float:right;width:10px;height:18px;margin-top:16px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_new_rbtn.png) no-repeat 0 0;text-indent:-9999px;}
+#middle.v_2 .box_timesale_banner .top_content .left_area .t_time {overflow:hidden;padding:140px 0 0 30px;}
+#middle.v_2 .box_timesale_banner .top_content .left_area .t_time span {float:left;width:53px;padding-right:13px;font-size:35px;font-weight:bold;text-align:right;line-height:52px;font-family:Verdana, sans-serif;letter-spacing:-1px;color:#da291c;}
+#middle.v_2 .box_timesale_banner .top_content .left_area .t_time .h {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_sale_bullet.png) no-repeat 58px 19px;}
+#middle.v_2 .box_timesale_banner .top_content .left_area .t_time .m {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_sale_bullet.png) no-repeat 58px 19px;}
+#middle.v_2 .line_banner_content {height:120px;margin-top:58px;}
+#middle.v_2 .line_banner_content .inner_box {position:absolute;left:0;right:0;height:120px;background-repeat:no-repeat;background-position:center 0;}
+#middle.v_2 .line_banner_content .inner_box .link_area {position:relative;top:-18px;width:907px;margin:0 auto;}
+#middle.v_2 .line_banner_content .inner_box .link_area img {margin-left:-340px;}
+#middle.v_2 .line_banner_content .inner_box .link_area a {display:block;position:absolute;right:129px;top:77px;width:60px;height:26px;background:#fff;cursor:pointer;opacity:0;filter:Alpha(opacity=0);}
+#middle.v_2 .ranking_banner_content {position:relative;margin-top:45px;}
+#middle.v_2 .ranking_banner_content .inner_box {margin-top:5px;}
+#middle.v_2 .ranking_banner_content .top_link_content {overflow:hidden;height:45px;border-bottom:3px solid #da291c;}
+#middle.v_2 .ranking_banner_content .top_link_content .link_area li {float:left;}
+#middle.v_2 .ranking_banner_content .top_link_content .link_area a {display:block;width:181px;height:33px;padding-top:12px;border-right:1px solid #fff;background:#f2f2f2;color:#4c4c4c;font-size:14px;line-height:20px;text-align:center;text-decoration:none;}
+#middle.v_2 .ranking_banner_content .top_link_content .link_area .l_1 a , #middle.v_2 .ranking_banner_content .top_link_content .link_area .l_2 a {width:180px;}
+#middle.v_2 .ranking_banner_content .top_link_content .link_area .l_5 a {border-right:none;}
+#middle.v_2 .ranking_banner_content .top_link_content .link_area li.on a {background:#da291c;color:#fff;}
+#middle.v_2 .ranking_banner_content .banner_content {overflow:hidden;position:relative;height:660px;margin-top:20px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_ranking_line.gif) repeat-x 0 310px}
+#middle.v_2 .ranking_banner_content .banner_list {display:none;}
+#middle.v_2 .ranking_banner_content .banner_list.on {display:block;}
+#middle.v_2 .ranking_banner_content .banner_list .goods_detail {overflow:hidden;width:169px;height:293px;padding:0 13px 0 44px;text-decoration:none;}
+#middle.v_2 .ranking_banner_content .banner_list .goods_detail .num {position:absolute;left:0;top:0;width:30px;height:30px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_banner_num.png) no-repeat 0 0;text-indent:-9999px;}
+#middle.v_2 .ranking_banner_content .banner_list .n_1 .goods_detail .num {background-position:0 0;}
+#middle.v_2 .ranking_banner_content .banner_list .n_2 .goods_detail .num {background-position:-50px 0;}
+#middle.v_2 .ranking_banner_content .banner_list .n_3 .goods_detail .num {background-position:0 -50px;}
+#middle.v_2 .ranking_banner_content .banner_list .n_4 .goods_detail .num {background-position:-50px -50px;}
+#middle.v_2 .ranking_banner_content .banner_list .n_5 .goods_detail .num {background-position:0 -100px;}
+#middle.v_2 .ranking_banner_content .banner_list .n_6 .goods_detail .num {background-position:-50px -100px;}
+#middle.v_2 .ranking_banner_content .banner_list .n_7 .goods_detail .num {background-position:0 -150px;}
+#middle.v_2 .ranking_banner_content .banner_list .n_8 .goods_detail .num {background-position:-50px -150px;}
+#middle.v_2 .ranking_banner_content .banner_list .goods_detail .img {position:absolute;left:13px;top:93px;width:200px;height:200px;}
+#middle.v_2 .ranking_banner_content .banner_list .goods_detail .txt_h {position:relative;margin-top:0;font-size:12px;text-align:left;color:#1a1a1a;z-index:10;}
+#middle.v_2 .ranking_banner_content .banner_list .goods_detail .txt_d {position:relative;height:16px;margin-top:1px;font-size:12px;text-align:left;color:#999;z-index:10;}
+#middle.v_2 .ranking_banner_content .banner_list .goods_detail .price {margin-top:7px;text-align:left;}
+#middle.v_2 .ranking_banner_content .banner_list .goods_detail .price .p_1 {font-size:14px;}
+#middle.v_2 .ranking_banner_content .banner_list .goods_detail .price .p_2 {left:1px;top:0;font-size:12px;}
+#middle.v_2 .ranking_banner_content .banner_list li {float:left;margin-bottom:38px;}
+#middle.v_2 .box_brand_banner {height:434px;margin-top:11px;}		
+#middle.v_2 .box_brand_banner .wide_wrap {position:absolute;left:0;right:0;height:434px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_new_banner_bg.gif) repeat-x 0 0;}
+#middle.v_2 .box_brand_banner .wide_wrap .center_wrap {width:907px;height:399px;padding:35px 0 0 12px;margin:0 auto;}
+#middle.v_2 .box_brand_banner .title_h2 {padding-left:0;}
+#middle.v_2 .box_brand_banner a {text-decoration:none;}
+#middle.v_2 .box_brand_banner .inner_box {position:relative;}
+#middle.v_2 .box_brand_banner .banner_content {overflow:hidden;position:relative;height:155px;margin-top:14px;padding:0 25px;z-index:10;}
+#middle.v_2 .box_brand_banner .banner_list {display:none;overflow:hidden;}
+#middle.v_2 .box_brand_banner .banner_list.on {display:block;}
+#middle.v_2 .box_brand_banner .banner_list li {float:left;margin-right:21px;}
+#middle.v_2 .box_brand_banner .banner_list li.n_2 , #middle.v_2 .box_brand_banner .banner_list li.n_4 {margin-right:20px;}
+#middle.v_2 .box_brand_banner .banner_list li.n_5 {margin-right:0;}
+#middle.v_2 .box_brand_banner .banner_list li img {width:155px;height:155px;}
+#middle.v_2 .box_brand_banner .bottom_banner_list {overflow:hidden;height:150px;margin-top:50px;}
+#middle.v_2 .box_brand_banner .bottom_banner_list li {float:left;}
+#middle.v_2 .box_brand_banner .bottom_banner_list li img {width:302px;height:150px;}
+#middle.v_2 .box_brand_banner .bottom_banner_list li.n_3 img {width:303px;}
+#middle.v_2 .box_brand_banner .left_btn {position:absolute;left:0;top:53px;width:25px;height:50px;z-index:50;}
+#middle.v_2 .box_brand_banner .left_btn span {display:block;width:10px;height:18px;margin-top:16px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_new_lbtn.png) no-repeat 0 0;text-indent:-9999px;}
+#middle.v_2 .box_brand_banner .right_btn {position:absolute;right:0;top:53px;width:25px;height:50px;z-index:50;}
+#middle.v_2 .box_brand_banner .right_btn span {display:block;float:right;width:10px;height:18px;margin-top:16px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_new_rbtn.png) no-repeat 0 0;text-indent:-9999px;}
+#middle.v_2 .category_content {position:relative;}
+#middle.v_2 .category_content .category_navi {position:absolute;left:-70px;top:0;width:50px;z-index:10;}
+#middle.v_2 .category_content .category_navi.move ul {position:fixed;left:50%;top:14px;width:50px;margin-left:-518px;}
+#middle.v_2 .category_content .category_navi li {float:left;}
+#middle.v_2 .category_content .category_navi li a {display:block;width:50px;height:50px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_float.jpg) no-repeat 0 0;text-indent:-9999px;}
+#middle.v_2 .category_content .category_navi li a.btn_1 {background-position:0 0;}
+#middle.v_2 .category_content .category_navi li a.btn_2 {background-position:0 -50px;}
+#middle.v_2 .category_content .category_navi li a.btn_3 {background-position:0 -100px;}
+#middle.v_2 .category_content .category_navi li a.btn_4 {background-position:0 -150px;}
+#middle.v_2 .category_content .category_navi li a.btn_5 {background-position:0 -200px;}
+#middle.v_2 .category_content .category_navi li a.btn_6 {background-position:0 -250px;}
+#middle.v_2 .category_content .category_navi li a.btn_7 {background-position:0 -300px;}
+#middle.v_2 .category_content .category_navi li a.btn_8 {background-position:0 -350px;}
+#middle.v_2 .category_content .category_navi li a.btn_1.on {background-position:-50px 0;}
+#middle.v_2 .category_content .category_navi li a.btn_2.on {background-position:-50px -50px;}
+#middle.v_2 .category_content .category_navi li a.btn_3.on {background-position:-50px -100px;}
+#middle.v_2 .category_content .category_navi li a.btn_4.on {background-position:-50px -150px;}
+#middle.v_2 .category_content .category_navi li a.btn_5.on {background-position:-50px -200px;}
+#middle.v_2 .category_content .category_navi li a.btn_6.on {background-position:-50px -250px;}
+#middle.v_2 .category_content .category_navi li a.btn_7.on {background-position:-50px -300px;}
+#middle.v_2 .category_content .category_navi li a.btn_8.on {background-position:-50px -350px;}
+#middle.v_2 .category_content .goods_area {margin-top:25px;}
+#middle.v_2 .category_content .goods_area.category_1 {margin-top:44px;}
+#middle.v_2 .category_content .goods_area .inner_box {overflow:hidden;margin-top:4px;border-top:2px solid #4d4d4d;}
+#middle.v_2 .category_content a {text-decoration:none;}
+#middle.v_2 .category_content .title_h2 {padding-left:0;}
+#middle.v_2 .category_content .link_list {float:left;width:171px;height:355px;padding:183px 0 0 20px;}
+#middle.v_2 .category_content .link_list li {width:151px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_linkbg.png) repeat-x 0 0;}
+#middle.v_2 .category_content .link_list li:first-child {background:none;}
+#middle.v_2 .category_content .link_list li a {display:block;width:148px;min-height:18px;padding:9px 0 11px 3px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_arrow.png) no-repeat 143px center;font-size:14px;line-height:18px;letter-spacing:-1px;color:#fff;}
+#middle.v_2 .category_content .goods_list .n_1 {position:absolute;left:0;top:0;}
+#middle.v_2 .category_content .goods_list .n_2 {position:absolute;left:315px;top:0;}
+#middle.v_2 .category_content .goods_list .n_3 {position:absolute;left:516px;top:0;}
+#middle.v_2 .category_content .goods_list .n_4 {position:absolute;left:315px;top:269px;}
+#middle.v_2 .category_content .goods_list .n_5 {position:absolute;left:516px;top:269px;}
+#middle.v_2 .category_content .goods_list {position:relative;float:left;width:716px;height:538px;background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_line.jpg) no-repeat 0 0;}
+#middle.v_2 .category_content .goods_list .goods_detail {width:170px;height:251px;padding:17px 10px 0 20px;}
+#middle.v_2 .category_content .goods_list .goods_detail .img {left:25px;top:98px;width:150px;height:150px;}
+#middle.v_2 .category_content .goods_list .goods_detail .txt_d {height:16px;margin-top:2px;}
+#middle.v_2 .category_content .goods_list .goods_detail .price {margin-top:7px;}
+#middle.v_2 .category_content .goods_list .n_1 .goods_detail {width:267px;height:166px;padding:370px 15px 0 32px;}
+#middle.v_2 .category_content .goods_list .n_1 .goods_detail .img {left:22px;top:82px;width:270px;height:270px;}
+#middle.v_2 .category_content .goods_list .n_1 .goods_detail .txt_h {height:30px;font-size:20px;line-height:30px;}
+#middle.v_2 .category_content .goods_list .n_1 .goods_detail .txt_d {height:20px;margin-top:3px;font-size:14px;line-height:20px;}
+#middle.v_2 .category_content .goods_list .n_1 .goods_detail .p_1 {font-size:22px;line-height:28px;}
+#middle.v_2 .category_content .goods_list .n_1 .goods_detail .p_2 {left:3px;top:0;font-size:14px;line-height:20px;}
+#middle.v_2 .category_content .goods_list .n_1 .goods_detail .price {margin-top:12px;}
+#middle.v_2 .category_content .category_1 .link_list {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_bg1.jpg) no-repeat 0 0;}
+#middle.v_2 .category_content .category_2 .link_list {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_bg2.jpg) no-repeat 0 0;}
+#middle.v_2 .category_content .category_3 .link_list {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_bg3.jpg) no-repeat 0 0;}
+#middle.v_2 .category_content .category_4 .link_list {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_bg4.jpg) no-repeat 0 0;}
+#middle.v_2 .category_content .category_5 .link_list {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_bg5.jpg) no-repeat 0 0;}
+#middle.v_2 .category_content .category_6 .link_list {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_bg6.jpg) no-repeat 0 0;}
+#middle.v_2 .category_content .category_7 .link_list {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_bg7.jpg) no-repeat 0 0;}
+#middle.v_2 .category_content .category_8 .link_list {background:url(http://chimg.lottedfs.com/static-root/cn_cdn/images/main/renewal/main_category_bg8.jpg) no-repeat 0 0;}
+
+#main_wrap.renewal #information.v_2 {margin-top:80px;border-top:none;background:none;}
+#main_wrap.renewal #information.v_2 .information_content {border-top:5px solid #e6e6e6;}
+#main_wrap.renewal #information.v_2 .information_content .top_cnt {height:50px;}
+#main_wrap.renewal #information.v_2 .information_content .top_cnt .rolling_txt {left:19px;top:18px;}
+#main_wrap.renewal #information.v_2 .information_content .top_cnt .rolling_txt .list .r_cnt .n_txt {width:295px;}
+#main_wrap.renewal #information.v_2 .information_content .top_cnt .rolling_txt .list .u_btn {right:18px;}
+#main_wrap.renewal #information.v_2 .information_content .top_cnt .rolling_txt .list .d_btn {right:18px;}
+#main_wrap.renewal #information.v_2 .information_content .top_cnt .sns_cnt {margin:18px 36px 0 0;}
+#main_wrap.renewal #information.v_2 .information_content .top_cnt .sns_cnt ul li.icon_1 {margin-left:20px;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img {padding-top:11px;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .sitemap_1 {width:130px;height:208px;padding:5px 0 0 20px;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .sitemap_2 {width:130px;height:208px;padding:5px 0 0 20px;border-left:1px solid #e6e6e6;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .sitemap_3 {width:130px;height:208px;padding:5px 0 0 20px;border-left:1px solid #e6e6e6;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .sitemap_4 {width:130px;height:208px;padding:5px 0 0 20px;border-left:1px solid #e6e6e6;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .site_list li {height:12px;margin-bottom:12px;padding-bottom:0;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .site_list li.title {height:14px;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .site_list li.line_2 {padding-top:18px;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .footer_banner_mark {width:283px;padding-left:20px;border-left:1px solid #e6e6e6;}
+#main_wrap.renewal #information.v_2 .information_content .site_cnt_img .footer_banner_mark li:first-child {padding-right:0;border-bottom:1px solid #e6e6e6;}
+
+#footer.new.v_2 {margin-top:20px;border-top:1px solid #e6e6e6;}
+#footer.new.v_2 .footer_content_top {padding:13px 0 10px 0;}
+/* //2016-03-10 중문 메인 리뉴얼 끝 */

@@ -1,0 +1,4 @@
+D:\zhangxiaowei\CosmeticProxy\CP.Model\bin\Debug\CP.Model.dll
+D:\zhangxiaowei\CosmeticProxy\CP.Model\bin\Debug\CP.Model.pdb
+D:\zhangxiaowei\CosmeticProxy\CP.Model\obj\Debug\CP.Model.dll
+D:\zhangxiaowei\CosmeticProxy\CP.Model\obj\Debug\CP.Model.pdb

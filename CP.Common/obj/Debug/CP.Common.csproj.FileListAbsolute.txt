@@ -1,0 +1,4 @@
+D:\zhangxiaowei\CosmeticProxy\CP.Common\bin\Debug\CP.Common.dll
+D:\zhangxiaowei\CosmeticProxy\CP.Common\bin\Debug\CP.Common.pdb
+D:\zhangxiaowei\CosmeticProxy\CP.Common\obj\Debug\CP.Common.dll
+D:\zhangxiaowei\CosmeticProxy\CP.Common\obj\Debug\CP.Common.pdb
