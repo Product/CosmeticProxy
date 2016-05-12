@@ -30,11 +30,10 @@ namespace CP.Web.Controllers
         /// <param name="pageSize"></param>
         /// <param name="pageIndex"></param>
         /// <returns></returns>
-        public JsonResult GetProductList(int pageSize, int pageIndex = 1)
+        public JsonResult GetProductList(int pageSize, int area = 0, string search = "", int pageIndex = 1)
         {
             int totalCount = 0;
-            List<ProductInfo> eriList = pBll.GetProProductList(pageIndex, pageSize, out totalCount);
-
+            List<ProductInfo> eriList = pBll.GetProProductList(area, search, pageIndex, pageSize, out totalCount);
             var result = new
             {
                 data = eriList,

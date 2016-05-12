@@ -2,3 +2,7 @@ D:\zhangxiaowei\CosmeticProxy\CP.Common\bin\Debug\CP.Common.dll
 D:\zhangxiaowei\CosmeticProxy\CP.Common\bin\Debug\CP.Common.pdb
 D:\zhangxiaowei\CosmeticProxy\CP.Common\obj\Debug\CP.Common.dll
 D:\zhangxiaowei\CosmeticProxy\CP.Common\obj\Debug\CP.Common.pdb
+C:\gitworkspace\CosmeticProxy\CP.Common\bin\Debug\CP.Common.dll
+C:\gitworkspace\CosmeticProxy\CP.Common\bin\Debug\CP.Common.pdb
+C:\gitworkspace\CosmeticProxy\CP.Common\obj\Debug\CP.Common.dll
+C:\gitworkspace\CosmeticProxy\CP.Common\obj\Debug\CP.Common.pdb

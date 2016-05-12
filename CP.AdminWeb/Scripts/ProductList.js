@@ -45,9 +45,9 @@ $(function () {
                     var changeLinkText = function(obj) {
                         var link;
                         if(obj.Status == 0)
-                            link = '<a id="DelProduct" code = "' + obj.Code + '">删除</a><br/><a id="UpdateStatus" code="' + obj.Code + '" status="' + obj.Status + '">发布</a><br/><a href=http://localhost:58174/Product/EditProduct?code="' + obj.Code + '">编辑</a>';
+                            link = '<a id="DelProduct" code = "' + obj.Code + '">删除</a><br/><a id="UpdateStatus" code="' + obj.Code + '" status="' + obj.Status + '">发布</a><br/><a href=http://admin.cosmeticproxy.com/Product/EditProduct?code="' + obj.Code + '">编辑</a>';
                         if(obj.Status == 2)
-                            link = '<a id="UpdateStatus" code="' + obj.Code + '" status="' + obj.Status + '">取消发布</a ><br/><a href="http://localhost:58174/Product/EditProduct?code=' + obj.Code + '">编辑</a>';
+                            link = '<a id="UpdateStatus" code="' + obj.Code + '" status="' + obj.Status + '">取消发布</a ><br/><a href="http://admin.cosmeticproxy.com/Product/EditProduct?code=' + obj.Code + '">编辑</a>';
                         return link;
                     }
 
@@ -61,7 +61,7 @@ $(function () {
                             '    <td width="200px">' + dCont[i].Description + '</td>' +//
                             '    <td>' + dCont[i].Price + '</td>' +//
                             '    <td>' + dCont[i].Area + '</td>' +//
-                            '    <td><img src=http://localhost:58174/Product/GetPic/' + dCont[i].Pic + '/1/></td>' +//
+                            '    <td><img src=http://admin.cosmeticproxy.com/Product/GetPic/' + dCont[i].Pic + '/1/></td>' +//
                             '    <td>' + formatJsonDateStr(dCont[i].CreateTime) + '</td>' +//
                             '    <td>' + changeLinkText(dCont[i]) + '</td>' + //
                             '</tr>';

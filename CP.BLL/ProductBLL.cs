@@ -77,9 +77,19 @@ namespace CP.DAL
         /// 获取商品列表（前台）
         /// </summary>
         /// <returns></returns>
-        public List<ProductInfo> GetProProductList(int pageIndex, int pageSize, out int totalCount)
+        public List<ProductInfo> GetProProductList(int area, string search, int pageIndex, int pageSize, out int totalCount)
         {
-            return productDAL.GetProProductList(pageIndex, pageSize, out totalCount);
+            return productDAL.GetProProductList(area,search,pageIndex, pageSize, out totalCount);
         }
+
+        /// <summary>
+        /// 获取商品列表数量（前台）
+        /// </summary>
+        /// <returns></returns>
+        public int GetProProductCount()
+        {
+            return productDAL.GetProProductCount();
+        }
+        
     }
 }

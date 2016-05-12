@@ -1,11 +1,14 @@
 ﻿//获取产品列表
 $(function () {
-    getlist();
+    $("#btnSearch").click(function() { /* 点击查询按钮 */
+        getlist($("#categoryId").val(), $("#searchContent").val());
+    });
+    getlist(0,"");
     //列表获取
-    function getlist() {
+    function getlist(area,search) {
 
         $("#js_tbSzList").ajaxPage({
-            url: "/Product/GetProductList",
+            url: "/Product/GetProductList?area=" + area + "&search=" + search,
             pageObj: $("#DataTables_Table_0_paginate"),
             pageIndex: 1,
             pageSize: 10,
@@ -45,7 +48,7 @@ $(function () {
                         dataHtml += '' +
                             '<li>' +
                             '    <a hrerf="' + dCont[i].Code + '">' +//
-                            '        <img alt="' + dCont[i].Name + '" src=http://localhost:59404/Product/GetPic/' + dCont[i].Pic + '/1/>' +//
+                            '        <img alt="' + dCont[i].Name + '" src=http://www.cosmeticproxy.com/Product/GetPic/' + dCont[i].Pic + '/1/>' +//
                             '        <h4>' + dCont[i].Name + '</h4>' +//
                             '        <p>' + dCont[i].Brank + '</p>' +//
                             '        <p>' + dCont[i].Price + '</p>' +//

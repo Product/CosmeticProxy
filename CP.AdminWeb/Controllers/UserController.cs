@@ -42,6 +42,7 @@ namespace CP.AdminWeb.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.Message = Request.RequestType;
             return View();
         }
 

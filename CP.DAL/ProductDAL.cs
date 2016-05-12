@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -226,26 +227,38 @@ namespace CP.DAL
         /// 获取商品列表（前台）
         /// </summary>
         /// <returns></returns>
-        public List<ProductInfo> GetProProductList(int pageIndex, int pageSize, out int totalCount)
+        public List<ProductInfo> GetProProductList(int area, string search,int pageIndex, int pageSize, out int totalCount)
         {
             totalCount = 0;
             IDataHelper dbo = DataHelperFactory.Create("CosmeticProxy");
-            SqlParameter[] parameters =
+            string searchSql = @"select Top (@PageSize) * from
+                                (
+                                select code,name,brank,description,price,area,pic,status,createtime
+                                ,row_number()over(order by createtime desc) as rownum
+                                from [dbo].[TProduct]
+                                where status = 2
+                                )b
+                                where rownum > (@PageIndex - 1) * @PageSize  
+                                ";
+            var parameter = new List<DbParameter>();
+            if (area > 0)
             {
-                new SqlParameter("@PageIndex", SqlDbType.Int),
-                new SqlParameter("@PageSize", SqlDbType.Int),
-                new SqlParameter("@TotalCount", SqlDbType.Int)
-            };
-            parameters[0].Value = pageIndex;
-            parameters[1].Value = pageSize;
-            parameters[2].Direction = ParameterDirection.Output;
-
-            DataTable datable = dbo.GetDataTable(CommandType.StoredProcedure, "sp_get_proproduct_list", parameters);
-
-            if (parameters[2].Value != null && parameters[2].Value != System.DBNull.Value)
-            {
-                totalCount = Convert.ToInt32(parameters[2].Value);
+                searchSql += "  and area = @Area";
+                parameter.Add(new SqlParameter("@Area", SqlDbType.Int) { Value = area });
             }
+            if (!string.IsNullOrEmpty(search))
+            {
+                searchSql += "  and (name like @SearchContent or description like @SearchContent)";
+                parameter.Add(new SqlParameter("@SearchContent", SqlDbType.VarChar) { Value = '%'+ search +'%' });
+            }
+            parameter.Add(new SqlParameter("@PageIndex", SqlDbType.Int) { Value = pageIndex });
+            parameter.Add(new SqlParameter("@PageSize", SqlDbType.Int) { Value = pageSize });
+
+            searchSql += " order by createtime desc";
+            
+            DbParameter[] paraArray = parameter.ToArray();
+
+            DataTable datable = dbo.GetDataTable(CommandType.Text, searchSql, paraArray);
 
             if (datable == null || datable.Rows.Count <= 0)
             {
@@ -255,7 +268,41 @@ namespace CP.DAL
             List<ProductInfo> productList = new List<ProductInfo>();
             productList.AddRange(from DataRow row in datable.Rows
                                  select BindProductInfo(row));
+
+            //搜索商品
+            string countSql = "SELECT count(1) as num FROM [dbo].[TProduct] where status = 2 ";
+            var countParameter = new List<DbParameter>();
+            if (area > 0)
+            {
+                countSql += "  and area = @Area";
+                countParameter.Add(new SqlParameter("@Area", SqlDbType.Int) { Value = area });
+            }
+            if (!string.IsNullOrEmpty(search))
+            {
+                countSql += "  and (name like @SearchContent or description like @SearchContent)";
+                countParameter.Add(new SqlParameter("@SearchContent", SqlDbType.VarChar) { Value = '%' + search + '%' });
+            }
+            object obj = dbo.ExecuteScalar(CommandType.Text, countSql, countParameter.ToArray());
+            if (obj != null && Int32.TryParse(obj.ToString(), out totalCount)) { }
+
             return productList;
+        }
+
+
+        /// <summary>
+        /// 获取商品列表数量（前台）
+        /// </summary>
+        /// <returns></returns>
+        public int GetProProductCount()
+        {
+            IDataHelper dbo = DataHelperFactory.Create("CosmeticProxy");
+            string sql = @"SELECT count(1) as num FROM [dbo].[TProduct] where status = 2 
+                                ";
+            object obj = dbo.ExecuteScalar(CommandType.Text, sql);
+            int result = 0;
+            if (obj != null && Int32.TryParse(obj.ToString(), out result))
+                return result;
+            return result;
         }
 
 

@@ -57,7 +57,10 @@
 @if (@ViewBag.Message != "")
 {
     <script type="text/javascript">
-        alert("@ViewBag.Message");
-    </script>
+        if (@ViewBag.Message != "GET")
+        {
+            alert(@ViewBag.Message);
+        }
+</script>
 }
 
